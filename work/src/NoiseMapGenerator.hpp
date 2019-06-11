@@ -68,24 +68,20 @@ float getNoiseAt(float xPos, float yPos) {
     const float xOffset2 = xOffset0 - 1.0f + 2.0f * skewingFactor1;
     const float yOffset2 = yOffset0 - 1.0f + 2.0f * skewingFactor1;
 
-    // Work out the hashed gradient indices of the three simplex corners
     const int gradientIndices0 = permutationTable[(xFloor + permutationTable[(yFloor)])];
     const int gradientIndices1 = permutationTable[(xFloor + middleOffsetI + permutationTable[(yFloor + middleOffsetJ)])];
     const int gradientIndices2 = permutationTable[(xFloor + 1 + permutationTable[(yFloor + 1)])];
 
-    // Calculate the contribution from the first corner
     float firstContribution = 0.5f - xOffset0 * xOffset0 - yOffset0 * yOffset0;
 
     if(!(firstContribution < 0.0f)) firstContribution *= firstContribution;
     noiseContribution0 = firstContribution < 0.0f ? 0.0f : firstContribution * firstContribution * computeGradient(gradientIndices0, xOffset0, yOffset0);
 
-    // Calculate the contribution from the second corner
     float secondContribution = 0.5f - xOffset1 * xOffset1 - yOffset1 * yOffset1;
 
     if(!(secondContribution < 0.0f)) secondContribution *= secondContribution;
     noiseContribution1 = secondContribution < 0.0f ? 0.0f : secondContribution * secondContribution * computeGradient(gradientIndices1, xOffset1, yOffset1);
 
-    // Calculate the contribution from the third corner
     float thirdContribution = 0.5f - xOffset2 * xOffset2 - yOffset2 * yOffset2;
 
     if(!(thirdContribution < 0.0f)) thirdContribution *= thirdContribution;

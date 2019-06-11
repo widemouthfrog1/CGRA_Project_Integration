@@ -24,7 +24,6 @@
 //#include "TreeApplication.hpp"
 
 glm::mat4 modelMatrix = glm::mat4(1.0f);
-glm::mat4 viewMatrix = glm::lookAt(glm::vec3(10,10,10), glm::vec3(0,0,0), glm::vec3(0,1,0));
 glm::mat4 projectionMatrix = glm::perspective(glm::radians(45.0f), 4.0f/3.0f, 0.1f, 1000.0f);
 
 glm::vec3 cameraPosition = glm::vec3(0, 40.0f, 0);
@@ -50,6 +49,8 @@ bool** treeMap;
 
 glm::vec2 meshHeightExtremes;
 
+// Options for Terrain Generation
+
 int terrainSize = 100;
 int amountOfOctaves = 4;
 float lacanarityValue = 1.8;
@@ -60,6 +61,21 @@ float blendingScale = 2;
 
 float flatHeight = 0.2;
 
+// Options for Erosion
+
+float inertiaConstant = 0.1;
+float minSedimentCapacity = 0.01;
+float sedimentCapacityFactor = 4.00;
+float depositSpeed = 0.01;
+float erodeSpeed = 0.01;
+float evaporationSpeed = 0.01;
+float gravityConstant = 4;
+
+int maxDropletLifetime = 30;
+int numIterations = 1000;
+
+int brushSize = 4;
+
 std::vector<std::vector<glm::vec2>> erosionBrushIndices;
 std::vector<std::vector<float>> erosionBrushWeights;
 
@@ -68,71 +84,6 @@ Shader simpleShader;
 
 static void glfwErrorCallback(int error, const char* description){
     fprintf(stderr, "Glfw Error %d: %s\n", error, description);
-}
-
-Mesh generateFakeTree(){
-
-    std::vector<MeshVertex> vertexPositions;
-    std::vector<unsigned int> depthIndices;
-
-    vertexPositions.push_back(MeshVertex{ glm::vec3(-1, -1, 1), glm::vec3(0, 0, 1)});
-    vertexPositions.push_back(MeshVertex{ glm::vec3(1, -1, 1), glm::vec3(0, 0, 1)});
-    vertexPositions.push_back(MeshVertex{ glm::vec3(-1, 1, 1), glm::vec3(0, 0, 1)});
-    vertexPositions.push_back(MeshVertex{ glm::vec3(1, 1, 1), glm::vec3(0, 0, 1)});
-    vertexPositions.push_back(MeshVertex{ glm::vec3(-1, 1, -1), glm::vec3(0, 0, 1)});
-    vertexPositions.push_back(MeshVertex{ glm::vec3(1, 1, -1), glm::vec3(0, 0, 1)});
-    vertexPositions.push_back(MeshVertex{ glm::vec3(-1, -1, -1), glm::vec3(0, 0, 1)});
-    vertexPositions.push_back(MeshVertex{ glm::vec3(1, -1, -1), glm::vec3(0, 0, 1)});
-    
-    depthIndices.push_back(0);
-    depthIndices.push_back(1);
-    depthIndices.push_back(2);
-
-    depthIndices.push_back(2);
-    depthIndices.push_back(1);
-    depthIndices.push_back(3);
-
-    depthIndices.push_back(2);
-    depthIndices.push_back(3);
-    depthIndices.push_back(4);
-
-    depthIndices.push_back(4);
-    depthIndices.push_back(3);
-    depthIndices.push_back(5);
-
-    depthIndices.push_back(4);
-    depthIndices.push_back(5);
-    depthIndices.push_back(6);
-
-    depthIndices.push_back(6);
-    depthIndices.push_back(5);
-    depthIndices.push_back(7);
-
-    depthIndices.push_back(6);
-    depthIndices.push_back(7);
-    depthIndices.push_back(0);
-
-    depthIndices.push_back(0);
-    depthIndices.push_back(7);
-    depthIndices.push_back(1);
-
-    depthIndices.push_back(1);
-    depthIndices.push_back(7);
-    depthIndices.push_back(3);
-
-    depthIndices.push_back(3);
-    depthIndices.push_back(7);
-    depthIndices.push_back(5);
-
-    depthIndices.push_back(6);
-    depthIndices.push_back(0);
-    depthIndices.push_back(4);
-
-    depthIndices.push_back(4);
-    depthIndices.push_back(0);
-    depthIndices.push_back(2);
-
-    return Mesh(vertexPositions, depthIndices);
 }
 
 void redrawScene(){
@@ -388,16 +339,16 @@ void generateTerrain(bool alterHeight){
     groundMesh = Mesh(vertexPositions, depthIndices);
 }
 
-void depositSediment(int xPos, int zPos, float cellOffsetX, float cellOffsetZ, float amountOfSediment){
+void depositSediment(int xPos, int zPos, float xOffset, float zOffset, float amountOfSediment){
 
-    depthMap[xPos][zPos] += amountOfSediment * (1 - cellOffsetX) * (1 - cellOffsetZ);
-    depthMap[xPos][zPos + 1] += amountOfSediment * cellOffsetX * (1 - cellOffsetZ);
-    depthMap[xPos + 1][zPos] += amountOfSediment * (1 - cellOffsetX) * cellOffsetZ;
-    depthMap[xPos + 1][zPos + 1] += amountOfSediment * cellOffsetX * cellOffsetZ;
+    depthMap[xPos][zPos] += amountOfSediment * (1 - xOffset) * (1 - zOffset);
+    depthMap[xPos][zPos + 1] += amountOfSediment * xOffset * (1 - zOffset);
+    depthMap[xPos + 1][zPos] += amountOfSediment * (1 - xOffset) * zOffset;
+    depthMap[xPos + 1][zPos + 1] += amountOfSediment * xOffset * zOffset;
 
 }
 
-void initializeBrushIndices(int brushRadius){
+void initializeBrush(int brushRadius){
 
     erosionBrushIndices = std::vector<std::vector<glm::vec2>>();
     erosionBrushWeights = std::vector<std::vector<float>>();
@@ -466,176 +417,110 @@ glm::vec3 calculateGradientAndHeight(float xPos, float zPos){
     int xCoordinate = (int)xPos;
     int zCoordinate = (int)zPos;
 
-    float cellOffsetX = xPos - xCoordinate;
-    float cellOffsetZ = zPos - zCoordinate;
+    float xOffset = xPos - xCoordinate;
+    float zOffset = zPos - zCoordinate;
 
     float heightNW = depthMap[xCoordinate][zCoordinate];
     float heightNE = depthMap[xCoordinate][zCoordinate + 1];
     float heightSW = depthMap[xCoordinate + 1][zCoordinate];
     float heightSE = depthMap[xCoordinate + 1][zCoordinate + 1];
 
-    float xGradient = (heightNE - heightNW) * (1 - cellOffsetZ) + (heightSE - heightSW) * cellOffsetZ;
-    float yGradient = (heightSW - heightNW) * (1 - cellOffsetX) + (heightSE - heightNE) * cellOffsetX;
+    float xGradient = (heightNE - heightNW) * (1 - zOffset) + (heightSE - heightSW) * zOffset;
+    float yGradient = (heightSW - heightNW) * (1 - xOffset) + (heightSE - heightNE) * xOffset;
 
-    float pointHeight = heightNW * (1 - cellOffsetX) * (1 - cellOffsetZ) + heightNE * cellOffsetX * (1 - cellOffsetZ) + heightSW * (1 - cellOffsetX) * cellOffsetZ + heightSE * cellOffsetX * cellOffsetZ;
+    float pointHeight = heightNW * (1 - xOffset) * (1 - zOffset) + heightNE * xOffset * (1 - zOffset) + heightSW * (1 - xOffset) * zOffset + heightSE * xOffset * zOffset;
 
     return glm::vec3(xGradient, yGradient, pointHeight);
 }
 
 void erodeTerrain(){
 
-    initializeBrushIndices(4);
+    initializeBrush(brushSize);
 
     std::random_device randomDevice;
     std::mt19937 randomNumberGenerator(randomDevice());
     std::uniform_int_distribution<std::mt19937::result_type> randomDistribution(0, (terrainSize - 1) * 10);
 
-    float inertiaConstant = 0.1;
-    float minSedimentCapacity = 0.01;
-    float sedimentCapacityFactor = 4.00;
-    float depositSpeed = 0.01;
-    float erodeSpeed = 0.01;
-    float evaporationSpeed = 0.01;
-    float gravityConstant = 4;
-
-    int maxDropletLifetime = 30;
-    
-    int numIterations = 1000;
-
     for(int i = 0; i < numIterations; i++) {
         
-        // Create water droplet at random point on map
-        float posX = randomDistribution(randomNumberGenerator) * 0.1;
-        float posY = randomDistribution(randomNumberGenerator) * 0.1;
+        float xPosition = randomDistribution(randomNumberGenerator) * 0.1;
+        float zPosition = randomDistribution(randomNumberGenerator) * 0.1;
 
-        float dirX = 0;
-        float dirY = 0;
+        float xDirection = 0;
+        float zDirection = 0;
         
-        float speed = 10;
-        float water = 1;
+        float currentSpeed = 10;
+        float amountOfWater = 1;
         
-        float sediment = 0;
+        float currentAmountOfSediment = 0;
 
-        for (int lifetime = 0; lifetime < maxDropletLifetime; lifetime++) {
+        for (int currentDropletLife = 0; currentDropletLife < maxDropletLifetime; currentDropletLife++) {
         
-            int nodeX = (int) posX;
-            int nodeY = (int) posY;
+            int xFloor = (int) xPosition;
+            int yFloor = (int) zPosition;
+
+            glm::vec3 heightAndGradient = calculateGradientAndHeight(xPosition, zPosition);
+
+            xDirection = (xDirection * inertiaConstant - heightAndGradient.x * (1 - inertiaConstant));
+            zDirection = (zDirection * inertiaConstant - heightAndGradient.y * (1 - inertiaConstant));
             
-            // Calculate droplet's offset inside the cell (0,0) = at NW node, (1,1) = at SE node
-            float cellOffsetX = posX - nodeX;
-            float cellOffsetY = posY - nodeY;
+            float directionLength = sqrt(xDirection * xDirection + zDirection * zDirection);
 
-            //std::cout <<"Position: " << posX << ", " << posY << std::endl;
-            //std::cout <<"Node: " << nodeX << ", " << nodeY << std::endl;
-            //std::cout <<"Offset: " << cellOffsetX << ", " << cellOffsetY << std::endl;
-
-            // Calculate droplet's height and direction of flow with bilinear interpolation of surrounding heights
-            glm::vec3 heightAndGradient = calculateGradientAndHeight(posX, posY);
-
-            // Update the droplet's direction and position (move position 1 unit regardless of speed)
-            dirX = (dirX * inertiaConstant - heightAndGradient.x * (1 - inertiaConstant));
-            dirY = (dirY * inertiaConstant - heightAndGradient.y * (1 - inertiaConstant));
-            
-            // Normalize direction
-            float len = sqrt (dirX * dirX + dirY * dirY);
-
-            if (len != 0) {
-                dirX /= len;
-                dirY /= len;
-            }
+            if (directionLength != 0) { xDirection /= directionLength; zDirection /= directionLength; }
                 
-            posX += dirX;
-            posY += dirY;
+            xPosition += xDirection;
+            zPosition += zDirection;
 
-            // Stop simulating droplet if it's not moving or has flowed over edge of map
-            if((dirX == 0 && dirY == 0) || posX < 0 || posX >= terrainSize - 1 || posY < 0 || posY >= terrainSize - 1) break;
+            if((xDirection == 0 && zDirection == 0) || xPosition < 0 || xPosition >= terrainSize - 1 || zPosition < 0 || zPosition >= terrainSize - 1) break;
 
-            // Find the droplet's new height and calculate the deltaHeight
-            float newHeight = calculateGradientAndHeight(posX, posY).z;
+            float newHeight = calculateGradientAndHeight(xPosition, zPosition).z;
             float deltaHeight = newHeight - heightAndGradient.z;
 
-            //Calculate the droplet's sediment capacity (higher when moving fast down a slope and contains lots of water)
-                
-            //std::cout << "Delta: " << -deltaHeight << std::endl;
-            //std::cout << "Speed: " << speed << std::endl;
+            float sedimentCapacity = std::max(-deltaHeight * currentSpeed * amountOfWater * sedimentCapacityFactor, minSedimentCapacity);
 
-            float sedimentCapacity = std::max(-deltaHeight * speed * water * sedimentCapacityFactor, minSedimentCapacity);
+            if (currentAmountOfSediment > sedimentCapacity || deltaHeight > 0) {
 
-            //std::cout << "Capacity: " << sedimentCapacity << std::endl << std::endl;
+                float amountToDeposit = (deltaHeight > 0) ? std::min (deltaHeight, currentAmountOfSediment) : (currentAmountOfSediment - sedimentCapacity) * depositSpeed;
 
-            // If carrying more sediment than capacity, or if flowing uphill:
-            if (sediment > sedimentCapacity || deltaHeight > 0) {
+                currentAmountOfSediment -= amountToDeposit;
 
-                    //std::cout << "Capacity: " << sedimentCapacity << std::endl;
-                    //std::cout << "Sediment: " << sediment << std::endl;
+                depositSediment(xFloor, yFloor, xPosition - xFloor, zPosition - yFloor, amountToDeposit);
 
-                    // If moving uphill (deltaHeight > 0) try fill up to the current height, otherwise deposit a fraction of the excess sediment
-                    float amountToDeposit = (deltaHeight > 0) ? std::min (deltaHeight, sediment) : (sediment - sedimentCapacity) * depositSpeed;
-                    sediment -= amountToDeposit;
+            }
+            else {
 
-                    // Add the sediment to the four nodes of the current cell using bilinear interpolation
-                    // Deposition is not distributed over a radius (like erosion) so that it can fill small pits
+                float amountToErode = std::min((sedimentCapacity - currentAmountOfSediment) * erodeSpeed, -deltaHeight);
 
-                    //std::cout << amountToDeposit << std::endl << std::endl;
-
-                    depositSediment(nodeX, nodeY, cellOffsetX, cellOffsetY, amountToDeposit);
-
-
-                } else {
-                    
-                    // Erode a fraction of the droplet's current carry capacity.
-                    // Clamp the erosion to the change in height so that it doesn't dig a hole in the terrain behind the droplet
-
-                    //std::cout << "Delta: " << -deltaHeight << std::endl;
-                    //std::cout << "Sediment: " << sediment << std::endl << std::endl;
-                    //std::cout << "Capacity: " << sedimentCapacity << std::endl << std::endl;
-
-                    float amountToErode = std::min((sedimentCapacity - sediment) * erodeSpeed, -deltaHeight);
-
-                    // Use erosion brush to erode from all nodes inside the droplet's erosion radius
-
-                    for (unsigned int brushPointIndex = 0; brushPointIndex < erosionBrushIndices[nodeX * terrainSize + nodeY].size(); brushPointIndex++) {
+                for (unsigned int brushPoint = 0; brushPoint < erosionBrushIndices[xFloor * terrainSize + yFloor].size(); brushPoint++) {
                                                 
-                        glm::vec2 nodeIndex = erosionBrushIndices[nodeX * terrainSize + nodeY][brushPointIndex];
+                    glm::vec2 nodeIndex = erosionBrushIndices[xFloor * terrainSize + yFloor][brushPoint];
 
-                        int xPos = (int)nodeIndex.x;
-                        int zPos = (int)nodeIndex.y;
+                    int xPos = (int)nodeIndex.x;
+                    int zPos = (int)nodeIndex.y;
 
-                        //std::cout << amountToErode << std::endl;
+                    float weighedErodeAmount = amountToErode * erosionBrushWeights[xFloor * terrainSize + yFloor][brushPoint];
 
-                        float weighedErodeAmount = amountToErode * erosionBrushWeights[nodeX * terrainSize + nodeY][brushPointIndex];
+                    float deltaSediment = depthMap[xPos][zPos] < weighedErodeAmount ? depthMap[xPos][zPos] : weighedErodeAmount;
 
-                        //std::cout << weighedErodeAmount << std::endl;
-                        
-                        float deltaSediment = depthMap[xPos][zPos] < weighedErodeAmount ? depthMap[xPos][zPos] : weighedErodeAmount;
-                        
-                        //std::cout << deltaSediment << std::endl;
-
-                        depthMap[xPos][zPos] -= deltaSediment;
-                        sediment += deltaSediment;
-
-                    }
-
-                    //std::cout << std::endl;
+                    depthMap[xPos][zPos] -= deltaSediment;
+                    currentAmountOfSediment += deltaSediment;
 
                 }
 
-                //std::cout << "About to be squared: " << speed * speed + deltaHeight * gravityConstant << std::endl;
-
-                // Update droplet's speed and water content
-                if(speed * speed + deltaHeight * gravityConstant < 0){ break; std::cout << "NEGATIVE SQUARE ROOT" << std::endl; }
-                else speed = sqrt(speed * speed + deltaHeight * gravityConstant);
-                water *= (1 - evaporationSpeed);
-
             }
 
-            generateTerrain(false);
-            redrawScene();
+            if(currentSpeed * currentSpeed + deltaHeight * gravityConstant < 0){ break; }
+            else currentSpeed = sqrt(currentSpeed * currentSpeed + deltaHeight * gravityConstant);
+            amountOfWater *= (1 - evaporationSpeed);
 
         }
 
-        std::cout << "Erosion complete" << std::endl;
+        generateTerrain(false);
+        redrawScene();
+
     }
+
+}
 
 void placeTrees(){
 
@@ -669,8 +554,8 @@ void placeTrees(){
 
             glm::vec3 gradientAndHeight = calculateGradientAndHeight(xPos, zPos);
 
-            float currentHeight = depthMap[xPos][zPos];
-            float currentIncline = gradientAndHeight.x; //+ gradientAndHeight.y;
+            float currentHeight = gradientAndHeight.z;
+            float currentIncline = sqrt(gradientAndHeight.x * gradientAndHeight.x + gradientAndHeight.y * gradientAndHeight.y);
 
             if(currentHeight >= lowestHeight && currentHeight <= heighestHeight && currentIncline >= minInclineAngle && currentIncline <= maxInclineAngle){
                     
@@ -726,6 +611,9 @@ void processInput(GLFWwindow *currentWindow){
 
 void renderTerrainGUI(){
 
+    ImGui::SetNextWindowPos(ImVec2(5, 5), ImGuiSetCond_Once);
+    ImGui::SetNextWindowSize(ImVec2(700, 600), ImGuiSetCond_Once);
+
 	ImGui::Begin("Options");
     
     ImGui::Text("Application average %.3f ms/frame (%.1f FPS)", 1000.0f / ImGui::GetIO().Framerate, ImGui::GetIO().Framerate);
@@ -747,6 +635,7 @@ void renderTerrainGUI(){
         if(persistanceValue > 1) persistanceValue = 1;
         if(noiseScale <= 0) noiseScale = 1;
         if(amountOfOctaves < 0) amountOfOctaves = 0;
+        if(amountOfOctaves > 8) amountOfOctaves = 8;
         if(heightMultiplier < 0) heightMultiplier = 0;
         if(blendingScale < 1) blendingScale = 1;
         if(blendingScale > 10) blendingScale = 10;
@@ -759,11 +648,29 @@ void renderTerrainGUI(){
         generateDepthMap();
         generateTerrain(true); 
     }
+
+    ImGui::Separator();
+
+    if(
+        ImGui::InputFloat("Inertia", &inertiaConstant, 0.1)   ||
+        ImGui::InputFloat("Minimum Sediment Capacity", &minSedimentCapacity, 0.1) ||
+        ImGui::InputFloat("Sediment Capacity Factor", &sedimentCapacityFactor, 1) ||
+        ImGui::InputFloat("Deposition Scale", &depositSpeed, 0.1) ||
+        ImGui::InputFloat("Erode Scale", &erodeSpeed) ||
+        ImGui::InputFloat("Evaporation Speed", &evaporationSpeed, 0.5) ||
+        ImGui::InputFloat("Gravity", &gravityConstant, 0.5) ||
+        ImGui::InputInt("Droplet Lifetime", &maxDropletLifetime) ||
+        ImGui::InputInt("Number of Droplets", &numIterations)
+    ){
+
+        if(inertiaConstant < 0) lacanarityValue = 0;
+        if(inertiaConstant > 1) lacanarityValue = 1;
+
+    }
+
     if(ImGui::Button("Start Erosion")){
         erodeTerrain();
     }
-
-    ImGui::Separator();
 
     //treeGUI();
 
