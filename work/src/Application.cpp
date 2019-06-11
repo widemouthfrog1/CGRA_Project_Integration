@@ -72,17 +72,17 @@ static void glfwErrorCallback(int error, const char* description){
 
 Mesh generateFakeTree(){
 
-    std::vector<Vertex> vertexPositions;
+    std::vector<MeshVertex> vertexPositions;
     std::vector<unsigned int> depthIndices;
 
-    vertexPositions.push_back(Vertex{ glm::vec3(-1, -1, 1), glm::vec3(0, 0, 1)});
-    vertexPositions.push_back(Vertex{ glm::vec3(1, -1, 1), glm::vec3(0, 0, 1)});
-    vertexPositions.push_back(Vertex{ glm::vec3(-1, 1, 1), glm::vec3(0, 0, 1)});
-    vertexPositions.push_back(Vertex{ glm::vec3(1, 1, 1), glm::vec3(0, 0, 1)});
-    vertexPositions.push_back(Vertex{ glm::vec3(-1, 1, -1), glm::vec3(0, 0, 1)});
-    vertexPositions.push_back(Vertex{ glm::vec3(1, 1, -1), glm::vec3(0, 0, 1)});
-    vertexPositions.push_back(Vertex{ glm::vec3(-1, -1, -1), glm::vec3(0, 0, 1)});
-    vertexPositions.push_back(Vertex{ glm::vec3(1, -1, -1), glm::vec3(0, 0, 1)});
+    vertexPositions.push_back(MeshVertex{ glm::vec3(-1, -1, 1), glm::vec3(0, 0, 1)});
+    vertexPositions.push_back(MeshVertex{ glm::vec3(1, -1, 1), glm::vec3(0, 0, 1)});
+    vertexPositions.push_back(MeshVertex{ glm::vec3(-1, 1, 1), glm::vec3(0, 0, 1)});
+    vertexPositions.push_back(MeshVertex{ glm::vec3(1, 1, 1), glm::vec3(0, 0, 1)});
+    vertexPositions.push_back(MeshVertex{ glm::vec3(-1, 1, -1), glm::vec3(0, 0, 1)});
+    vertexPositions.push_back(MeshVertex{ glm::vec3(1, 1, -1), glm::vec3(0, 0, 1)});
+    vertexPositions.push_back(MeshVertex{ glm::vec3(-1, -1, -1), glm::vec3(0, 0, 1)});
+    vertexPositions.push_back(MeshVertex{ glm::vec3(1, -1, -1), glm::vec3(0, 0, 1)});
     
     depthIndices.push_back(0);
     depthIndices.push_back(1);
@@ -137,15 +137,15 @@ Mesh generateFakeTree(){
 
 void generateWater(){
 
-    std::vector<Vertex> vertexPositions;
+    std::vector<MeshVertex> vertexPositions;
     std::vector<unsigned int> depthIndices;
 
     float waterHeight = 0.1 * heightMultiplier;
     
-    vertexPositions.push_back(Vertex{ glm::vec3(-terrainSize/2, waterHeight, -terrainSize/2), glm::vec3(0, 1, 0)});
-    vertexPositions.push_back(Vertex{ glm::vec3(-terrainSize/2, waterHeight, terrainSize/2), glm::vec3(0, 1, 0)});
-    vertexPositions.push_back(Vertex{ glm::vec3(terrainSize/2, waterHeight, -terrainSize/2), glm::vec3(0, 1, 0)});
-    vertexPositions.push_back(Vertex{ glm::vec3(terrainSize/2, waterHeight, terrainSize/2), glm::vec3(0, 1, 0)});
+    vertexPositions.push_back(MeshVertex{ glm::vec3(-terrainSize/2, waterHeight, -terrainSize/2), glm::vec3(0, 1, 0)});
+    vertexPositions.push_back(MeshVertex{ glm::vec3(-terrainSize/2, waterHeight, terrainSize/2), glm::vec3(0, 1, 0)});
+    vertexPositions.push_back(MeshVertex{ glm::vec3(terrainSize/2, waterHeight, -terrainSize/2), glm::vec3(0, 1, 0)});
+    vertexPositions.push_back(MeshVertex{ glm::vec3(terrainSize/2, waterHeight, terrainSize/2), glm::vec3(0, 1, 0)});
 
     depthIndices.push_back(0);
     depthIndices.push_back(1);
@@ -368,7 +368,7 @@ void generateTerrain(bool alterHeight){
     meshHeightExtremes.x = FLT_MIN;
     meshHeightExtremes.y = FLT_MAX;
 
-    std::vector<Vertex> vertexPositions;
+    std::vector<MeshVertex> vertexPositions;
     std::vector<unsigned int> depthIndices;
 
     float centerSubtraction = (terrainSize - 1) / 2.0f;
@@ -385,7 +385,7 @@ void generateTerrain(bool alterHeight){
 
             glm::vec3 vertexPosition = glm::vec3(i - centerSubtraction,  currentHeight, j - centerSubtraction);
 
-            vertexPositions.push_back(Vertex{
+            vertexPositions.push_back(MeshVertex{
                 vertexPosition, 
                 glm::vec3(0, 0, 0)
             });
@@ -427,7 +427,7 @@ void generateTerrain(bool alterHeight){
 
     }
 
-    for(Vertex currentVertex: vertexPositions){
+    for(MeshVertex currentVertex: vertexPositions){
         currentVertex.vertexNormal = glm::normalize(currentVertex.vertexNormal);
     }
 
