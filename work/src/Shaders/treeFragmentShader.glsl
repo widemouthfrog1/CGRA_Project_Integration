@@ -52,4 +52,7 @@ void main(){
     vec3 shaderColor = ambientColor + diffuseColor;
 
     outputColor = vec4(shaderColor, 1);
+
+    outputColor = vec4(vec3(1, 0, 0), 1);
+    
 }

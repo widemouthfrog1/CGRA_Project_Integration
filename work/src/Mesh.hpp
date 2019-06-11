@@ -25,10 +25,13 @@ class Mesh {
             setupMesh();
         }
 
-        void drawMesh(){
+        void drawMesh(bool isWireframe){
         
             glBindVertexArray(VertexArrayID);
-            glDrawElements(GL_TRIANGLES, meshIndices.size(), GL_UNSIGNED_INT, 0);
+            
+            if(isWireframe) glDrawElements(GL_LINES, meshIndices.size(), GL_UNSIGNED_INT, 0);
+            else glDrawElements(GL_TRIANGLES, meshIndices.size(), GL_UNSIGNED_INT, 0);
+
             glBindVertexArray(0);
     
         }

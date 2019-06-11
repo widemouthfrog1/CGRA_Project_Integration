@@ -26,7 +26,7 @@
 glm::mat4 modelMatrix = glm::mat4(1.0f);
 glm::mat4 projectionMatrix = glm::perspective(glm::radians(45.0f), 4.0f/3.0f, 0.1f, 1000.0f);
 
-glm::vec3 cameraPosition = glm::vec3(0, 0.0f, 0);
+glm::vec3 cameraPosition = glm::vec3(0, 40.0f, 0);
 glm::vec3 cameraDirection = glm::vec3(0, 0, 0);
 Camera mainCamera = Camera(cameraPosition, cameraDirection, glm::vec3(0.0f, 1.0f, 0.0f));
 
@@ -115,16 +115,11 @@ void redrawScene(){
     GLuint blendingScaleID = glGetUniformLocation(simpleShader.getID(), "uBlendingScale");
     glUniform1fv(blendingScaleID, 1, &blendingScale);
 
-    groundMesh.drawMesh(); 
+    GLint isTree = 0;
+    GLuint isTreeID = glGetUniformLocation(simpleShader.getID(), "uIsTree");
+    glUniform1iv(isTreeID, 1, &isTree);
 
-    for(unsigned int i = 0; i < treeMeshes.size(); i++){
-
-        glm::mat4 scaleMatrix = glm::scale(glm::mat4(1.0f), glm::vec3(0.1, 1, 0.1));
-        glm::mat4 newModelViewMatrix = mainCamera.getViewMatrix() * treeTransforms[i] * glm::translate(glm::mat4(1.0f), glm::vec3(-(terrainSize-1)/2, 0, -(terrainSize-1)/2)) * scaleMatrix;
-        glUniformMatrix4fv(modelViewMatrixID, 1, GL_FALSE, &newModelViewMatrix[0][0]);
-
-        treeMeshes[i].drawMesh();
-    }
+    groundMesh.drawMesh(false);
         
     glfwSwapBuffers(mainWindow);
 }
@@ -167,8 +162,6 @@ int main(){
     generateTerrain(true);
 
     simpleShader = Shader(CGRA_SRCDIR + std::string("/src/Shaders/basicVertexShader.glsl"), CGRA_SRCDIR + std::string("/src/Shaders/basicFragmentShader.glsl"));
-
-    Shader treeShader = Shader(CGRA_SRCDIR + std::string("/src/Shaders/basicVertexShader.glsl"), CGRA_SRCDIR + std::string("/src/Shaders/treeFragmentShader.glsl"));
 
     glClearColor(0.0f, 0.4f, 0.4f, 0.0f);
 
@@ -230,28 +223,28 @@ int main(){
         GLuint blendingScaleID = glGetUniformLocation(simpleShader.getID(), "uBlendingScale");
         glUniform1fv(blendingScaleID, 1, &blendingScale);
 
-        //groundMesh.drawMesh();
-
-        std::cout << "Size of trees before drawing = " << treeList.size() << std::endl;
+        GLint isTree = 0;
+        GLuint isTreeID = glGetUniformLocation(simpleShader.getID(), "uIsTree");
+        glUniform1iv(isTreeID, 1, &isTree);
+        
+        groundMesh.drawMesh(false);
 
         for(unsigned int i = 0; i < treeList.size(); i++){
-
-            //treeShader.useShader();
-
-            //glm::mat4 scaleMatrix = glm::scale(glm::mat4(1.0f), glm::vec3(10, 10, 10));
-            glm::mat4 newModelViewMatrix = glm::mat4(1.0); //mainCamera.getViewMatrix() * glm::translate(glm::mat4(1.0f), treeList[i].position) * glm::translate(glm::mat4(1.0f), glm::vec3(-(terrainSize-1)/2, 0, -(terrainSize-1)/2)) * scaleMatrix;
+            
+            glm::mat4 scaleMatrix = glm::scale(glm::mat4(1.0f), glm::vec3(1, 10, 1));
+            glm::mat4 newModelViewMatrix = mainCamera.getViewMatrix() * glm::translate(glm::mat4(1.0f), treeList[i].position) * glm::translate(glm::mat4(1.0f), glm::vec3(-(terrainSize-1)/2, 0, -(terrainSize-1)/2)) * scaleMatrix;
             glUniformMatrix4fv(modelViewMatrixID, 1, GL_FALSE, &newModelViewMatrix[0][0]);
 
+            isTree = 1;
+            glUniform1iv(isTreeID, 1, &isTree);
+
             GLint isHighlighted = selectedTree;
-            GLuint waterMeshID = glGetUniformLocation(treeShader.getID(), "uTreeSelected");
-            glUniform1iv(waterMeshID, 1, &isHighlighted);
+            GLuint selectedTreeID = glGetUniformLocation(simpleShader.getID(), "uSelectedTree");
+            glUniform1iv(selectedTreeID, 1, &isHighlighted);
 
-            treeList[i].mesh.drawMesh();
-
-            std::cout << treeList[i].mesh.meshVertices[0].vertexPosition.y << std::endl;
-            std::cout << treeList[i].mesh.meshVertices[1].vertexPosition.y << std::endl << std::endl;
+            treeList[i].mesh.drawMesh(true);
         }
-
+        
         if(toggleOptions) ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData()); 
         
         glfwSwapBuffers(mainWindow);
@@ -468,7 +461,10 @@ void erodeTerrain(){
         for (int currentDropletLife = 0; currentDropletLife < maxDropletLifetime; currentDropletLife++) {
         
             int xFloor = (int) xPosition;
-            int yFloor = (int) zPosition;
+            int zFloor = (int) zPosition;
+
+            float xOffset = xPosition - xFloor;
+            float zOffset = zPosition - zFloor;
 
             glm::vec3 heightAndGradient = calculateGradientAndHeight(xPosition, zPosition);
 
@@ -491,25 +487,25 @@ void erodeTerrain(){
 
             if (currentAmountOfSediment > sedimentCapacity || deltaHeight > 0) {
 
-                float amountToDeposit = (deltaHeight > 0) ? std::min (deltaHeight, currentAmountOfSediment) : (currentAmountOfSediment - sedimentCapacity) * depositSpeed;
+                float amountToDeposit = (deltaHeight > 0) ? std::min(deltaHeight, currentAmountOfSediment) : (currentAmountOfSediment - sedimentCapacity) * depositSpeed;
 
                 currentAmountOfSediment -= amountToDeposit;
 
-                depositSediment(xFloor, yFloor, xPosition - xFloor, zPosition - yFloor, amountToDeposit);
+                depositSediment(xFloor, zFloor, xOffset, zOffset, amountToDeposit);
 
             }
             else {
 
                 float amountToErode = std::min((sedimentCapacity - currentAmountOfSediment) * erodeSpeed, -deltaHeight);
 
-                for (unsigned int brushPoint = 0; brushPoint < erosionBrushIndices[xFloor * terrainSize + yFloor].size(); brushPoint++) {
+                for (unsigned int brushPoint = 0; brushPoint < erosionBrushIndices[xFloor * terrainSize + zFloor].size(); brushPoint++) {
                                                 
-                    glm::vec2 nodeIndex = erosionBrushIndices[xFloor * terrainSize + yFloor][brushPoint];
+                    glm::vec2 nodeIndex = erosionBrushIndices[xFloor * terrainSize + zFloor][brushPoint];
 
                     int xPos = (int)nodeIndex.x;
                     int zPos = (int)nodeIndex.y;
 
-                    float weighedErodeAmount = amountToErode * erosionBrushWeights[xFloor * terrainSize + yFloor][brushPoint];
+                    float weighedErodeAmount = amountToErode * erosionBrushWeights[xFloor * terrainSize + zFloor][brushPoint];
 
                     float deltaSediment = depthMap[xPos][zPos] < weighedErodeAmount ? depthMap[xPos][zPos] : weighedErodeAmount;
 
@@ -549,7 +545,7 @@ void placeTrees(){
 
     std::vector<glm::vec3> treePositions;
 
-    int numberOfTrees = 10;
+    int numberOfTrees = 1;
 
     for(unsigned int k = 0; k < numberOfTrees; k++){
 

@@ -2,6 +2,9 @@
 
 #define PI 3.14159265
 
+uniform int uSelectedTree;
+uniform int uIsTree;
+
 uniform vec2 uHeightExtremes;
 uniform float uBlendingScale;
 
@@ -96,6 +99,9 @@ void main(){
 
 		}
 	}
+
+	if(uIsTree == 1) materialColor = vec3(0, 0, 1);
+	if(uIsTree == 1 && uSelectedTree == 1) materialColor = vec3(1, 0, 0);
 
 	vec3 lightColor = vec3(1, 1, 1);
 	vec3 lightDirection = vec3(1, -1, 0);

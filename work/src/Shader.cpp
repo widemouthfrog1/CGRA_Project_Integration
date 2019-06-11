@@ -21,8 +21,8 @@ void Shader::useShader(){
 
 GLuint Shader::loadShaders(std::string vertexShaderString, std::string fragmentShaderString){
 
-        const char * vertexShaderFilepath = vertexShaderString.c_str();
-        const char * fragmentShaderFilepath = fragmentShaderString.c_str();
+    const char * vertexShaderFilepath = vertexShaderString.c_str();
+    const char * fragmentShaderFilepath = fragmentShaderString.c_str();
 
 	// Create the Shaders
 	GLuint VertexShaderID = glCreateShader(GL_VERTEX_SHADER);
@@ -52,7 +52,7 @@ GLuint Shader::loadShaders(std::string vertexShaderString, std::string fragmentS
 		FragmentShaderStream.close();
 	}
     else{
-		printf("Failed to open: %s\n",  fragmentShaderFilepath);
+		printf("Failed to open: %s\n", fragmentShaderFilepath);
 		return 0;
 	}
 
