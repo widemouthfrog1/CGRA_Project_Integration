@@ -1,4 +1,4 @@
-# Install script for directory: /home/hoefsldyla/Documents/CLionCopy/work/src/Trees
+# Install script for directory: /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/src/Trees
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
