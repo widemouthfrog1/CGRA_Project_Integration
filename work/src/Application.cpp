@@ -15,15 +15,11 @@
 #include "NoiseMapGenerator.hpp"
 
 #include <imgui.h>
-//#include <imgui_impl_glfw.h>
-//#include <imgui_impl_opengl3.h>
+#include <imgui_impl_glfw.h>
+#include <imgui_impl_opengl3.h>
 
 #include <random>
 #include <algorithm>
-#include <imgui/imgui_impl_glfw.h>
-#include <imgui/imgui_impl_opengl3.h>
-
-#include "Trees/TreeApplication.hpp"
 
 glm::mat4 modelMatrix = glm::mat4(1.0f);
 glm::mat4 viewMatrix = glm::lookAt(glm::vec3(10,10,10), glm::vec3(0,0,0), glm::vec3(0,1,0));
@@ -76,17 +72,17 @@ static void glfwErrorCallback(int error, const char* description){
 
 Mesh generateFakeTree(){
 
-    std::vector<MeshVertex> vertexPositions;
+    std::vector<Vertex> vertexPositions;
     std::vector<unsigned int> depthIndices;
 
-    vertexPositions.push_back(MeshVertex{ glm::vec3(-1, -1, 1), glm::vec3(0, 0, 1)});
-    vertexPositions.push_back(MeshVertex{ glm::vec3(1, -1, 1), glm::vec3(0, 0, 1)});
-    vertexPositions.push_back(MeshVertex{ glm::vec3(-1, 1, 1), glm::vec3(0, 0, 1)});
-    vertexPositions.push_back(MeshVertex{ glm::vec3(1, 1, 1), glm::vec3(0, 0, 1)});
-    vertexPositions.push_back(MeshVertex{ glm::vec3(-1, 1, -1), glm::vec3(0, 0, 1)});
-    vertexPositions.push_back(MeshVertex{ glm::vec3(1, 1, -1), glm::vec3(0, 0, 1)});
-    vertexPositions.push_back(MeshVertex{ glm::vec3(-1, -1, -1), glm::vec3(0, 0, 1)});
-    vertexPositions.push_back(MeshVertex{ glm::vec3(1, -1, -1), glm::vec3(0, 0, 1)});
+    vertexPositions.push_back(Vertex{ glm::vec3(-1, -1, 1), glm::vec3(0, 0, 1)});
+    vertexPositions.push_back(Vertex{ glm::vec3(1, -1, 1), glm::vec3(0, 0, 1)});
+    vertexPositions.push_back(Vertex{ glm::vec3(-1, 1, 1), glm::vec3(0, 0, 1)});
+    vertexPositions.push_back(Vertex{ glm::vec3(1, 1, 1), glm::vec3(0, 0, 1)});
+    vertexPositions.push_back(Vertex{ glm::vec3(-1, 1, -1), glm::vec3(0, 0, 1)});
+    vertexPositions.push_back(Vertex{ glm::vec3(1, 1, -1), glm::vec3(0, 0, 1)});
+    vertexPositions.push_back(Vertex{ glm::vec3(-1, -1, -1), glm::vec3(0, 0, 1)});
+    vertexPositions.push_back(Vertex{ glm::vec3(1, -1, -1), glm::vec3(0, 0, 1)});
     
     depthIndices.push_back(0);
     depthIndices.push_back(1);
@@ -141,15 +137,15 @@ Mesh generateFakeTree(){
 
 void generateWater(){
 
-    std::vector<MeshVertex> vertexPositions;
+    std::vector<Vertex> vertexPositions;
     std::vector<unsigned int> depthIndices;
 
     float waterHeight = 0.1 * heightMultiplier;
     
-    vertexPositions.push_back(MeshVertex{ glm::vec3(-terrainSize/2, waterHeight, -terrainSize/2), glm::vec3(0, 1, 0)});
-    vertexPositions.push_back(MeshVertex{ glm::vec3(-terrainSize/2, waterHeight, terrainSize/2), glm::vec3(0, 1, 0)});
-    vertexPositions.push_back(MeshVertex{ glm::vec3(terrainSize/2, waterHeight, -terrainSize/2), glm::vec3(0, 1, 0)});
-    vertexPositions.push_back(MeshVertex{ glm::vec3(terrainSize/2, waterHeight, terrainSize/2), glm::vec3(0, 1, 0)});
+    vertexPositions.push_back(Vertex{ glm::vec3(-terrainSize/2, waterHeight, -terrainSize/2), glm::vec3(0, 1, 0)});
+    vertexPositions.push_back(Vertex{ glm::vec3(-terrainSize/2, waterHeight, terrainSize/2), glm::vec3(0, 1, 0)});
+    vertexPositions.push_back(Vertex{ glm::vec3(terrainSize/2, waterHeight, -terrainSize/2), glm::vec3(0, 1, 0)});
+    vertexPositions.push_back(Vertex{ glm::vec3(terrainSize/2, waterHeight, terrainSize/2), glm::vec3(0, 1, 0)});
 
     depthIndices.push_back(0);
     depthIndices.push_back(1);
@@ -214,8 +210,6 @@ void redrawScene(){
 
 int main(){
 
-    testFunction();
-
     glfwSetErrorCallback(glfwErrorCallback);
 
     if(!glfwInit()){ 
@@ -252,7 +246,7 @@ int main(){
     generateDepthMap();
     generateTerrain(true);
 
-    simpleShader = Shader(CGRA_SRCDIR + std::string("/src/Shaders/basicVertexShader.glsl"), CGRA_SRCDIR + std::string("/src/Shaders/basicFragmentShader.glsl"));
+    simpleShader = Shader("/home/dylan/Documents/CGRA350/Project/Shaders/basicVertexShader.glsl", "/home/dylan/Documents/CGRA350/Project/Shaders/basicFragmentShader.glsl");
 
     glClearColor(0.0f, 0.4f, 0.4f, 0.0f);
 
@@ -272,7 +266,7 @@ int main(){
     
     const char* glsl_version = "#version 330";
     ImGui_ImplGlfw_InitForOpenGL(mainWindow, true);
-    ImGui_ImplOpenGL3_Init(glsl_version);
+    ImGui_ImplOpenGL3_Init(glsl_version);  
 
     // Setup ImGui //
 
@@ -332,7 +326,8 @@ int main(){
             treeMeshes[i].drawMesh();
         }
 
-        if(toggleOptions) ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
+    ImGui::Render();
+        if(toggleOptions) ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData()); 
         
         glfwSwapBuffers(mainWindow);
 
@@ -373,7 +368,7 @@ void generateTerrain(bool alterHeight){
     meshHeightExtremes.x = FLT_MIN;
     meshHeightExtremes.y = FLT_MAX;
 
-    std::vector<MeshVertex> vertexPositions;
+    std::vector<Vertex> vertexPositions;
     std::vector<unsigned int> depthIndices;
 
     float centerSubtraction = (terrainSize - 1) / 2.0f;
@@ -390,7 +385,7 @@ void generateTerrain(bool alterHeight){
 
             glm::vec3 vertexPosition = glm::vec3(i - centerSubtraction,  currentHeight, j - centerSubtraction);
 
-            vertexPositions.push_back(MeshVertex{
+            vertexPositions.push_back(Vertex{
                 vertexPosition, 
                 glm::vec3(0, 0, 0)
             });
@@ -432,7 +427,7 @@ void generateTerrain(bool alterHeight){
 
     }
 
-    for(MeshVertex currentVertex: vertexPositions){
+    for(Vertex currentVertex: vertexPositions){
         currentVertex.vertexNormal = glm::normalize(currentVertex.vertexNormal);
     }
 
@@ -702,7 +697,9 @@ void placeTrees(){
         }
     }
 
-    std::random_shuffle(possiblePositions.begin(), possiblePositions.end());
+    std::random_device randomDevice;
+    std::mt19937 randomNumberGenerator(randomDevice());
+    std::shuffle(possiblePositions.begin(), possiblePositions.end(), randomNumberGenerator);
 
     for(unsigned int k = 0; k < treeMeshes.size(); k++){
 
@@ -775,7 +772,7 @@ void processInput(GLFWwindow *currentWindow){
 
 void renderGUI(){
 
-    ImGui::Begin("Options");
+	ImGui::Begin("Options");
     
     ImGui::Text("Application average %.3f ms/frame (%.1f FPS)", 1000.0f / ImGui::GetIO().Framerate, ImGui::GetIO().Framerate);
     
