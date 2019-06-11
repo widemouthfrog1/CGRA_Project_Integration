@@ -1,6 +1,6 @@
 #version 330 core
 
-uniform int uSelectedTree
+uniform int uSelectedTree;
 
 in vec3 fragmentPosition;
 in vec3 fragmentNormal;
@@ -35,7 +35,7 @@ void main(){
 
     vec3 materialColor = vec3(0.5, 0.5, 0.5);
 
-    if(uSelectedTree = 1) materialColor = vec3(1, 0, 0);
+    if(uSelectedTree == 1) materialColor = vec3(1, 0, 0);
 
     vec3 lightColor = vec3(1, 1, 1);
     vec3 lightDirection = vec3(1, -1, 0);

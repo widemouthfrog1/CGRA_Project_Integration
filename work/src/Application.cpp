@@ -21,6 +21,8 @@
 #include <random>
 #include <algorithm>
 
+#include "Trees/TreeApplication.hpp"
+
 glm::mat4 modelMatrix = glm::mat4(1.0f);
 glm::mat4 viewMatrix = glm::lookAt(glm::vec3(10,10,10), glm::vec3(0,0,0), glm::vec3(0,1,0));
 glm::mat4 projectionMatrix = glm::perspective(glm::radians(45.0f), 4.0f/3.0f, 0.1f, 1000.0f);
@@ -32,7 +34,6 @@ Camera mainCamera = Camera(cameraPosition, cameraDirection, glm::vec3(0.0f, 1.0f
 void renderTerrainGUI();
 void generateTerrain(bool alterHeight);
 void generateDepthMap();
-void loadTrees(std::vector<Mesh> treeMeshes);
 void placeTrees();
 void processInput(GLFWwindow *currentWindow);
 void setupCallbacks(GLFWwindow *currentWindow);
@@ -214,6 +215,8 @@ int main(){
 
     simpleShader = Shader(CGRA_SRCDIR + std::string("/src/Shaders/basicVertexShader.glsl"), CGRA_SRCDIR + std::string("/src/Shaders/basicFragmentShader.glsl"));
 
+    Shader treeShader = Shader(CGRA_SRCDIR + std::string("/src/Shaders/basicVertexShader.glsl"), CGRA_SRCDIR + std::string("/src/Shaders/treeFragmentShader.glsl"));
+
     glClearColor(0.0f, 0.4f, 0.4f, 0.0f);
 
     //glEnable(GL_CULL_FACE);
@@ -235,6 +238,8 @@ int main(){
     ImGui_ImplOpenGL3_Init(glsl_version);  
 
     // Setup ImGui //
+
+    loadTrees(std::vector<glm::vec3>());
 
     while(glfwGetKey(mainWindow, GLFW_KEY_Q) != GLFW_PRESS && glfwWindowShouldClose(mainWindow) == 0){
         
@@ -274,20 +279,20 @@ int main(){
 
         groundMesh.drawMesh();
 
-        GLint isHighlighted = 0;
-        GLuint waterMeshID = glGetUniformLocation(simpleShader.getID(), "uTreeSelected");
-        glUniform1iv(waterMeshID, 1, &isHighlighted);
-
-        for(unsigned int i = 0; i < treeMeshes.size(); i++){
+        for(unsigned int i = 0; i < trees.size(); i++){
 
             glm::mat4 scaleMatrix = glm::scale(glm::mat4(1.0f), glm::vec3(0.1, 1, 0.1));
-            glm::mat4 newModelViewMatrix = mainCamera.getViewMatrix() * treeTransforms[i] * glm::translate(glm::mat4(1.0f), glm::vec3(-(terrainSize-1)/2, 0, -(terrainSize-1)/2)) * scaleMatrix;
+            glm::mat4 newModelViewMatrix = mainCamera.getViewMatrix() * glm::translate(glm::mat4(1.0f), trees[i].position) * glm::translate(glm::mat4(1.0f), glm::vec3(-(terrainSize-1)/2, 0, -(terrainSize-1)/2)) * scaleMatrix;
             glUniformMatrix4fv(modelViewMatrixID, 1, GL_FALSE, &newModelViewMatrix[0][0]);
 
-            treeMeshes[i].drawMesh();
+            GLint isHighlighted = selectedTree;
+            GLuint waterMeshID = glGetUniformLocation(treeShader.getID(), "uTreeSelected");
+            glUniform1iv(waterMeshID, 1, &isHighlighted);
+
+            trees[i].mesh.drawMesh();
         }
 
-    ImGui::Render();
+
         if(toggleOptions) ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData()); 
         
         glfwSwapBuffers(mainWindow);
@@ -311,15 +316,6 @@ void generateDepthMap(){
     for(int i = 0; i < terrainSize; ++i) treeMap[i] = new bool[terrainSize];
 
     generateNoiseMap(terrainSize + 1, noiseScale, lacanarityValue, persistanceValue, amountOfOctaves, &depthMap);
-    
-    //Just for testings
-    std::vector<Mesh> fakeTreeMeshes;
-
-    for(int i = 0; i < 0; i++){
-        fakeTreeMeshes.push_back(generateFakeTree());
-    }
-
-    loadTrees(fakeTreeMeshes);
 
     placeTrees();
 }
@@ -644,10 +640,6 @@ void erodeTerrain(){
         std::cout << "Erosion complete" << std::endl;
     }
 
-void loadTrees(std::vector<Mesh> newTreeMeshes){
-    treeMeshes = newTreeMeshes;
-}
-
 void placeTrees(){
 
     std::vector<glm::vec2> possiblePositions;
@@ -662,14 +654,16 @@ void placeTrees(){
     std::mt19937 randomNumberGenerator(randomDevice());
     std::shuffle(possiblePositions.begin(), possiblePositions.end(), randomNumberGenerator);
 
-    for(unsigned int k = 0; k < treeMeshes.size(); k++){
+    std::vector<glm::vec3> treePositions;
+
+    int numberOfTrees = 1;
+
+    for(unsigned int k = 0; k < numberOfTrees; k++){
 
         float lowestHeight = 0;
         float heighestHeight = 0.2;
         float minInclineAngle = 0;
         float maxInclineAngle = 90;
-
-        treeTransforms.push_back(glm::mat4(1.0f));
 
         for(glm::vec2 currentPosition: possiblePositions){
             
@@ -687,7 +681,7 @@ void placeTrees(){
                         
                     float actualHeight = depthMap[xPos][zPos] < flatHeight ? depthMap[xPos][zPos] : depthMap[xPos][zPos] * depthMap[xPos][zPos] * heightMultiplier;
 
-                    treeTransforms[k] = glm::translate(glm::mat4(1.0f), glm::vec3(xPos, actualHeight, zPos));
+                    treePositions.push_back(glm::vec3(xPos, actualHeight, zPos));
                     treeMap[xPos][zPos] = true;
 
                     break;                    
@@ -695,6 +689,8 @@ void placeTrees(){
             }
         }
     }
+
+    //loadTrees(treePositions);
 
 }
 

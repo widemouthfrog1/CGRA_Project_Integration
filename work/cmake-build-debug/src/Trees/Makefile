@@ -48,10 +48,10 @@ RM = /am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/bi
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hoefsldyla/Documents/CLionCopy/work
+CMAKE_SOURCE_DIR = /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug
+CMAKE_BINARY_DIR = /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -67,40 +67,6 @@ install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
 	/am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
-
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
-
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
-
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -124,16 +90,50 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
 # The main all target
 all: cmake_check_build_system
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/src/Trees/CMakeFiles/progress.marks
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/Trees/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles 0
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/src/Trees/CMakeFiles/progress.marks
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/Trees/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/Trees/clean
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/Trees/clean
 .PHONY : clean
 
 # The main clean target
@@ -143,18 +143,330 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/Trees/preinstall
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/Trees/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/Trees/preinstall
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/Trees/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+# Convenience name for target.
+src/Trees/CMakeFiles/TreeLib.dir/rule:
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/Trees/CMakeFiles/TreeLib.dir/rule
+.PHONY : src/Trees/CMakeFiles/TreeLib.dir/rule
+
+# Convenience name for target.
+TreeLib: src/Trees/CMakeFiles/TreeLib.dir/rule
+
+.PHONY : TreeLib
+
+# fast build rule for target.
+TreeLib/fast:
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(MAKE) -f src/Trees/CMakeFiles/TreeLib.dir/build.make src/Trees/CMakeFiles/TreeLib.dir/build
+.PHONY : TreeLib/fast
+
+Branch.o: Branch.cpp.o
+
+.PHONY : Branch.o
+
+# target to build an object file
+Branch.cpp.o:
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(MAKE) -f src/Trees/CMakeFiles/TreeLib.dir/build.make src/Trees/CMakeFiles/TreeLib.dir/Branch.cpp.o
+.PHONY : Branch.cpp.o
+
+Branch.i: Branch.cpp.i
+
+.PHONY : Branch.i
+
+# target to preprocess a source file
+Branch.cpp.i:
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(MAKE) -f src/Trees/CMakeFiles/TreeLib.dir/build.make src/Trees/CMakeFiles/TreeLib.dir/Branch.cpp.i
+.PHONY : Branch.cpp.i
+
+Branch.s: Branch.cpp.s
+
+.PHONY : Branch.s
+
+# target to generate assembly for a file
+Branch.cpp.s:
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(MAKE) -f src/Trees/CMakeFiles/TreeLib.dir/build.make src/Trees/CMakeFiles/TreeLib.dir/Branch.cpp.s
+.PHONY : Branch.cpp.s
+
+BranchFactory.o: BranchFactory.cpp.o
+
+.PHONY : BranchFactory.o
+
+# target to build an object file
+BranchFactory.cpp.o:
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(MAKE) -f src/Trees/CMakeFiles/TreeLib.dir/build.make src/Trees/CMakeFiles/TreeLib.dir/BranchFactory.cpp.o
+.PHONY : BranchFactory.cpp.o
+
+BranchFactory.i: BranchFactory.cpp.i
+
+.PHONY : BranchFactory.i
+
+# target to preprocess a source file
+BranchFactory.cpp.i:
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(MAKE) -f src/Trees/CMakeFiles/TreeLib.dir/build.make src/Trees/CMakeFiles/TreeLib.dir/BranchFactory.cpp.i
+.PHONY : BranchFactory.cpp.i
+
+BranchFactory.s: BranchFactory.cpp.s
+
+.PHONY : BranchFactory.s
+
+# target to generate assembly for a file
+BranchFactory.cpp.s:
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(MAKE) -f src/Trees/CMakeFiles/TreeLib.dir/build.make src/Trees/CMakeFiles/TreeLib.dir/BranchFactory.cpp.s
+.PHONY : BranchFactory.cpp.s
+
+Circle.o: Circle.cpp.o
+
+.PHONY : Circle.o
+
+# target to build an object file
+Circle.cpp.o:
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(MAKE) -f src/Trees/CMakeFiles/TreeLib.dir/build.make src/Trees/CMakeFiles/TreeLib.dir/Circle.cpp.o
+.PHONY : Circle.cpp.o
+
+Circle.i: Circle.cpp.i
+
+.PHONY : Circle.i
+
+# target to preprocess a source file
+Circle.cpp.i:
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(MAKE) -f src/Trees/CMakeFiles/TreeLib.dir/build.make src/Trees/CMakeFiles/TreeLib.dir/Circle.cpp.i
+.PHONY : Circle.cpp.i
+
+Circle.s: Circle.cpp.s
+
+.PHONY : Circle.s
+
+# target to generate assembly for a file
+Circle.cpp.s:
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(MAKE) -f src/Trees/CMakeFiles/TreeLib.dir/build.make src/Trees/CMakeFiles/TreeLib.dir/Circle.cpp.s
+.PHONY : Circle.cpp.s
+
+Letter.o: Letter.cpp.o
+
+.PHONY : Letter.o
+
+# target to build an object file
+Letter.cpp.o:
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(MAKE) -f src/Trees/CMakeFiles/TreeLib.dir/build.make src/Trees/CMakeFiles/TreeLib.dir/Letter.cpp.o
+.PHONY : Letter.cpp.o
+
+Letter.i: Letter.cpp.i
+
+.PHONY : Letter.i
+
+# target to preprocess a source file
+Letter.cpp.i:
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(MAKE) -f src/Trees/CMakeFiles/TreeLib.dir/build.make src/Trees/CMakeFiles/TreeLib.dir/Letter.cpp.i
+.PHONY : Letter.cpp.i
+
+Letter.s: Letter.cpp.s
+
+.PHONY : Letter.s
+
+# target to generate assembly for a file
+Letter.cpp.s:
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(MAKE) -f src/Trees/CMakeFiles/TreeLib.dir/build.make src/Trees/CMakeFiles/TreeLib.dir/Letter.cpp.s
+.PHONY : Letter.cpp.s
+
+ProjectMath.o: ProjectMath.cpp.o
+
+.PHONY : ProjectMath.o
+
+# target to build an object file
+ProjectMath.cpp.o:
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(MAKE) -f src/Trees/CMakeFiles/TreeLib.dir/build.make src/Trees/CMakeFiles/TreeLib.dir/ProjectMath.cpp.o
+.PHONY : ProjectMath.cpp.o
+
+ProjectMath.i: ProjectMath.cpp.i
+
+.PHONY : ProjectMath.i
+
+# target to preprocess a source file
+ProjectMath.cpp.i:
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(MAKE) -f src/Trees/CMakeFiles/TreeLib.dir/build.make src/Trees/CMakeFiles/TreeLib.dir/ProjectMath.cpp.i
+.PHONY : ProjectMath.cpp.i
+
+ProjectMath.s: ProjectMath.cpp.s
+
+.PHONY : ProjectMath.s
+
+# target to generate assembly for a file
+ProjectMath.cpp.s:
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(MAKE) -f src/Trees/CMakeFiles/TreeLib.dir/build.make src/Trees/CMakeFiles/TreeLib.dir/ProjectMath.cpp.s
+.PHONY : ProjectMath.cpp.s
+
+Rule.o: Rule.cpp.o
+
+.PHONY : Rule.o
+
+# target to build an object file
+Rule.cpp.o:
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(MAKE) -f src/Trees/CMakeFiles/TreeLib.dir/build.make src/Trees/CMakeFiles/TreeLib.dir/Rule.cpp.o
+.PHONY : Rule.cpp.o
+
+Rule.i: Rule.cpp.i
+
+.PHONY : Rule.i
+
+# target to preprocess a source file
+Rule.cpp.i:
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(MAKE) -f src/Trees/CMakeFiles/TreeLib.dir/build.make src/Trees/CMakeFiles/TreeLib.dir/Rule.cpp.i
+.PHONY : Rule.cpp.i
+
+Rule.s: Rule.cpp.s
+
+.PHONY : Rule.s
+
+# target to generate assembly for a file
+Rule.cpp.s:
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(MAKE) -f src/Trees/CMakeFiles/TreeLib.dir/build.make src/Trees/CMakeFiles/TreeLib.dir/Rule.cpp.s
+.PHONY : Rule.cpp.s
+
+TreeApplication.o: TreeApplication.cpp.o
+
+.PHONY : TreeApplication.o
+
+# target to build an object file
+TreeApplication.cpp.o:
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(MAKE) -f src/Trees/CMakeFiles/TreeLib.dir/build.make src/Trees/CMakeFiles/TreeLib.dir/TreeApplication.cpp.o
+.PHONY : TreeApplication.cpp.o
+
+TreeApplication.i: TreeApplication.cpp.i
+
+.PHONY : TreeApplication.i
+
+# target to preprocess a source file
+TreeApplication.cpp.i:
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(MAKE) -f src/Trees/CMakeFiles/TreeLib.dir/build.make src/Trees/CMakeFiles/TreeLib.dir/TreeApplication.cpp.i
+.PHONY : TreeApplication.cpp.i
+
+TreeApplication.s: TreeApplication.cpp.s
+
+.PHONY : TreeApplication.s
+
+# target to generate assembly for a file
+TreeApplication.cpp.s:
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(MAKE) -f src/Trees/CMakeFiles/TreeLib.dir/build.make src/Trees/CMakeFiles/TreeLib.dir/TreeApplication.cpp.s
+.PHONY : TreeApplication.cpp.s
+
+TreeFactory.o: TreeFactory.cpp.o
+
+.PHONY : TreeFactory.o
+
+# target to build an object file
+TreeFactory.cpp.o:
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(MAKE) -f src/Trees/CMakeFiles/TreeLib.dir/build.make src/Trees/CMakeFiles/TreeLib.dir/TreeFactory.cpp.o
+.PHONY : TreeFactory.cpp.o
+
+TreeFactory.i: TreeFactory.cpp.i
+
+.PHONY : TreeFactory.i
+
+# target to preprocess a source file
+TreeFactory.cpp.i:
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(MAKE) -f src/Trees/CMakeFiles/TreeLib.dir/build.make src/Trees/CMakeFiles/TreeLib.dir/TreeFactory.cpp.i
+.PHONY : TreeFactory.cpp.i
+
+TreeFactory.s: TreeFactory.cpp.s
+
+.PHONY : TreeFactory.s
+
+# target to generate assembly for a file
+TreeFactory.cpp.s:
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(MAKE) -f src/Trees/CMakeFiles/TreeLib.dir/build.make src/Trees/CMakeFiles/TreeLib.dir/TreeFactory.cpp.s
+.PHONY : TreeFactory.cpp.s
+
+Turtle.o: Turtle.cpp.o
+
+.PHONY : Turtle.o
+
+# target to build an object file
+Turtle.cpp.o:
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(MAKE) -f src/Trees/CMakeFiles/TreeLib.dir/build.make src/Trees/CMakeFiles/TreeLib.dir/Turtle.cpp.o
+.PHONY : Turtle.cpp.o
+
+Turtle.i: Turtle.cpp.i
+
+.PHONY : Turtle.i
+
+# target to preprocess a source file
+Turtle.cpp.i:
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(MAKE) -f src/Trees/CMakeFiles/TreeLib.dir/build.make src/Trees/CMakeFiles/TreeLib.dir/Turtle.cpp.i
+.PHONY : Turtle.cpp.i
+
+Turtle.s: Turtle.cpp.s
+
+.PHONY : Turtle.s
+
+# target to generate assembly for a file
+Turtle.cpp.s:
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(MAKE) -f src/Trees/CMakeFiles/TreeLib.dir/build.make src/Trees/CMakeFiles/TreeLib.dir/Turtle.cpp.s
+.PHONY : Turtle.cpp.s
+
+Variable.o: Variable.cpp.o
+
+.PHONY : Variable.o
+
+# target to build an object file
+Variable.cpp.o:
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(MAKE) -f src/Trees/CMakeFiles/TreeLib.dir/build.make src/Trees/CMakeFiles/TreeLib.dir/Variable.cpp.o
+.PHONY : Variable.cpp.o
+
+Variable.i: Variable.cpp.i
+
+.PHONY : Variable.i
+
+# target to preprocess a source file
+Variable.cpp.i:
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(MAKE) -f src/Trees/CMakeFiles/TreeLib.dir/build.make src/Trees/CMakeFiles/TreeLib.dir/Variable.cpp.i
+.PHONY : Variable.cpp.i
+
+Variable.s: Variable.cpp.s
+
+.PHONY : Variable.s
+
+# target to generate assembly for a file
+Variable.cpp.s:
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(MAKE) -f src/Trees/CMakeFiles/TreeLib.dir/build.make src/Trees/CMakeFiles/TreeLib.dir/Variable.cpp.s
+.PHONY : Variable.cpp.s
+
+Vertex.o: Vertex.cpp.o
+
+.PHONY : Vertex.o
+
+# target to build an object file
+Vertex.cpp.o:
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(MAKE) -f src/Trees/CMakeFiles/TreeLib.dir/build.make src/Trees/CMakeFiles/TreeLib.dir/Vertex.cpp.o
+.PHONY : Vertex.cpp.o
+
+Vertex.i: Vertex.cpp.i
+
+.PHONY : Vertex.i
+
+# target to preprocess a source file
+Vertex.cpp.i:
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(MAKE) -f src/Trees/CMakeFiles/TreeLib.dir/build.make src/Trees/CMakeFiles/TreeLib.dir/Vertex.cpp.i
+.PHONY : Vertex.cpp.i
+
+Vertex.s: Vertex.cpp.s
+
+.PHONY : Vertex.s
+
+# target to generate assembly for a file
+Vertex.cpp.s:
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(MAKE) -f src/Trees/CMakeFiles/TreeLib.dir/build.make src/Trees/CMakeFiles/TreeLib.dir/Vertex.cpp.s
+.PHONY : Vertex.cpp.s
 
 # Help Target
 help:
@@ -163,11 +475,45 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... install/strip"
-	@echo "... install"
-	@echo "... install/local"
-	@echo "... list_install_components"
 	@echo "... edit_cache"
+	@echo "... TreeLib"
 	@echo "... rebuild_cache"
+	@echo "... list_install_components"
+	@echo "... install/local"
+	@echo "... install"
+	@echo "... Branch.o"
+	@echo "... Branch.i"
+	@echo "... Branch.s"
+	@echo "... BranchFactory.o"
+	@echo "... BranchFactory.i"
+	@echo "... BranchFactory.s"
+	@echo "... Circle.o"
+	@echo "... Circle.i"
+	@echo "... Circle.s"
+	@echo "... Letter.o"
+	@echo "... Letter.i"
+	@echo "... Letter.s"
+	@echo "... ProjectMath.o"
+	@echo "... ProjectMath.i"
+	@echo "... ProjectMath.s"
+	@echo "... Rule.o"
+	@echo "... Rule.i"
+	@echo "... Rule.s"
+	@echo "... TreeApplication.o"
+	@echo "... TreeApplication.i"
+	@echo "... TreeApplication.s"
+	@echo "... TreeFactory.o"
+	@echo "... TreeFactory.i"
+	@echo "... TreeFactory.s"
+	@echo "... Turtle.o"
+	@echo "... Turtle.i"
+	@echo "... Turtle.s"
+	@echo "... Variable.o"
+	@echo "... Variable.i"
+	@echo "... Variable.s"
+	@echo "... Vertex.o"
+	@echo "... Vertex.i"
+	@echo "... Vertex.s"
 .PHONY : help
 
 
@@ -179,6 +525,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
