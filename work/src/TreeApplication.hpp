@@ -24,7 +24,7 @@ static int depth = 4;
 static int oldDepth = 1;
 static int oldSelectedTree = 0;
 static int selectedTree = 0;
-static bool selectAll = true;
+static bool selectAll = false;
 static char rule[50];
 static char guirules[500] = "";
 static int rulesIndex = 0;

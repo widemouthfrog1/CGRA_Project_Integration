@@ -100,9 +100,6 @@ void main(){
 		}
 	}
 
-	if(uIsTree == 1) materialColor = vec3(0, 0, 1);
-	if(uIsTree == 1 && uSelectedTree == 1) materialColor = vec3(1, 0, 0);
-
 	vec3 lightColor = vec3(1, 1, 1);
 	vec3 lightDirection = vec3(1, -1, 0);
 
@@ -118,4 +115,7 @@ void main(){
 	vec3 shaderColor = ambientColor + diffuseColor;
 
     outputColor = vec4(shaderColor, 1);
+
+	if(uIsTree == 1) outputColor = vec4(vec3(0, 0, 1), 1);
+	if(uIsTree == 1 && uSelectedTree == 1) outputColor = vec4(vec3(1, 0, 0), 1);
 }

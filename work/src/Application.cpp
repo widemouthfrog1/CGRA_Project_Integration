@@ -30,12 +30,13 @@ glm::vec3 cameraPosition = glm::vec3(0, 40.0f, 0);
 glm::vec3 cameraDirection = glm::vec3(0, 0, 0);
 Camera mainCamera = Camera(cameraPosition, cameraDirection, glm::vec3(0.0f, 1.0f, 0.0f));
 
-void renderTerrainGUI();
+void renderGUI();
 void generateTerrain(bool alterHeight);
 void generateDepthMap();
 void placeTrees();
 void processInput(GLFWwindow *currentWindow);
 void setupCallbacks(GLFWwindow *currentWindow);
+glm::vec3 calculateGradientAndHeight(float xPosition, float zPosition);
 
 bool toggleOptions = false;
 
@@ -75,6 +76,11 @@ int maxDropletLifetime = 30;
 int numIterations = 1000;
 
 int brushSize = 4;
+
+//Options for Trees
+
+float lowestHeight = 0;
+float highestHeight = 0.2;
 
 std::vector<std::vector<glm::vec2>> erosionBrushIndices;
 std::vector<std::vector<float>> erosionBrushWeights;
@@ -119,8 +125,24 @@ void redrawScene(){
     GLint isTree = 0;
     GLuint isTreeID = glGetUniformLocation(simpleShader.getID(), "uIsTree");
     glUniform1iv(isTreeID, 1, &isTree);
-
+        
     groundMesh.drawMesh(false);
+
+    for(unsigned int i = 0; i < treeList.size(); i++){
+            
+        glm::mat4 scaleMatrix = glm::scale(glm::mat4(1.0f), glm::vec3(0.5, 0.5, 0.5));
+        glm::mat4 newModelViewMatrix = mainCamera.getViewMatrix() * glm::translate(glm::mat4(1.0f), treeList[i].position) * glm::translate(glm::mat4(1.0f), glm::vec3(-(terrainSize-1)/2, 0, -(terrainSize-1)/2)) * scaleMatrix;
+        glUniformMatrix4fv(modelViewMatrixID, 1, GL_FALSE, &newModelViewMatrix[0][0]);
+
+        isTree = 1;
+        glUniform1iv(isTreeID, 1, &isTree);
+
+        GLint isHighlighted = selectedTree == i || selectAll ? 1 : 0;
+        GLuint selectedTreeID = glGetUniformLocation(simpleShader.getID(), "uSelectedTree");
+        glUniform1iv(selectedTreeID, 1, &isHighlighted);
+
+        treeList[i].mesh.drawMesh(true);
+    }
         
     glfwSwapBuffers(mainWindow);
 }
@@ -198,7 +220,7 @@ int main(){
         ImGui_ImplGlfw_NewFrame();
         ImGui::NewFrame();
 
-        renderTerrainGUI();
+        renderGUI();
 
         ImGui::Render();
         ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
@@ -232,14 +254,14 @@ int main(){
 
         for(unsigned int i = 0; i < treeList.size(); i++){
             
-            glm::mat4 scaleMatrix = glm::scale(glm::mat4(1.0f), glm::vec3(1, 1, 1));
+            glm::mat4 scaleMatrix = glm::scale(glm::mat4(1.0f), glm::vec3(0.5, 0.5, 0.5));
             glm::mat4 newModelViewMatrix = mainCamera.getViewMatrix() * glm::translate(glm::mat4(1.0f), treeList[i].position) * glm::translate(glm::mat4(1.0f), glm::vec3(-(terrainSize-1)/2, 0, -(terrainSize-1)/2)) * scaleMatrix;
             glUniformMatrix4fv(modelViewMatrixID, 1, GL_FALSE, &newModelViewMatrix[0][0]);
 
             isTree = 1;
             glUniform1iv(isTreeID, 1, &isTree);
 
-            GLint isHighlighted = selectedTree;
+            GLint isHighlighted = selectedTree == i || selectAll ? 1 : 0;
             GLuint selectedTreeID = glGetUniformLocation(simpleShader.getID(), "uSelectedTree");
             glUniform1iv(selectedTreeID, 1, &isHighlighted);
 
@@ -342,6 +364,14 @@ void generateTerrain(bool alterHeight){
     }
 
     groundMesh = Mesh(vertexPositions, depthIndices);
+}
+
+void updateTreeHeights(){
+
+    for(treeModel currentTree: treeList){
+        glm::vec3 treePosition = currentTree.position;
+        currentTree.position.y = calculateGradientAndHeight(treePosition.x, treePosition.z).z;
+    }
 }
 
 void depositSediment(int xPos, int zPos, float xOffset, float zOffset, float amountOfSediment){
@@ -524,6 +554,7 @@ void erodeTerrain(){
         }
 
         generateTerrain(false);
+        updateTreeHeights();
         redrawScene();
 
     }
@@ -534,8 +565,8 @@ void placeTrees(){
 
     std::vector<glm::vec2> possiblePositions;
 
-    for(int i = 0; i < terrainSize; i++){
-        for(int j = 0; j < terrainSize; j++){
+    for(int i = 0; i < terrainSize - 10; i++){
+        for(int j = 0; j < terrainSize - 10; j++){
             possiblePositions.push_back(glm::vec2(i, j));        
         }
     }
@@ -550,10 +581,8 @@ void placeTrees(){
 
     for(unsigned int k = 0; k < numberOfTrees; k++){
 
-        float lowestHeight = 0;
-        float heighestHeight = 0.2;
         float minInclineAngle = 0;
-        float maxInclineAngle = 90;
+        float maxInclineAngle = 1;
 
         for(glm::vec2 currentPosition: possiblePositions){
             
@@ -565,7 +594,7 @@ void placeTrees(){
             float currentHeight = gradientAndHeight.z;
             float currentIncline = sqrt(gradientAndHeight.x * gradientAndHeight.x + gradientAndHeight.y * gradientAndHeight.y);
 
-            if(currentHeight >= lowestHeight && currentHeight <= heighestHeight && currentIncline >= minInclineAngle && currentIncline <= maxInclineAngle){
+            if(currentHeight >= lowestHeight && currentHeight <= highestHeight && currentIncline >= minInclineAngle && currentIncline <= maxInclineAngle){
                     
                 if(!treeMap[xPos][zPos]){
                         
@@ -617,20 +646,10 @@ void processInput(GLFWwindow *currentWindow){
     mainCamera.onKeyboard(currentWindow);
 }
 
-void renderTerrainGUI(){
-
-    ImGui::SetNextWindowPos(ImVec2(5, 5), ImGuiSetCond_Once);
-    ImGui::SetNextWindowSize(ImVec2(700, 600), ImGuiSetCond_Once);
-
-	ImGui::Begin("Options");
-    
-    ImGui::Text("Application average %.3f ms/frame (%.1f FPS)", 1000.0f / ImGui::GetIO().Framerate, ImGui::GetIO().Framerate);
-    
-    ImGui::InputInt("Size", &terrainSize);
-
-    ImGui::Separator();
+void terrainGUI(){
 
     if( 
+        ImGui::InputInt("Size", &terrainSize) ||
         ImGui::InputFloat("Lacanarity", &lacanarityValue, 0.1)   ||
         ImGui::InputFloat("Persistance", &persistanceValue, 0.1) ||
         ImGui::InputFloat("Scale", &noiseScale, 1) ||
@@ -647,6 +666,7 @@ void renderTerrainGUI(){
         if(heightMultiplier < 0) heightMultiplier = 0;
         if(blendingScale < 1) blendingScale = 1;
         if(blendingScale > 10) blendingScale = 10;
+        if(terrainSize < 2) terrainSize = 2;
 
         generateDepthMap();
         generateTerrain(true);
@@ -664,15 +684,15 @@ void renderTerrainGUI(){
         ImGui::InputFloat("Minimum Sediment Capacity", &minSedimentCapacity, 0.1) ||
         ImGui::InputFloat("Sediment Capacity Factor", &sedimentCapacityFactor, 1) ||
         ImGui::InputFloat("Deposition Scale", &depositSpeed, 0.1) ||
-        ImGui::InputFloat("Erode Scale", &erodeSpeed) ||
+        ImGui::InputFloat("Erode Scale", &erodeSpeed, 0.1) ||
         ImGui::InputFloat("Evaporation Speed", &evaporationSpeed, 0.5) ||
         ImGui::InputFloat("Gravity", &gravityConstant, 0.5) ||
         ImGui::InputInt("Droplet Lifetime", &maxDropletLifetime) ||
         ImGui::InputInt("Number of Droplets", &numIterations)
     ){
 
-        if(inertiaConstant < 0) lacanarityValue = 0;
-        if(inertiaConstant > 1) lacanarityValue = 1;
+        if(inertiaConstant < 0) inertiaConstant = 0;
+        if(inertiaConstant > 1) inertiaConstant = 1;
 
     }
 
@@ -680,8 +700,44 @@ void renderTerrainGUI(){
         erodeTerrain();
     }
 
-    treeGUI();
+    ImGui::Separator();
+
+    if(
+        ImGui::InputFloat("Minimum height", &lowestHeight, 0.1)   ||
+        ImGui::InputFloat("Maximum height", &highestHeight, 0.1)
+    ){
+        if(lowestHeight < 0) lowestHeight = 0;
+        if(lowestHeight > 1) lowestHeight = 1;
+        if(highestHeight < 0) highestHeight = 0;
+        if(highestHeight > 1) highestHeight = 1;
+    }
+
+    if(ImGui::Button("Place Trees")){
+        placeTrees();
+    }
+
+}
+
+void renderGUI(){
+
+    ImGui::SetNextWindowPos(ImVec2(5, 5), ImGuiSetCond_Once);
+    ImGui::SetNextWindowSize(ImVec2(700, 600), ImGuiSetCond_Once);
+
+	ImGui::Begin("Options");
+    
+    ImGui::Text("Application average %.3f ms/frame (%.1f FPS)", 1000.0f / ImGui::GetIO().Framerate, ImGui::GetIO().Framerate);
+    
+    const char* selectableItems[] = { "Erosion", "Trees" };
+	const char* listBoxLabel = "Mode";
+	static int currentItemIndex = 0;
+	int itemCount = 2;
+	
+	ImGui::Combo(listBoxLabel, &currentItemIndex, selectableItems, itemCount);
+
+    ImGui::Separator();
+
+    if(selectableItems[currentItemIndex] == (char*)"Erosion") terrainGUI();
+	else treeGUI();
 
     ImGui::End();
-
 }
