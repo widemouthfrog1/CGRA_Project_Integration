@@ -67,8 +67,8 @@ float flatHeight = 0.2;
 float inertiaConstant = 0.1;
 float minSedimentCapacity = 0.1;
 float sedimentCapacityFactor = 4.00;
-float depositSpeed = 0.1;
-float erodeSpeed = 0.1;
+float depositSpeed = 0.05;
+float erodeSpeed = 0.05;
 float evaporationSpeed = 0.01;
 float gravityConstant = 4;
 
@@ -272,7 +272,7 @@ int main(){
             isTree = 1;
             glUniform1iv(isTreeID, 1, &isTree);
 
-            GLint isHighlighted = selectedTree == i || selectAll ? 1 : 0;
+            GLint isHighlighted = getSelectedTree() == i || getSelectAll() ? 1 : 0;
             GLuint selectedTreeID = glGetUniformLocation(simpleShader.getID(), "uSelectedTree");
             glUniform1iv(selectedTreeID, 1, &isHighlighted);
 
@@ -651,6 +651,7 @@ void setupCallbacks(GLFWwindow *currentWindow){
 }
 
 void processInput(GLFWwindow *currentWindow){
+    if(toggleOptions) return;
     mainCamera.onKeyboard(currentWindow);
 }
 
@@ -751,7 +752,7 @@ void terrainGUI(){
 void renderGUI(){
 
     ImGui::SetNextWindowPos(ImVec2(5, 5), ImGuiSetCond_Once);
-    ImGui::SetNextWindowSize(ImVec2(700, 660), ImGuiSetCond_Once);
+    ImGui::SetNextWindowSize(ImVec2(700, 680), ImGuiSetCond_Once);
 
 	ImGui::Begin("Options");
     

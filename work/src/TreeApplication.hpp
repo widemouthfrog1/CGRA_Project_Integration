@@ -26,10 +26,13 @@ static int oldSelectedTree = 0;
 static int selectedTree = 0;
 static bool selectAll = false;
 static char rule[50];
-static char guirules[500] = "";
-static int rulesIndex = 0;
+static char guirules[500] = "\nF:F[+CF][-CF][^CF][&CF]\nCF:D(d/l)F";
+static int rulesIndex = 34;
 
 std::vector<treeModel> loadTrees(std::vector<glm::vec3> inputPositions);
+bool getSelectAll();
+int getSelectedTree();
+std::vector<treeModel> getTrees();
 void addRule(std::string newRule);
 void treeGUI();
 

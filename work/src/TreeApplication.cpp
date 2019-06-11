@@ -1,4 +1,3 @@
-
 // project
 #include "TreeApplication.hpp"
 #include "Turtle.h"
@@ -18,9 +17,10 @@ std::vector<treeModel> loadTrees(std::vector<glm::vec3> inputPositions) {
 		model.mesh = mesh;
 		model.position = inputPositions.at(i);
 		trees.push_back(model);
-	}	
-		
-	return trees;
+	}
+
+    return trees;
+
 
 }
 
@@ -28,15 +28,23 @@ void addRule(std::string newRule){
     rules.push_back(newRule);
 }
 
+bool getSelectAll(){
+    return selectAll;
+}
+
+int getSelectedTree(){
+    return selectedTree;
+}
+
 void treeGUI()
 {
 	ImGui::Checkbox("SelectAll", &selectAll);
-	if (!selectAll) {
-		ImGui::SliderInt("SelectedTree", &selectedTree, 0, trees.size() - 1);
-	}
+	ImGui::SliderInt("SelectedTree", &selectedTree, 0, trees.size() - 1);
+
 	ImGui::InputText("Axiom", axiom, 50);
 	if (ImGui::Button("Clear Rules")) {
 		rules.clear();
+		rulesIndex = 0;
 		for (int i = 0; i < 500; i++) {
 			guirules[i] = '\0';
 		}
@@ -44,7 +52,7 @@ void treeGUI()
 	if (ImGui::InputText("Add Rule:", rule, 50, ImGuiInputTextFlags_EnterReturnsTrue)) {
 		rules.push_back(std::string(rule));
 		for (int i = 0; i < rules.at(rules.size() - 1).size(); i++) {
-			guirules[rulesIndex + i];
+			guirules[rulesIndex + i + 1] = rules.at(rules.size() - 1).at(i);
 		}
 		rulesIndex += rules.at(rules.size() - 1).size();
 	}
