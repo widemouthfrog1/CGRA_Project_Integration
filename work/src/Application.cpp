@@ -29,7 +29,7 @@ glm::vec3 cameraPosition = glm::vec3(0, 40.0f, 0);
 glm::vec3 cameraDirection = glm::vec3(0, 0, 0);
 Camera mainCamera = Camera(cameraPosition, cameraDirection, glm::vec3(0.0f, 1.0f, 0.0f));
 
-void renderGUI();
+void renderTerrainGUI();
 void generateTerrain(bool alterHeight);
 void generateDepthMap();
 void loadTrees(std::vector<Mesh> treeMeshes);
@@ -39,7 +39,6 @@ void setupCallbacks(GLFWwindow *currentWindow);
 
 bool toggleOptions = false;
 
-Mesh waterMesh;
 Mesh groundMesh;
 
 std::vector<Mesh> treeMeshes;
@@ -135,29 +134,6 @@ Mesh generateFakeTree(){
     return Mesh(vertexPositions, depthIndices);
 }
 
-void generateWater(){
-
-    std::vector<MeshVertex> vertexPositions;
-    std::vector<unsigned int> depthIndices;
-
-    float waterHeight = 0.1 * heightMultiplier;
-    
-    vertexPositions.push_back(MeshVertex{ glm::vec3(-terrainSize/2, waterHeight, -terrainSize/2), glm::vec3(0, 1, 0)});
-    vertexPositions.push_back(MeshVertex{ glm::vec3(-terrainSize/2, waterHeight, terrainSize/2), glm::vec3(0, 1, 0)});
-    vertexPositions.push_back(MeshVertex{ glm::vec3(terrainSize/2, waterHeight, -terrainSize/2), glm::vec3(0, 1, 0)});
-    vertexPositions.push_back(MeshVertex{ glm::vec3(terrainSize/2, waterHeight, terrainSize/2), glm::vec3(0, 1, 0)});
-
-    depthIndices.push_back(0);
-    depthIndices.push_back(1);
-    depthIndices.push_back(2);
-
-    depthIndices.push_back(1);
-    depthIndices.push_back(2);
-    depthIndices.push_back(3);
-
-    waterMesh = Mesh(vertexPositions, depthIndices);
-}
-
 void redrawScene(){
 
     processInput(mainWindow);
@@ -185,16 +161,7 @@ void redrawScene(){
     GLuint blendingScaleID = glGetUniformLocation(simpleShader.getID(), "uBlendingScale");
     glUniform1fv(blendingScaleID, 1, &blendingScale);
 
-    GLint drawWater = 0;
-    GLuint waterMeshID = glGetUniformLocation(simpleShader.getID(), "uWaterMesh");
-    glUniform1iv(waterMeshID, 1, &drawWater);
-
     groundMesh.drawMesh(); 
-
-    drawWater = 1;
-    glUniform1iv(waterMeshID, 1, &drawWater);
-
-    //waterMesh.drawMesh();
 
     for(unsigned int i = 0; i < treeMeshes.size(); i++){
 
@@ -242,7 +209,6 @@ int main(){
     glfwSetInputMode(mainWindow, GLFW_STICKY_KEYS, GL_TRUE);
     glfwSetInputMode(mainWindow, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
 
-    generateWater();
     generateDepthMap();
     generateTerrain(true);
 
@@ -280,7 +246,7 @@ int main(){
         ImGui_ImplGlfw_NewFrame();
         ImGui::NewFrame();
 
-        renderGUI();
+        renderTerrainGUI();
 
         ImGui::Render();
         ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
@@ -306,16 +272,11 @@ int main(){
         GLuint blendingScaleID = glGetUniformLocation(simpleShader.getID(), "uBlendingScale");
         glUniform1fv(blendingScaleID, 1, &blendingScale);
 
-        GLint drawWater = 0;
-        GLuint waterMeshID = glGetUniformLocation(simpleShader.getID(), "uWaterMesh");
-        glUniform1iv(waterMeshID, 1, &drawWater);
+        groundMesh.drawMesh();
 
-        groundMesh.drawMesh(); 
-
-        drawWater = 1;
-        glUniform1iv(waterMeshID, 1, &drawWater);
-
-        //waterMesh.drawMesh();
+        GLint isHighlighted = 0;
+        GLuint waterMeshID = glGetUniformLocation(simpleShader.getID(), "uTreeSelected");
+        glUniform1iv(waterMeshID, 1, &isHighlighted);
 
         for(unsigned int i = 0; i < treeMeshes.size(); i++){
 
@@ -770,7 +731,7 @@ void processInput(GLFWwindow *currentWindow){
     mainCamera.onKeyboard(currentWindow);
 }
 
-void renderGUI(){
+void renderTerrainGUI(){
 
 	ImGui::Begin("Options");
     
@@ -797,14 +758,12 @@ void renderGUI(){
         if(blendingScale < 1) blendingScale = 1;
         if(blendingScale > 10) blendingScale = 10;
 
-        generateWater();
         generateDepthMap();
         generateTerrain(true);
     }
 
     if(ImGui::Button("Generate Terrain")){
-        generateWater();
-        generateDepthMap(); 
+        generateDepthMap();
         generateTerrain(true); 
     }
     if(ImGui::Button("Start Erosion")){

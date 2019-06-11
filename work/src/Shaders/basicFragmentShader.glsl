@@ -2,7 +2,6 @@
 
 #define PI 3.14159265
 
-uniform int uWaterMesh;
 uniform vec2 uHeightExtremes;
 uniform float uBlendingScale;
 
@@ -98,14 +97,12 @@ void main(){
 		}
 	}
 
-	if(uWaterMesh == 1) materialColor = waterColor;
-
 	vec3 lightColor = vec3(1, 1, 1);
 	vec3 lightDirection = vec3(1, -1, 0);
 
 	float NdotL = dot(fragmentNormal, lightDirection);
 
-	float ambientIntensity = 0.1;
+	float ambientIntensity = 0.2;
 	vec3 ambientColor = materialColor * lightColor * ambientIntensity;
 
 	float diffuseRoughness = 0.4;
@@ -114,5 +111,5 @@ void main(){
 
 	vec3 shaderColor = ambientColor + diffuseColor;
 
-  outputColor = vec4(shaderColor, 1);
+    outputColor = vec4(shaderColor, 1);
 }
