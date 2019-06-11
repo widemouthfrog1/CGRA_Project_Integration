@@ -80,10 +80,10 @@ int brushSize = 4;
 //Options for Trees
 
 float lowestHeight = 0;
-float highestHeight = 0.2;
+float highestHeight = 0.4;
 
 float minInclineAngle = 0;
-float maxInclineAngle = 1;
+float maxInclineAngle = 0.1;
 
 std::vector<std::vector<glm::vec2>> erosionBrushIndices;
 std::vector<std::vector<float>> erosionBrushWeights;
@@ -92,7 +92,6 @@ GLFWwindow *mainWindow;
 Shader simpleShader;
 
 std::vector<treeModel> treeList;
-std::vector<std::string> treeRules;
 
 static void glfwErrorCallback(int error, const char* description){
     fprintf(stderr, "Glfw Error %d: %s\n", error, description);
@@ -184,7 +183,7 @@ int main(){
     glfwSetInputMode(mainWindow, GLFW_STICKY_KEYS, GL_TRUE);
     glfwSetInputMode(mainWindow, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
 
-    treeRules.push_back("F:F[+CF][-CF][^CF][&CF]");
+    addRule("F:F[+CF][-CF][^CF][&CF]");
 
     generateDepthMap();
     generateTerrain(true);
@@ -618,7 +617,7 @@ void placeTrees(){
         }
     }
 
-    treeList = loadTrees(treePositions, treeRules);
+    treeList = loadTrees(treePositions);
 
 }
 
@@ -752,7 +751,7 @@ void terrainGUI(){
 void renderGUI(){
 
     ImGui::SetNextWindowPos(ImVec2(5, 5), ImGuiSetCond_Once);
-    ImGui::SetNextWindowSize(ImVec2(700, 620), ImGuiSetCond_Once);
+    ImGui::SetNextWindowSize(ImVec2(700, 660), ImGuiSetCond_Once);
 
 	ImGui::Begin("Options");
     

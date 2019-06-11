@@ -29,7 +29,8 @@ static char rule[50];
 static char guirules[500] = "";
 static int rulesIndex = 0;
 
-std::vector<treeModel> loadTrees(std::vector<glm::vec3> inputPositions, std::vector<std::string> inputRules);
+std::vector<treeModel> loadTrees(std::vector<glm::vec3> inputPositions);
+void addRule(std::string newRule);
 void treeGUI();
 
 #endif

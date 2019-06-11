@@ -8,27 +8,27 @@
 # --------------------------- #
 SET(sources
 
-	"Application.cpp"
-	"Camera.hpp"
-	"Camera.cpp"
-	"Mesh.hpp"
-	"Shader.hpp"
-	"Shader.cpp"
-    "NoiseMapGenerator.hpp"
+        "Application.cpp"
+        "Camera.hpp"
+        "Camera.cpp"
+        "Mesh.hpp"
+        "Shader.hpp"
+        "Shader.cpp"
+        "NoiseMapGenerator.hpp"
 
-	"TreeApplication.cpp"
-	"TreeApplication.hpp"
-	"ProjectMath.cpp"
-	"ProjectMath.h"
-	"Rule.h"
-	"Rule.cpp"
-	"Turtle.cpp"
-	"Turtle.h"
-	"Vertex.cpp"
-	"Vertex.h"
+        "TreeApplication.cpp"
+        "TreeApplication.hpp"
+        "ProjectMath.cpp"
+        "ProjectMath.h"
+        "Rule.h"
+        "Rule.cpp"
+        "Turtle.cpp"
+        "Turtle.h"
+        "Vertex.cpp"
+        "Vertex.h"
 
-	"CMakeLists.txt"
-)
+        "CMakeLists.txt"
+        )
 
 # Add executable target and link libraries
 add_executable(${CGRA_PROJECT} ${sources})
@@ -54,5 +54,5 @@ target_link_libraries(${CGRA_PROJECT} PRIVATE stb imgui)
 
 # For experimental <filesystem>
 if("${CMAKE_CXX_COMPILER_ID}" STREQUAL "GNU")
-	target_link_libraries(${CGRA_PROJECT} PRIVATE -lstdc++fs)
+    target_link_libraries(${CGRA_PROJECT} PRIVATE -lstdc++fs)
 endif()

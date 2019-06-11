@@ -3,13 +3,11 @@
 #include "TreeApplication.hpp"
 #include "Turtle.h"
 
-std::vector<treeModel> loadTrees(std::vector<glm::vec3> inputPositions, std::vector<std::string> inputRules) {
-	
-	rules = inputRules;
+std::vector<treeModel> loadTrees(std::vector<glm::vec3> inputPositions) {
 
 	Turtle turtle(glm::vec3(0,1,0));
 		
-	turtle.loadRules(inputRules);
+	turtle.loadRules(rules);
 	turtle.draw(turtle.getCommand(axiom, depth));
 	Mesh mesh = turtle.createMesh();
 
@@ -18,13 +16,16 @@ std::vector<treeModel> loadTrees(std::vector<glm::vec3> inputPositions, std::vec
 	for (int i = 0; i < inputPositions.size(); i++) {
 		treeModel model;
 		model.mesh = mesh;
-		//model.mesh = generateFakeTree();
 		model.position = inputPositions.at(i);
 		trees.push_back(model);
 	}	
 		
 	return trees;
 
+}
+
+void addRule(std::string newRule){
+    rules.push_back(newRule);
 }
 
 void treeGUI()

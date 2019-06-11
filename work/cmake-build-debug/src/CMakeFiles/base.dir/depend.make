@@ -109,6 +109,7 @@ src/CMakeFiles/base.dir/Application.cpp.o: ../src/Camera.hpp
 src/CMakeFiles/base.dir/Application.cpp.o: ../src/Mesh.hpp
 src/CMakeFiles/base.dir/Application.cpp.o: ../src/NoiseMapGenerator.hpp
 src/CMakeFiles/base.dir/Application.cpp.o: ../src/Shader.hpp
+src/CMakeFiles/base.dir/Application.cpp.o: ../src/TreeApplication.hpp
 
 src/CMakeFiles/base.dir/Camera.cpp.o: ../ext/glfw/include/GLFW/glfw3.h
 src/CMakeFiles/base.dir/Camera.cpp.o: ../ext/glm/common.hpp
