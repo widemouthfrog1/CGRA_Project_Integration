@@ -1,1 +1,0 @@
-/usr/bin/c++   -fopenmp  -rdynamic CMakeFiles/base.dir/Application.cpp.o CMakeFiles/base.dir/Camera.cpp.o CMakeFiles/base.dir/Shader.cpp.o  -o ../bin/base ../bin/libglew.a ../bin/libglfw3.a -lX11 -lXrandr -lXinerama -lXi -lXxf86vm -lrt -lm -lXcursor -lGL ../bin/libstb.a ../bin/libimgui.a -lstdc++fs -lGLU 

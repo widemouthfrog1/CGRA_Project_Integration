@@ -1,4 +1,0 @@
-warning: source /home/dylan/Documents/CGRA_Project_Integration/work/ext/glfw/examples is not a readable file or directory... skipping.
-/home/dylan/Documents/CGRA_Project_Integration/work/ext/glfw/docs/quick.dox:300: warning: included file simple.c is not found. Check your EXAMPLE_PATH
-/home/dylan/Documents/CGRA_Project_Integration/work/ext/glfw/docs/quick.dox:300: warning: block marked with [code] for \snippet should appear twice in file simple.c, found it 0 times
-
