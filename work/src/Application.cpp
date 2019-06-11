@@ -56,7 +56,7 @@ int terrainSize = 100;
 int amountOfOctaves = 4;
 float lacanarityValue = 1.8;
 float persistanceValue = 0.5;
-float noiseScale = 25;
+float noiseScale = 45;
 float heightMultiplier = 20;
 float blendingScale = 2;
 
@@ -65,15 +65,15 @@ float flatHeight = 0.2;
 // Options for Erosion
 
 float inertiaConstant = 0.1;
-float minSedimentCapacity = 0.01;
+float minSedimentCapacity = 0.1;
 float sedimentCapacityFactor = 4.00;
-float depositSpeed = 0.01;
-float erodeSpeed = 0.01;
+float depositSpeed = 0.2;
+float erodeSpeed = 0.2;
 float evaporationSpeed = 0.01;
 float gravityConstant = 4;
 
 int maxDropletLifetime = 30;
-int numIterations = 1000;
+int numIterations = 600;
 
 int brushSize = 4;
 
@@ -81,6 +81,9 @@ int brushSize = 4;
 
 float lowestHeight = 0;
 float highestHeight = 0.2;
+
+float minInclineAngle = 0;
+float maxInclineAngle = 1;
 
 std::vector<std::vector<glm::vec2>> erosionBrushIndices;
 std::vector<std::vector<float>> erosionBrushWeights;
@@ -211,7 +214,16 @@ int main(){
     // Setup ImGui //
 
     while(glfwGetKey(mainWindow, GLFW_KEY_Q) != GLFW_PRESS && glfwWindowShouldClose(mainWindow) == 0){
-        
+
+        if(!toggleOptions){
+            int windowWidth, windowHeight;
+            glfwGetWindowSize(mainWindow, &windowWidth, &windowHeight);
+
+            double xPosition, yPosition;
+            glfwGetCursorPos(mainWindow, &xPosition, &yPosition);
+            glfwSetCursorPos(mainWindow, windowWidth/2, windowHeight/2);
+        }
+
         processInput(mainWindow);
         
         glfwPollEvents();
@@ -390,7 +402,7 @@ void initializeBrush(int brushRadius){
     
     int* xOffsets = new int[brushRadius * brushRadius * 4];
     int* yOffsets = new int[brushRadius * brushRadius * 4];
-    float* weights = new float[brushRadius * brushRadius * 4];
+    float* weightArray = new float[brushRadius * brushRadius * 4];
 
     float weightSum = 0;
     int addIndex = 0;
@@ -419,11 +431,11 @@ void initializeBrush(int brushRadius){
 
                         if(coordX >= 0 && coordX < terrainSize && coordY >= 0 && coordY < terrainSize){
 
-                            float weight = 1 - sqrt(sqrtDistance) / brushRadius;
+                            float currentWeight = 1 - sqrt(sqrtDistance) / brushRadius;
                             
-                            weightSum += weight;
+                            weightSum += currentWeight;
 
-                            weights[addIndex] = weight;
+                            weightArray[addIndex] = currentWeight;
                             xOffsets[addIndex] = x;
                             yOffsets[addIndex] = y;
 
@@ -441,7 +453,7 @@ void initializeBrush(int brushRadius){
         for(int j = 0; j < numEntries; j++){
             
             erosionBrushIndices[i].push_back(glm::vec2(yOffsets[j] + centreY, xOffsets[j] + centreX));
-            erosionBrushWeights[i].push_back(weights[j] / weightSum);
+            erosionBrushWeights[i].push_back(weightArray[j] / weightSum);
         }
     }
 }
@@ -517,7 +529,7 @@ void erodeTerrain(){
             float sedimentCapacity = std::max(-deltaHeight * currentSpeed * amountOfWater * sedimentCapacityFactor, minSedimentCapacity);
 
             if (currentAmountOfSediment > sedimentCapacity || deltaHeight > 0) {
-
+                
                 float amountToDeposit = (deltaHeight > 0) ? std::min(deltaHeight, currentAmountOfSediment) : (currentAmountOfSediment - sedimentCapacity) * depositSpeed;
 
                 currentAmountOfSediment -= amountToDeposit;
@@ -580,9 +592,6 @@ void placeTrees(){
     int numberOfTrees = 10;
 
     for(unsigned int k = 0; k < numberOfTrees; k++){
-
-        float minInclineAngle = 0;
-        float maxInclineAngle = 1;
 
         for(glm::vec2 currentPosition: possiblePositions){
             
@@ -648,6 +657,8 @@ void processInput(GLFWwindow *currentWindow){
 
 void terrainGUI(){
 
+    ImGui::Text("Terrain generation");
+
     if( 
         ImGui::InputInt("Size", &terrainSize) ||
         ImGui::InputFloat("Lacanarity", &lacanarityValue, 0.1)   ||
@@ -674,18 +685,20 @@ void terrainGUI(){
 
     if(ImGui::Button("Generate Terrain")){
         generateDepthMap();
-        generateTerrain(true); 
+        generateTerrain(true);
     }
 
     ImGui::Separator();
 
+    ImGui::Text("Erosion");
+
     if(
         ImGui::InputFloat("Inertia", &inertiaConstant, 0.1)   ||
         ImGui::InputFloat("Minimum Sediment Capacity", &minSedimentCapacity, 0.1) ||
-        ImGui::InputFloat("Sediment Capacity Factor", &sedimentCapacityFactor, 1) ||
+        ImGui::InputFloat("Sediment Capacity Factor", &sedimentCapacityFactor, 0.5) ||
         ImGui::InputFloat("Deposition Scale", &depositSpeed, 0.1) ||
         ImGui::InputFloat("Erode Scale", &erodeSpeed, 0.1) ||
-        ImGui::InputFloat("Evaporation Speed", &evaporationSpeed, 0.5) ||
+        ImGui::InputFloat("Evaporation Speed", &evaporationSpeed, 0.01) ||
         ImGui::InputFloat("Gravity", &gravityConstant, 0.5) ||
         ImGui::InputInt("Droplet Lifetime", &maxDropletLifetime) ||
         ImGui::InputInt("Number of Droplets", &numIterations)
@@ -693,6 +706,17 @@ void terrainGUI(){
 
         if(inertiaConstant < 0) inertiaConstant = 0;
         if(inertiaConstant > 1) inertiaConstant = 1;
+        if(minSedimentCapacity < 0) minSedimentCapacity = 0;
+        if(sedimentCapacityFactor < 0) sedimentCapacityFactor = 0;
+        if(depositSpeed < 0) depositSpeed = 0;
+        if(depositSpeed > 1) depositSpeed = 1;
+        if(erodeSpeed < 0) erodeSpeed = 0;
+        if(erodeSpeed > 1) erodeSpeed = 1;
+        if(evaporationSpeed < 0) evaporationSpeed = 0;
+        if(evaporationSpeed > 1) evaporationSpeed = 1;
+        if(gravityConstant < 0) gravityConstant = 0;
+        if(maxDropletLifetime < 1) maxDropletLifetime = 1;
+        if(numIterations < 1) numIterations = 1;
 
     }
 
@@ -702,18 +726,25 @@ void terrainGUI(){
 
     ImGui::Separator();
 
+    ImGui::Text("Tree placement");
+
     if(
         ImGui::InputFloat("Minimum height", &lowestHeight, 0.1)   ||
-        ImGui::InputFloat("Maximum height", &highestHeight, 0.1)
+        ImGui::InputFloat("Maximum height", &highestHeight, 0.1) ||
+        ImGui::InputFloat("Minimum gradient", &minInclineAngle, 0.001) ||
+        ImGui::InputFloat("Maximum gradient", &maxInclineAngle, 0.001)
     ){
         if(lowestHeight < 0) lowestHeight = 0;
         if(lowestHeight > 1) lowestHeight = 1;
         if(highestHeight < 0) highestHeight = 0;
         if(highestHeight > 1) highestHeight = 1;
+        if(minInclineAngle < 0) minInclineAngle = 0;
+        if(maxInclineAngle < 0) maxInclineAngle = 0;
     }
 
     if(ImGui::Button("Place Trees")){
-        placeTrees();
+        generateDepthMap();
+        generateTerrain(true);
     }
 
 }
@@ -721,7 +752,7 @@ void terrainGUI(){
 void renderGUI(){
 
     ImGui::SetNextWindowPos(ImVec2(5, 5), ImGuiSetCond_Once);
-    ImGui::SetNextWindowSize(ImVec2(700, 600), ImGuiSetCond_Once);
+    ImGui::SetNextWindowSize(ImVec2(700, 620), ImGuiSetCond_Once);
 
 	ImGui::Begin("Options");
     

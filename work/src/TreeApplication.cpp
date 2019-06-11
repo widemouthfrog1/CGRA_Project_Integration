@@ -8,9 +8,7 @@ std::vector<treeModel> loadTrees(std::vector<glm::vec3> inputPositions, std::vec
 	rules = inputRules;
 
 	Turtle turtle(glm::vec3(0,1,0));
-	
-	std::cout << rules.size() << std::endl;
-	
+		
 	turtle.loadRules(inputRules);
 	turtle.draw(turtle.getCommand(axiom, depth));
 	Mesh mesh = turtle.createMesh();
