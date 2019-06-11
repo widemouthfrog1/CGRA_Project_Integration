@@ -83,6 +83,7 @@ GLFWwindow *mainWindow;
 Shader simpleShader;
 
 std::vector<treeModel> treeList;
+std::vector<std::string> treeRules;
 
 static void glfwErrorCallback(int error, const char* description){
     fprintf(stderr, "Glfw Error %d: %s\n", error, description);
@@ -158,6 +159,8 @@ int main(){
     glfwSetInputMode(mainWindow, GLFW_STICKY_KEYS, GL_TRUE);
     glfwSetInputMode(mainWindow, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
 
+    treeRules.push_back("F:F[+CF][-CF][^CF][&CF]");
+
     generateDepthMap();
     generateTerrain(true);
 
@@ -184,8 +187,6 @@ int main(){
     ImGui_ImplOpenGL3_Init(glsl_version);  
 
     // Setup ImGui //
-
-    rules.push_back("F:F[+CF][-CF][^CF][&CF]");
 
     while(glfwGetKey(mainWindow, GLFW_KEY_Q) != GLFW_PRESS && glfwWindowShouldClose(mainWindow) == 0){
         
@@ -231,7 +232,7 @@ int main(){
 
         for(unsigned int i = 0; i < treeList.size(); i++){
             
-            glm::mat4 scaleMatrix = glm::scale(glm::mat4(1.0f), glm::vec3(1, 10, 1));
+            glm::mat4 scaleMatrix = glm::scale(glm::mat4(1.0f), glm::vec3(1, 1, 1));
             glm::mat4 newModelViewMatrix = mainCamera.getViewMatrix() * glm::translate(glm::mat4(1.0f), treeList[i].position) * glm::translate(glm::mat4(1.0f), glm::vec3(-(terrainSize-1)/2, 0, -(terrainSize-1)/2)) * scaleMatrix;
             glUniformMatrix4fv(modelViewMatrixID, 1, GL_FALSE, &newModelViewMatrix[0][0]);
 
@@ -545,7 +546,7 @@ void placeTrees(){
 
     std::vector<glm::vec3> treePositions;
 
-    int numberOfTrees = 1;
+    int numberOfTrees = 10;
 
     for(unsigned int k = 0; k < numberOfTrees; k++){
 
@@ -579,7 +580,7 @@ void placeTrees(){
         }
     }
 
-    treeList = loadTrees(treePositions);
+    treeList = loadTrees(treePositions, treeRules);
 
 }
 

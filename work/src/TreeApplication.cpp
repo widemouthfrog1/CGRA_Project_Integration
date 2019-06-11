@@ -3,84 +3,25 @@
 #include "TreeApplication.hpp"
 #include "Turtle.h"
 
-#include "Mesh.hpp"
-
-Mesh generateFakeTree(){
-
-    std::vector<MeshVertex> vertexPositions;
-    std::vector<unsigned int> depthIndices;
-
-    vertexPositions.push_back(MeshVertex{ glm::vec3(0, 0, 1), glm::vec3(0, 0, 1)});
-    vertexPositions.push_back(MeshVertex{ glm::vec3(1, 0, 1), glm::vec3(0, 0, 1)});
-    vertexPositions.push_back(MeshVertex{ glm::vec3(0, 1, 1), glm::vec3(0, 0, 1)});
-    vertexPositions.push_back(MeshVertex{ glm::vec3(1, 1, 1), glm::vec3(0, 0, 1)});
-    vertexPositions.push_back(MeshVertex{ glm::vec3(0, 1, 0), glm::vec3(0, 0, 1)});
-    vertexPositions.push_back(MeshVertex{ glm::vec3(1, 1, 0), glm::vec3(0, 0, 1)});
-    vertexPositions.push_back(MeshVertex{ glm::vec3(0, 0, 0), glm::vec3(0, 0, 1)});
-    vertexPositions.push_back(MeshVertex{ glm::vec3(1, 0, 0), glm::vec3(0, 0, 1)});
-    
-    depthIndices.push_back(0);
-    depthIndices.push_back(1);
-    depthIndices.push_back(2);
-
-    depthIndices.push_back(2);
-    depthIndices.push_back(1);
-    depthIndices.push_back(3);
-
-    depthIndices.push_back(2);
-    depthIndices.push_back(3);
-    depthIndices.push_back(4);
-
-    depthIndices.push_back(4);
-    depthIndices.push_back(3);
-    depthIndices.push_back(5);
-
-    depthIndices.push_back(4);
-    depthIndices.push_back(5);
-    depthIndices.push_back(6);
-
-    depthIndices.push_back(6);
-    depthIndices.push_back(5);
-    depthIndices.push_back(7);
-
-    depthIndices.push_back(6);
-    depthIndices.push_back(7);
-    depthIndices.push_back(0);
-
-    depthIndices.push_back(0);
-    depthIndices.push_back(7);
-    depthIndices.push_back(1);
-
-    depthIndices.push_back(1);
-    depthIndices.push_back(7);
-    depthIndices.push_back(3);
-
-    depthIndices.push_back(3);
-    depthIndices.push_back(7);
-    depthIndices.push_back(5);
-
-    depthIndices.push_back(6);
-    depthIndices.push_back(0);
-    depthIndices.push_back(4);
-
-    depthIndices.push_back(4);
-    depthIndices.push_back(0);
-    depthIndices.push_back(2);
-
-    return Mesh(vertexPositions, depthIndices);
-}
-
-std::vector<treeModel> loadTrees(std::vector<glm::vec3> positions) {
+std::vector<treeModel> loadTrees(std::vector<glm::vec3> inputPositions, std::vector<std::string> inputRules) {
 	
+	rules = inputRules;
+
 	Turtle turtle(glm::vec3(0,1,0));
-	turtle.loadRules(rules);
+	
+	std::cout << rules.size() << std::endl;
+	
+	turtle.loadRules(inputRules);
 	turtle.draw(turtle.getCommand(axiom, depth));
 	Mesh mesh = turtle.createMesh();
-	for (int i = 0; i < positions.size(); i++) {
+
+	std::vector<treeModel> trees;
+
+	for (int i = 0; i < inputPositions.size(); i++) {
 		treeModel model;
 		model.mesh = mesh;
 		//model.mesh = generateFakeTree();
-		model.position = positions.at(i);
+		model.position = inputPositions.at(i);
 		trees.push_back(model);
 	}	
 		
