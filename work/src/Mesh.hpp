@@ -14,6 +14,9 @@ struct MeshVertex {
 class Mesh {
     public:
 
+        std::vector<MeshVertex> meshVertices;
+        std::vector<unsigned int> meshIndices;
+
         Mesh(){}
 
         Mesh(std::vector<MeshVertex> meshVertices, std::vector<unsigned int> meshIndices){
@@ -31,9 +34,6 @@ class Mesh {
         }
         
     private:
-
-        std::vector<MeshVertex> meshVertices;
-        std::vector<unsigned int> meshIndices;
 
         GLuint VertexArrayID, VertexBufferID, ElementBufferID;
 

@@ -1,4 +1,6 @@
-#pragma once
+//#pragma once
+#ifndef TREE
+#define TREE
 
 #include <imgui.h>
 #include <imgui_impl_glfw.h>
@@ -10,20 +12,24 @@ struct treeModel {
 	Mesh mesh;
 	glm::vec3 position;
 };
+
 // geometry
-std::vector<treeModel> trees;
-std::vector<std::string> rules;
+
+static std::vector<treeModel> trees;
+static std::vector<std::string> rules;
 
 //Project
-char axiom[50] = "F";
-int depth = 1;
-int oldDepth = 1;
-int oldSelectedTree = 0;
-int selectedTree = 0;
-bool selectAll = true;
-char rule[50];
-char guirules[500] = "";
-int rulesIndex = 0;
+static char axiom[50] = "F";
+static int depth = 5;
+static int oldDepth = 1;
+static int oldSelectedTree = 0;
+static int selectedTree = 0;
+static bool selectAll = true;
+static char rule[50];
+static char guirules[500] = "";
+static int rulesIndex = 0;
 
-void loadTrees(std::vector<glm::vec3> positions);
+std::vector<treeModel> loadTrees(std::vector<glm::vec3> positions);
 void treeGUI();
+
+#endif

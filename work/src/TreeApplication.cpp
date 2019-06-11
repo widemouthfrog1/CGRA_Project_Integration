@@ -3,7 +3,8 @@
 #include "TreeApplication.hpp"
 #include "Turtle.h"
 
-void loadTrees(std::vector<glm::vec3> positions) {
+std::vector<treeModel> loadTrees(std::vector<glm::vec3> positions) {
+	
 	Turtle turtle(glm::vec3(0,1,0));
 	turtle.loadRules(rules);
 	turtle.draw(turtle.getCommand(axiom, depth));
@@ -13,7 +14,10 @@ void loadTrees(std::vector<glm::vec3> positions) {
 		model.mesh = mesh;
 		model.position = positions.at(i);
 		trees.push_back(model);
-	}
+	}	
+		
+	return trees;
+
 }
 
 void treeGUI()

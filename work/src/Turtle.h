@@ -89,7 +89,7 @@ struct Expression {
 };
 
 class Turtle {
-	glm::vec3 position;
+	glm::vec3 position = glm::vec3(0,0,0);
 	glm::vec3 direction;
 	std::vector<SavePoint> stack;
 	std::vector<Vertex> vertices;

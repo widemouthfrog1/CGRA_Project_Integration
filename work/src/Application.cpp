@@ -21,12 +21,12 @@
 #include <random>
 #include <algorithm>
 
-//#include "TreeApplication.hpp"
+#include "TreeApplication.hpp"
 
 glm::mat4 modelMatrix = glm::mat4(1.0f);
 glm::mat4 projectionMatrix = glm::perspective(glm::radians(45.0f), 4.0f/3.0f, 0.1f, 1000.0f);
 
-glm::vec3 cameraPosition = glm::vec3(0, 40.0f, 0);
+glm::vec3 cameraPosition = glm::vec3(0, 0.0f, 0);
 glm::vec3 cameraDirection = glm::vec3(0, 0, 0);
 Camera mainCamera = Camera(cameraPosition, cameraDirection, glm::vec3(0.0f, 1.0f, 0.0f));
 
@@ -81,6 +81,8 @@ std::vector<std::vector<float>> erosionBrushWeights;
 
 GLFWwindow *mainWindow;
 Shader simpleShader;
+
+std::vector<treeModel> treeList;
 
 static void glfwErrorCallback(int error, const char* description){
     fprintf(stderr, "Glfw Error %d: %s\n", error, description);
@@ -190,6 +192,8 @@ int main(){
 
     // Setup ImGui //
 
+    rules.push_back("F:F[+CF][-CF][^CF][&CF]");
+
     while(glfwGetKey(mainWindow, GLFW_KEY_Q) != GLFW_PRESS && glfwWindowShouldClose(mainWindow) == 0){
         
         processInput(mainWindow);
@@ -226,20 +230,27 @@ int main(){
         GLuint blendingScaleID = glGetUniformLocation(simpleShader.getID(), "uBlendingScale");
         glUniform1fv(blendingScaleID, 1, &blendingScale);
 
-        groundMesh.drawMesh();
+        //groundMesh.drawMesh();
 
-        /*for(unsigned int i = 0; i < trees.size(); i++){
+        std::cout << "Size of trees before drawing = " << treeList.size() << std::endl;
 
-            glm::mat4 scaleMatrix = glm::scale(glm::mat4(1.0f), glm::vec3(0.1, 1, 0.1));
-            glm::mat4 newModelViewMatrix = mainCamera.getViewMatrix() * glm::translate(glm::mat4(1.0f), trees[i].position) * glm::translate(glm::mat4(1.0f), glm::vec3(-(terrainSize-1)/2, 0, -(terrainSize-1)/2)) * scaleMatrix;
+        for(unsigned int i = 0; i < treeList.size(); i++){
+
+            //treeShader.useShader();
+
+            //glm::mat4 scaleMatrix = glm::scale(glm::mat4(1.0f), glm::vec3(10, 10, 10));
+            glm::mat4 newModelViewMatrix = glm::mat4(1.0); //mainCamera.getViewMatrix() * glm::translate(glm::mat4(1.0f), treeList[i].position) * glm::translate(glm::mat4(1.0f), glm::vec3(-(terrainSize-1)/2, 0, -(terrainSize-1)/2)) * scaleMatrix;
             glUniformMatrix4fv(modelViewMatrixID, 1, GL_FALSE, &newModelViewMatrix[0][0]);
 
             GLint isHighlighted = selectedTree;
             GLuint waterMeshID = glGetUniformLocation(treeShader.getID(), "uTreeSelected");
             glUniform1iv(waterMeshID, 1, &isHighlighted);
 
-            trees[i].mesh.drawMesh();
-        }*/
+            treeList[i].mesh.drawMesh();
+
+            std::cout << treeList[i].mesh.meshVertices[0].vertexPosition.y << std::endl;
+            std::cout << treeList[i].mesh.meshVertices[1].vertexPosition.y << std::endl << std::endl;
+        }
 
         if(toggleOptions) ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData()); 
         
@@ -538,7 +549,7 @@ void placeTrees(){
 
     std::vector<glm::vec3> treePositions;
 
-    int numberOfTrees = 1;
+    int numberOfTrees = 10;
 
     for(unsigned int k = 0; k < numberOfTrees; k++){
 
@@ -572,7 +583,7 @@ void placeTrees(){
         }
     }
 
-    //loadTrees(treePositions);
+    treeList = loadTrees(treePositions);
 
 }
 
@@ -672,7 +683,7 @@ void renderTerrainGUI(){
         erodeTerrain();
     }
 
-    //treeGUI();
+    treeGUI();
 
     ImGui::End();
 
