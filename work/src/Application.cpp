@@ -67,8 +67,8 @@ float flatHeight = 0.2;
 float inertiaConstant = 0.1;
 float minSedimentCapacity = 0.1;
 float sedimentCapacityFactor = 4.00;
-float depositSpeed = 0.2;
-float erodeSpeed = 0.2;
+float depositSpeed = 0.1;
+float erodeSpeed = 0.1;
 float evaporationSpeed = 0.01;
 float gravityConstant = 4;
 
