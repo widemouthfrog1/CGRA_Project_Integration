@@ -104,8 +104,7 @@ class Turtle {
 	vector<Rule> ruleList;
 	int level = 0;
 public:
-	Turtle(glm::vec3 startingPosition, glm::vec3 startingDirection) {
-		this->position = startingPosition;
+	Turtle( glm::vec3 startingDirection) {
 		this->direction = startingDirection;
 	}
 
