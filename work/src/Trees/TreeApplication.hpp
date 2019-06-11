@@ -15,7 +15,7 @@ std::vector<std::string> rules;
 
 void testFunction(){
     std::cout << "Testing" << std::endl;
-};
+}
 
 void loadTrees();
 void drawTrees();

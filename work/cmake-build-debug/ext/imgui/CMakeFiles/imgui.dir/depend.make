@@ -5,17 +5,28 @@ ext/imgui/CMakeFiles/imgui.dir/imgui.cpp.o: ../ext/imgui/imconfig.h
 ext/imgui/CMakeFiles/imgui.dir/imgui.cpp.o: ../ext/imgui/imgui.cpp
 ext/imgui/CMakeFiles/imgui.dir/imgui.cpp.o: ../ext/imgui/imgui.h
 ext/imgui/CMakeFiles/imgui.dir/imgui.cpp.o: ../ext/imgui/imgui_internal.h
-ext/imgui/CMakeFiles/imgui.dir/imgui.cpp.o: ../ext/imgui/stb_textedit.h
-
-ext/imgui/CMakeFiles/imgui.dir/imgui_demo.cpp.o: ../ext/imgui/imconfig.h
-ext/imgui/CMakeFiles/imgui.dir/imgui_demo.cpp.o: ../ext/imgui/imgui.h
-ext/imgui/CMakeFiles/imgui.dir/imgui_demo.cpp.o: ../ext/imgui/imgui_demo.cpp
 
 ext/imgui/CMakeFiles/imgui.dir/imgui_draw.cpp.o: ../ext/imgui/imconfig.h
 ext/imgui/CMakeFiles/imgui.dir/imgui_draw.cpp.o: ../ext/imgui/imgui.h
 ext/imgui/CMakeFiles/imgui.dir/imgui_draw.cpp.o: ../ext/imgui/imgui_draw.cpp
 ext/imgui/CMakeFiles/imgui.dir/imgui_draw.cpp.o: ../ext/imgui/imgui_internal.h
-ext/imgui/CMakeFiles/imgui.dir/imgui_draw.cpp.o: ../ext/imgui/stb_rect_pack.h
-ext/imgui/CMakeFiles/imgui.dir/imgui_draw.cpp.o: ../ext/imgui/stb_textedit.h
-ext/imgui/CMakeFiles/imgui.dir/imgui_draw.cpp.o: ../ext/imgui/stb_truetype.h
+
+ext/imgui/CMakeFiles/imgui.dir/imgui_impl_glfw.cpp.o: ../ext/glfw/include/GLFW/glfw3.h
+ext/imgui/CMakeFiles/imgui.dir/imgui_impl_glfw.cpp.o: ../ext/glfw/include/GLFW/glfw3native.h
+ext/imgui/CMakeFiles/imgui.dir/imgui_impl_glfw.cpp.o: ../ext/imgui/imconfig.h
+ext/imgui/CMakeFiles/imgui.dir/imgui_impl_glfw.cpp.o: ../ext/imgui/imgui.h
+ext/imgui/CMakeFiles/imgui.dir/imgui_impl_glfw.cpp.o: ../ext/imgui/imgui_impl_glfw.cpp
+ext/imgui/CMakeFiles/imgui.dir/imgui_impl_glfw.cpp.o: ../ext/imgui/imgui_impl_glfw.h
+
+ext/imgui/CMakeFiles/imgui.dir/imgui_impl_opengl3.cpp.o: ../ext/glew-1.10.0/include/GL/glew.h
+ext/imgui/CMakeFiles/imgui.dir/imgui_impl_opengl3.cpp.o: ../ext/imgui/imconfig.h
+ext/imgui/CMakeFiles/imgui.dir/imgui_impl_opengl3.cpp.o: ../ext/imgui/imgui.h
+ext/imgui/CMakeFiles/imgui.dir/imgui_impl_opengl3.cpp.o: ../ext/imgui/imgui_impl_opengl3.cpp
+ext/imgui/CMakeFiles/imgui.dir/imgui_impl_opengl3.cpp.o: ../ext/imgui/imgui_impl_opengl3.h
+
+ext/imgui/CMakeFiles/imgui.dir/imgui_widgets.cpp.o: ../ext/imgui/imconfig.h
+ext/imgui/CMakeFiles/imgui.dir/imgui_widgets.cpp.o: ../ext/imgui/imgui.h
+ext/imgui/CMakeFiles/imgui.dir/imgui_widgets.cpp.o: ../ext/imgui/imgui_internal.h
+ext/imgui/CMakeFiles/imgui.dir/imgui_widgets.cpp.o: ../ext/imgui/imgui_widgets.cpp
+ext/imgui/CMakeFiles/imgui.dir/imgui_widgets.cpp.o: ../ext/imgui/imstb_textedit.h
 

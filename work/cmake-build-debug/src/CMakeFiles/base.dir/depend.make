@@ -109,6 +109,8 @@ src/CMakeFiles/base.dir/Application.cpp.o: ../ext/glm/vec4.hpp
 src/CMakeFiles/base.dir/Application.cpp.o: ../ext/glm/vector_relational.hpp
 src/CMakeFiles/base.dir/Application.cpp.o: ../ext/imgui/imconfig.h
 src/CMakeFiles/base.dir/Application.cpp.o: ../ext/imgui/imgui.h
+src/CMakeFiles/base.dir/Application.cpp.o: ../ext/imgui/imgui_impl_glfw.h
+src/CMakeFiles/base.dir/Application.cpp.o: ../ext/imgui/imgui_impl_opengl3.h
 src/CMakeFiles/base.dir/Application.cpp.o: ../src/Application.cpp
 src/CMakeFiles/base.dir/Application.cpp.o: ../src/Camera.hpp
 src/CMakeFiles/base.dir/Application.cpp.o: ../src/Mesh.hpp

@@ -198,33 +198,6 @@ imgui.cpp.s:
 	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug && $(MAKE) -f ext/imgui/CMakeFiles/imgui.dir/build.make ext/imgui/CMakeFiles/imgui.dir/imgui.cpp.s
 .PHONY : imgui.cpp.s
 
-imgui_demo.o: imgui_demo.cpp.o
-
-.PHONY : imgui_demo.o
-
-# target to build an object file
-imgui_demo.cpp.o:
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug && $(MAKE) -f ext/imgui/CMakeFiles/imgui.dir/build.make ext/imgui/CMakeFiles/imgui.dir/imgui_demo.cpp.o
-.PHONY : imgui_demo.cpp.o
-
-imgui_demo.i: imgui_demo.cpp.i
-
-.PHONY : imgui_demo.i
-
-# target to preprocess a source file
-imgui_demo.cpp.i:
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug && $(MAKE) -f ext/imgui/CMakeFiles/imgui.dir/build.make ext/imgui/CMakeFiles/imgui.dir/imgui_demo.cpp.i
-.PHONY : imgui_demo.cpp.i
-
-imgui_demo.s: imgui_demo.cpp.s
-
-.PHONY : imgui_demo.s
-
-# target to generate assembly for a file
-imgui_demo.cpp.s:
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug && $(MAKE) -f ext/imgui/CMakeFiles/imgui.dir/build.make ext/imgui/CMakeFiles/imgui.dir/imgui_demo.cpp.s
-.PHONY : imgui_demo.cpp.s
-
 imgui_draw.o: imgui_draw.cpp.o
 
 .PHONY : imgui_draw.o
@@ -252,6 +225,87 @@ imgui_draw.cpp.s:
 	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug && $(MAKE) -f ext/imgui/CMakeFiles/imgui.dir/build.make ext/imgui/CMakeFiles/imgui.dir/imgui_draw.cpp.s
 .PHONY : imgui_draw.cpp.s
 
+imgui_impl_glfw.o: imgui_impl_glfw.cpp.o
+
+.PHONY : imgui_impl_glfw.o
+
+# target to build an object file
+imgui_impl_glfw.cpp.o:
+	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug && $(MAKE) -f ext/imgui/CMakeFiles/imgui.dir/build.make ext/imgui/CMakeFiles/imgui.dir/imgui_impl_glfw.cpp.o
+.PHONY : imgui_impl_glfw.cpp.o
+
+imgui_impl_glfw.i: imgui_impl_glfw.cpp.i
+
+.PHONY : imgui_impl_glfw.i
+
+# target to preprocess a source file
+imgui_impl_glfw.cpp.i:
+	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug && $(MAKE) -f ext/imgui/CMakeFiles/imgui.dir/build.make ext/imgui/CMakeFiles/imgui.dir/imgui_impl_glfw.cpp.i
+.PHONY : imgui_impl_glfw.cpp.i
+
+imgui_impl_glfw.s: imgui_impl_glfw.cpp.s
+
+.PHONY : imgui_impl_glfw.s
+
+# target to generate assembly for a file
+imgui_impl_glfw.cpp.s:
+	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug && $(MAKE) -f ext/imgui/CMakeFiles/imgui.dir/build.make ext/imgui/CMakeFiles/imgui.dir/imgui_impl_glfw.cpp.s
+.PHONY : imgui_impl_glfw.cpp.s
+
+imgui_impl_opengl3.o: imgui_impl_opengl3.cpp.o
+
+.PHONY : imgui_impl_opengl3.o
+
+# target to build an object file
+imgui_impl_opengl3.cpp.o:
+	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug && $(MAKE) -f ext/imgui/CMakeFiles/imgui.dir/build.make ext/imgui/CMakeFiles/imgui.dir/imgui_impl_opengl3.cpp.o
+.PHONY : imgui_impl_opengl3.cpp.o
+
+imgui_impl_opengl3.i: imgui_impl_opengl3.cpp.i
+
+.PHONY : imgui_impl_opengl3.i
+
+# target to preprocess a source file
+imgui_impl_opengl3.cpp.i:
+	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug && $(MAKE) -f ext/imgui/CMakeFiles/imgui.dir/build.make ext/imgui/CMakeFiles/imgui.dir/imgui_impl_opengl3.cpp.i
+.PHONY : imgui_impl_opengl3.cpp.i
+
+imgui_impl_opengl3.s: imgui_impl_opengl3.cpp.s
+
+.PHONY : imgui_impl_opengl3.s
+
+# target to generate assembly for a file
+imgui_impl_opengl3.cpp.s:
+	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug && $(MAKE) -f ext/imgui/CMakeFiles/imgui.dir/build.make ext/imgui/CMakeFiles/imgui.dir/imgui_impl_opengl3.cpp.s
+.PHONY : imgui_impl_opengl3.cpp.s
+
+imgui_widgets.o: imgui_widgets.cpp.o
+
+.PHONY : imgui_widgets.o
+
+# target to build an object file
+imgui_widgets.cpp.o:
+	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug && $(MAKE) -f ext/imgui/CMakeFiles/imgui.dir/build.make ext/imgui/CMakeFiles/imgui.dir/imgui_widgets.cpp.o
+.PHONY : imgui_widgets.cpp.o
+
+imgui_widgets.i: imgui_widgets.cpp.i
+
+.PHONY : imgui_widgets.i
+
+# target to preprocess a source file
+imgui_widgets.cpp.i:
+	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug && $(MAKE) -f ext/imgui/CMakeFiles/imgui.dir/build.make ext/imgui/CMakeFiles/imgui.dir/imgui_widgets.cpp.i
+.PHONY : imgui_widgets.cpp.i
+
+imgui_widgets.s: imgui_widgets.cpp.s
+
+.PHONY : imgui_widgets.s
+
+# target to generate assembly for a file
+imgui_widgets.cpp.s:
+	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug && $(MAKE) -f ext/imgui/CMakeFiles/imgui.dir/build.make ext/imgui/CMakeFiles/imgui.dir/imgui_widgets.cpp.s
+.PHONY : imgui_widgets.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -268,12 +322,18 @@ help:
 	@echo "... imgui.o"
 	@echo "... imgui.i"
 	@echo "... imgui.s"
-	@echo "... imgui_demo.o"
-	@echo "... imgui_demo.i"
-	@echo "... imgui_demo.s"
 	@echo "... imgui_draw.o"
 	@echo "... imgui_draw.i"
 	@echo "... imgui_draw.s"
+	@echo "... imgui_impl_glfw.o"
+	@echo "... imgui_impl_glfw.i"
+	@echo "... imgui_impl_glfw.s"
+	@echo "... imgui_impl_opengl3.o"
+	@echo "... imgui_impl_opengl3.i"
+	@echo "... imgui_impl_opengl3.s"
+	@echo "... imgui_widgets.o"
+	@echo "... imgui_widgets.i"
+	@echo "... imgui_widgets.s"
 .PHONY : help
 
 

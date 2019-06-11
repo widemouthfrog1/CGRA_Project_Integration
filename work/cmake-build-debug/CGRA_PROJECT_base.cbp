@@ -1306,13 +1306,25 @@
 		<Unit filename="/home/hoefsldyla/Documents/CLionCopy/work/ext/imgui/imgui.h">
 			<Option target="imgui"/>
 		</Unit>
-		<Unit filename="/home/hoefsldyla/Documents/CLionCopy/work/ext/imgui/imgui_demo.cpp">
-			<Option target="imgui"/>
-		</Unit>
 		<Unit filename="/home/hoefsldyla/Documents/CLionCopy/work/ext/imgui/imgui_draw.cpp">
 			<Option target="imgui"/>
 		</Unit>
+		<Unit filename="/home/hoefsldyla/Documents/CLionCopy/work/ext/imgui/imgui_impl_glfw.cpp">
+			<Option target="imgui"/>
+		</Unit>
+		<Unit filename="/home/hoefsldyla/Documents/CLionCopy/work/ext/imgui/imgui_impl_glfw.h">
+			<Option target="imgui"/>
+		</Unit>
+		<Unit filename="/home/hoefsldyla/Documents/CLionCopy/work/ext/imgui/imgui_impl_opengl3.cpp">
+			<Option target="imgui"/>
+		</Unit>
+		<Unit filename="/home/hoefsldyla/Documents/CLionCopy/work/ext/imgui/imgui_impl_opengl3.h">
+			<Option target="imgui"/>
+		</Unit>
 		<Unit filename="/home/hoefsldyla/Documents/CLionCopy/work/ext/imgui/imgui_internal.h">
+			<Option target="imgui"/>
+		</Unit>
+		<Unit filename="/home/hoefsldyla/Documents/CLionCopy/work/ext/imgui/imgui_widgets.cpp">
 			<Option target="imgui"/>
 		</Unit>
 		<Unit filename="/home/hoefsldyla/Documents/CLionCopy/work/ext/stb/stb.c">

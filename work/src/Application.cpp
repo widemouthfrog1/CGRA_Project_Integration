@@ -20,6 +20,8 @@
 
 #include <random>
 #include <algorithm>
+#include <imgui/imgui_impl_glfw.h>
+#include <imgui/imgui_impl_opengl3.h>
 
 #include "Trees/TreeApplication.hpp"
 
@@ -263,14 +265,14 @@ int main(){
 
     // Setup ImGui //
 
-    /*IMGUI_CHECKVERSION();
+    IMGUI_CHECKVERSION();
     ImGui::CreateContext();
     ImGui::StyleColorsDark();
   	ImGuiIO& io = ImGui::GetIO(); (void)io;
     
     const char* glsl_version = "#version 330";
-    //ImGui_ImplGlfw_InitForOpenGL(mainWindow, true);
-    //ImGui_ImplOpenGL3_Init(glsl_version);*/
+    ImGui_ImplGlfw_InitForOpenGL(mainWindow, true);
+    ImGui_ImplOpenGL3_Init(glsl_version);
 
     // Setup ImGui //
 
@@ -280,14 +282,14 @@ int main(){
         
         glfwPollEvents();
 
-        //ImGui_ImplOpenGL3_NewFrame();
-        //ImGui_ImplGlfw_NewFrame();
-        //ImGui::NewFrame();
+        ImGui_ImplOpenGL3_NewFrame();
+        ImGui_ImplGlfw_NewFrame();
+        ImGui::NewFrame();
 
         renderGUI();
 
-        //ImGui::Render();
-        //ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
+        ImGui::Render();
+        ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
 
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
         
@@ -330,15 +332,15 @@ int main(){
             treeMeshes[i].drawMesh();
         }
 
-        if(toggleOptions);// ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
+        if(toggleOptions) ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
         
         glfwSwapBuffers(mainWindow);
 
     }
 
-    //ImGui_ImplOpenGL3_Shutdown();
-    //ImGui_ImplGlfw_Shutdown();
-    //ImGui::DestroyContext();
+    ImGui_ImplOpenGL3_Shutdown();
+    ImGui_ImplGlfw_Shutdown();
+    ImGui::DestroyContext();
 
     glfwDestroyWindow(mainWindow);
     glfwTerminate();
@@ -773,7 +775,7 @@ void processInput(GLFWwindow *currentWindow){
 
 void renderGUI(){
 
-    /*ImGui::Begin("Options");
+    ImGui::Begin("Options");
     
     ImGui::Text("Application average %.3f ms/frame (%.1f FPS)", 1000.0f / ImGui::GetIO().Framerate, ImGui::GetIO().Framerate);
     
@@ -812,6 +814,6 @@ void renderGUI(){
         erodeTerrain();
     }
 
-    ImGui::End();*/
+    ImGui::End();
 
 }

@@ -110,6 +110,8 @@ src/CMakeFiles/base.dir/Application.cpp.o
  ../ext/glm/vector_relational.hpp
  ../ext/imgui/imconfig.h
  ../ext/imgui/imgui.h
+ ../ext/imgui/imgui_impl_glfw.h
+ ../ext/imgui/imgui_impl_opengl3.h
  /home/hoefsldyla/Documents/CLionCopy/work/src/Application.cpp
  /home/hoefsldyla/Documents/CLionCopy/work/src/Camera.hpp
  /home/hoefsldyla/Documents/CLionCopy/work/src/Mesh.hpp

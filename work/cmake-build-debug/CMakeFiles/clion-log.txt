@@ -19,9 +19,6 @@ Call Stack (most recent call first):
   CMakeLists.txt:40 (find_package)
 This warning is for project developers.  Use -Wno-dev to suppress it.
 
--- Found OpenMP_C: -fopenmp  
--- Found OpenMP_CXX: -fopenmp  
--- Found OpenMP: TRUE   
 CMake Deprecation Warning at ext/glfw/CMakeLists.txt:8 (cmake_policy):
   The OLD behavior for policy CMP0042 will be removed from a future version
   of CMake.

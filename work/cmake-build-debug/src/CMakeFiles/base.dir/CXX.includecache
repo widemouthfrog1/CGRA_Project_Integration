@@ -956,6 +956,10 @@ assert.h
 imgui_user.h
 ../ext/imgui/imgui_user.h
 
+../ext/imgui/imgui_impl_glfw.h
+
+../ext/imgui/imgui_impl_opengl3.h
+
 /home/hoefsldyla/Documents/CLionCopy/work/src/Application.cpp
 stdio.h
 -
@@ -987,12 +991,12 @@ random
 -
 algorithm
 -
+imgui/imgui_impl_glfw.h
+-
+imgui/imgui_impl_opengl3.h
+-
 Trees/TreeApplication.hpp
 /home/hoefsldyla/Documents/CLionCopy/work/src/Trees/TreeApplication.hpp
-
-/home/hoefsldyla/Documents/CLionCopy/work/src/Camera.cpp
-Camera.hpp
-/home/hoefsldyla/Documents/CLionCopy/work/src/Camera.hpp
 
 /home/hoefsldyla/Documents/CLionCopy/work/src/Camera.hpp
 GLFW/glfw3.h

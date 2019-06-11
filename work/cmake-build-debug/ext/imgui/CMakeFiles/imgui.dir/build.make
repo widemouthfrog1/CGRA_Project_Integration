@@ -70,22 +70,9 @@ ext/imgui/CMakeFiles/imgui.dir/imgui.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/imgui.dir/imgui.cpp.s"
 	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/ext/imgui && /bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hoefsldyla/Documents/CLionCopy/work/ext/imgui/imgui.cpp -o CMakeFiles/imgui.dir/imgui.cpp.s
 
-ext/imgui/CMakeFiles/imgui.dir/imgui_demo.cpp.o: ext/imgui/CMakeFiles/imgui.dir/flags.make
-ext/imgui/CMakeFiles/imgui.dir/imgui_demo.cpp.o: ../ext/imgui/imgui_demo.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object ext/imgui/CMakeFiles/imgui.dir/imgui_demo.cpp.o"
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/ext/imgui && /bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/imgui.dir/imgui_demo.cpp.o -c /home/hoefsldyla/Documents/CLionCopy/work/ext/imgui/imgui_demo.cpp
-
-ext/imgui/CMakeFiles/imgui.dir/imgui_demo.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/imgui.dir/imgui_demo.cpp.i"
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/ext/imgui && /bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hoefsldyla/Documents/CLionCopy/work/ext/imgui/imgui_demo.cpp > CMakeFiles/imgui.dir/imgui_demo.cpp.i
-
-ext/imgui/CMakeFiles/imgui.dir/imgui_demo.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/imgui.dir/imgui_demo.cpp.s"
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/ext/imgui && /bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hoefsldyla/Documents/CLionCopy/work/ext/imgui/imgui_demo.cpp -o CMakeFiles/imgui.dir/imgui_demo.cpp.s
-
 ext/imgui/CMakeFiles/imgui.dir/imgui_draw.cpp.o: ext/imgui/CMakeFiles/imgui.dir/flags.make
 ext/imgui/CMakeFiles/imgui.dir/imgui_draw.cpp.o: ../ext/imgui/imgui_draw.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object ext/imgui/CMakeFiles/imgui.dir/imgui_draw.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object ext/imgui/CMakeFiles/imgui.dir/imgui_draw.cpp.o"
 	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/ext/imgui && /bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/imgui.dir/imgui_draw.cpp.o -c /home/hoefsldyla/Documents/CLionCopy/work/ext/imgui/imgui_draw.cpp
 
 ext/imgui/CMakeFiles/imgui.dir/imgui_draw.cpp.i: cmake_force
@@ -96,21 +83,64 @@ ext/imgui/CMakeFiles/imgui.dir/imgui_draw.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/imgui.dir/imgui_draw.cpp.s"
 	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/ext/imgui && /bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hoefsldyla/Documents/CLionCopy/work/ext/imgui/imgui_draw.cpp -o CMakeFiles/imgui.dir/imgui_draw.cpp.s
 
+ext/imgui/CMakeFiles/imgui.dir/imgui_widgets.cpp.o: ext/imgui/CMakeFiles/imgui.dir/flags.make
+ext/imgui/CMakeFiles/imgui.dir/imgui_widgets.cpp.o: ../ext/imgui/imgui_widgets.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object ext/imgui/CMakeFiles/imgui.dir/imgui_widgets.cpp.o"
+	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/ext/imgui && /bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/imgui.dir/imgui_widgets.cpp.o -c /home/hoefsldyla/Documents/CLionCopy/work/ext/imgui/imgui_widgets.cpp
+
+ext/imgui/CMakeFiles/imgui.dir/imgui_widgets.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/imgui.dir/imgui_widgets.cpp.i"
+	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/ext/imgui && /bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hoefsldyla/Documents/CLionCopy/work/ext/imgui/imgui_widgets.cpp > CMakeFiles/imgui.dir/imgui_widgets.cpp.i
+
+ext/imgui/CMakeFiles/imgui.dir/imgui_widgets.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/imgui.dir/imgui_widgets.cpp.s"
+	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/ext/imgui && /bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hoefsldyla/Documents/CLionCopy/work/ext/imgui/imgui_widgets.cpp -o CMakeFiles/imgui.dir/imgui_widgets.cpp.s
+
+ext/imgui/CMakeFiles/imgui.dir/imgui_impl_glfw.cpp.o: ext/imgui/CMakeFiles/imgui.dir/flags.make
+ext/imgui/CMakeFiles/imgui.dir/imgui_impl_glfw.cpp.o: ../ext/imgui/imgui_impl_glfw.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object ext/imgui/CMakeFiles/imgui.dir/imgui_impl_glfw.cpp.o"
+	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/ext/imgui && /bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/imgui.dir/imgui_impl_glfw.cpp.o -c /home/hoefsldyla/Documents/CLionCopy/work/ext/imgui/imgui_impl_glfw.cpp
+
+ext/imgui/CMakeFiles/imgui.dir/imgui_impl_glfw.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/imgui.dir/imgui_impl_glfw.cpp.i"
+	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/ext/imgui && /bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hoefsldyla/Documents/CLionCopy/work/ext/imgui/imgui_impl_glfw.cpp > CMakeFiles/imgui.dir/imgui_impl_glfw.cpp.i
+
+ext/imgui/CMakeFiles/imgui.dir/imgui_impl_glfw.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/imgui.dir/imgui_impl_glfw.cpp.s"
+	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/ext/imgui && /bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hoefsldyla/Documents/CLionCopy/work/ext/imgui/imgui_impl_glfw.cpp -o CMakeFiles/imgui.dir/imgui_impl_glfw.cpp.s
+
+ext/imgui/CMakeFiles/imgui.dir/imgui_impl_opengl3.cpp.o: ext/imgui/CMakeFiles/imgui.dir/flags.make
+ext/imgui/CMakeFiles/imgui.dir/imgui_impl_opengl3.cpp.o: ../ext/imgui/imgui_impl_opengl3.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object ext/imgui/CMakeFiles/imgui.dir/imgui_impl_opengl3.cpp.o"
+	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/ext/imgui && /bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/imgui.dir/imgui_impl_opengl3.cpp.o -c /home/hoefsldyla/Documents/CLionCopy/work/ext/imgui/imgui_impl_opengl3.cpp
+
+ext/imgui/CMakeFiles/imgui.dir/imgui_impl_opengl3.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/imgui.dir/imgui_impl_opengl3.cpp.i"
+	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/ext/imgui && /bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hoefsldyla/Documents/CLionCopy/work/ext/imgui/imgui_impl_opengl3.cpp > CMakeFiles/imgui.dir/imgui_impl_opengl3.cpp.i
+
+ext/imgui/CMakeFiles/imgui.dir/imgui_impl_opengl3.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/imgui.dir/imgui_impl_opengl3.cpp.s"
+	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/ext/imgui && /bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hoefsldyla/Documents/CLionCopy/work/ext/imgui/imgui_impl_opengl3.cpp -o CMakeFiles/imgui.dir/imgui_impl_opengl3.cpp.s
+
 # Object files for target imgui
 imgui_OBJECTS = \
 "CMakeFiles/imgui.dir/imgui.cpp.o" \
-"CMakeFiles/imgui.dir/imgui_demo.cpp.o" \
-"CMakeFiles/imgui.dir/imgui_draw.cpp.o"
+"CMakeFiles/imgui.dir/imgui_draw.cpp.o" \
+"CMakeFiles/imgui.dir/imgui_widgets.cpp.o" \
+"CMakeFiles/imgui.dir/imgui_impl_glfw.cpp.o" \
+"CMakeFiles/imgui.dir/imgui_impl_opengl3.cpp.o"
 
 # External object files for target imgui
 imgui_EXTERNAL_OBJECTS =
 
 bin/libimgui.a: ext/imgui/CMakeFiles/imgui.dir/imgui.cpp.o
-bin/libimgui.a: ext/imgui/CMakeFiles/imgui.dir/imgui_demo.cpp.o
 bin/libimgui.a: ext/imgui/CMakeFiles/imgui.dir/imgui_draw.cpp.o
+bin/libimgui.a: ext/imgui/CMakeFiles/imgui.dir/imgui_widgets.cpp.o
+bin/libimgui.a: ext/imgui/CMakeFiles/imgui.dir/imgui_impl_glfw.cpp.o
+bin/libimgui.a: ext/imgui/CMakeFiles/imgui.dir/imgui_impl_opengl3.cpp.o
 bin/libimgui.a: ext/imgui/CMakeFiles/imgui.dir/build.make
 bin/libimgui.a: ext/imgui/CMakeFiles/imgui.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library ../../bin/libimgui.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library ../../bin/libimgui.a"
 	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/ext/imgui && $(CMAKE_COMMAND) -P CMakeFiles/imgui.dir/cmake_clean_target.cmake
 	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/ext/imgui && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/imgui.dir/link.txt --verbose=$(VERBOSE)
 
