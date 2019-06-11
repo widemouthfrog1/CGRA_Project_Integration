@@ -48,10 +48,10 @@ RM = /am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/bi
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hoefsldyla/Documents/CLionCopy/work
+CMAKE_SOURCE_DIR = /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug
+CMAKE_BINARY_DIR = /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -126,14 +126,14 @@ install/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/src/CMakeFiles/progress.marks
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles 0
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/src/CMakeFiles/progress.marks
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/clean
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -143,22 +143,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/CMakeFiles/base.dir/rule:
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/base.dir/rule
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/base.dir/rule
 .PHONY : src/CMakeFiles/base.dir/rule
 
 # Convenience name for target.
@@ -168,7 +168,7 @@ base: src/CMakeFiles/base.dir/rule
 
 # fast build rule for target.
 base/fast:
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug && $(MAKE) -f src/CMakeFiles/base.dir/build.make src/CMakeFiles/base.dir/build
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(MAKE) -f src/CMakeFiles/base.dir/build.make src/CMakeFiles/base.dir/build
 .PHONY : base/fast
 
 Application.o: Application.cpp.o
@@ -177,7 +177,7 @@ Application.o: Application.cpp.o
 
 # target to build an object file
 Application.cpp.o:
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug && $(MAKE) -f src/CMakeFiles/base.dir/build.make src/CMakeFiles/base.dir/Application.cpp.o
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(MAKE) -f src/CMakeFiles/base.dir/build.make src/CMakeFiles/base.dir/Application.cpp.o
 .PHONY : Application.cpp.o
 
 Application.i: Application.cpp.i
@@ -186,7 +186,7 @@ Application.i: Application.cpp.i
 
 # target to preprocess a source file
 Application.cpp.i:
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug && $(MAKE) -f src/CMakeFiles/base.dir/build.make src/CMakeFiles/base.dir/Application.cpp.i
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(MAKE) -f src/CMakeFiles/base.dir/build.make src/CMakeFiles/base.dir/Application.cpp.i
 .PHONY : Application.cpp.i
 
 Application.s: Application.cpp.s
@@ -195,7 +195,7 @@ Application.s: Application.cpp.s
 
 # target to generate assembly for a file
 Application.cpp.s:
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug && $(MAKE) -f src/CMakeFiles/base.dir/build.make src/CMakeFiles/base.dir/Application.cpp.s
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(MAKE) -f src/CMakeFiles/base.dir/build.make src/CMakeFiles/base.dir/Application.cpp.s
 .PHONY : Application.cpp.s
 
 Camera.o: Camera.cpp.o
@@ -204,7 +204,7 @@ Camera.o: Camera.cpp.o
 
 # target to build an object file
 Camera.cpp.o:
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug && $(MAKE) -f src/CMakeFiles/base.dir/build.make src/CMakeFiles/base.dir/Camera.cpp.o
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(MAKE) -f src/CMakeFiles/base.dir/build.make src/CMakeFiles/base.dir/Camera.cpp.o
 .PHONY : Camera.cpp.o
 
 Camera.i: Camera.cpp.i
@@ -213,7 +213,7 @@ Camera.i: Camera.cpp.i
 
 # target to preprocess a source file
 Camera.cpp.i:
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug && $(MAKE) -f src/CMakeFiles/base.dir/build.make src/CMakeFiles/base.dir/Camera.cpp.i
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(MAKE) -f src/CMakeFiles/base.dir/build.make src/CMakeFiles/base.dir/Camera.cpp.i
 .PHONY : Camera.cpp.i
 
 Camera.s: Camera.cpp.s
@@ -222,7 +222,7 @@ Camera.s: Camera.cpp.s
 
 # target to generate assembly for a file
 Camera.cpp.s:
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug && $(MAKE) -f src/CMakeFiles/base.dir/build.make src/CMakeFiles/base.dir/Camera.cpp.s
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(MAKE) -f src/CMakeFiles/base.dir/build.make src/CMakeFiles/base.dir/Camera.cpp.s
 .PHONY : Camera.cpp.s
 
 Shader.o: Shader.cpp.o
@@ -231,7 +231,7 @@ Shader.o: Shader.cpp.o
 
 # target to build an object file
 Shader.cpp.o:
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug && $(MAKE) -f src/CMakeFiles/base.dir/build.make src/CMakeFiles/base.dir/Shader.cpp.o
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(MAKE) -f src/CMakeFiles/base.dir/build.make src/CMakeFiles/base.dir/Shader.cpp.o
 .PHONY : Shader.cpp.o
 
 Shader.i: Shader.cpp.i
@@ -240,7 +240,7 @@ Shader.i: Shader.cpp.i
 
 # target to preprocess a source file
 Shader.cpp.i:
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug && $(MAKE) -f src/CMakeFiles/base.dir/build.make src/CMakeFiles/base.dir/Shader.cpp.i
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(MAKE) -f src/CMakeFiles/base.dir/build.make src/CMakeFiles/base.dir/Shader.cpp.i
 .PHONY : Shader.cpp.i
 
 Shader.s: Shader.cpp.s
@@ -249,7 +249,7 @@ Shader.s: Shader.cpp.s
 
 # target to generate assembly for a file
 Shader.cpp.s:
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug && $(MAKE) -f src/CMakeFiles/base.dir/build.make src/CMakeFiles/base.dir/Shader.cpp.s
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(MAKE) -f src/CMakeFiles/base.dir/build.make src/CMakeFiles/base.dir/Shader.cpp.s
 .PHONY : Shader.cpp.s
 
 # Help Target
@@ -285,6 +285,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

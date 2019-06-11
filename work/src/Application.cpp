@@ -246,7 +246,7 @@ int main(){
     generateDepthMap();
     generateTerrain(true);
 
-    simpleShader = Shader("/home/dylan/Documents/CGRA350/Project/Shaders/basicVertexShader.glsl", "/home/dylan/Documents/CGRA350/Project/Shaders/basicFragmentShader.glsl");
+    simpleShader = Shader(CGRA_SRCDIR + std::string("/src/Shaders/basicVertexShader.glsl"), CGRA_SRCDIR + std::string("/src/Shaders/basicFragmentShader.glsl"));
 
     glClearColor(0.0f, 0.4f, 0.4f, 0.0f);
 

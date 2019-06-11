@@ -1,9 +1,9 @@
 
-if (NOT EXISTS "/home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/ext/glfw/install_manifest.txt")
-  message(FATAL_ERROR "Cannot find install manifest: \"/home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/ext/glfw/install_manifest.txt\"")
+if (NOT EXISTS "/home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/ext/glfw/install_manifest.txt")
+  message(FATAL_ERROR "Cannot find install manifest: \"/home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/ext/glfw/install_manifest.txt\"")
 endif()
 
-file(READ "/home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/ext/glfw/install_manifest.txt" files)
+file(READ "/home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/ext/glfw/install_manifest.txt" files)
 string(REGEX REPLACE "\n" ";" files "${files}")
 
 foreach (file ${files})

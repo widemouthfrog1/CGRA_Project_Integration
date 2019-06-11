@@ -43,10 +43,10 @@ RM = /am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/bi
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hoefsldyla/Documents/CLionCopy/work
+CMAKE_SOURCE_DIR = /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug
+CMAKE_BINARY_DIR = /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include ext/glm/CMakeFiles/glm_dummy.dir/depend.make
@@ -59,29 +59,29 @@ include ext/glm/CMakeFiles/glm_dummy.dir/flags.make
 
 ext/glm/CMakeFiles/glm_dummy.dir/detail/dummy.cpp.o: ext/glm/CMakeFiles/glm_dummy.dir/flags.make
 ext/glm/CMakeFiles/glm_dummy.dir/detail/dummy.cpp.o: ../ext/glm/detail/dummy.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object ext/glm/CMakeFiles/glm_dummy.dir/detail/dummy.cpp.o"
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/ext/glm && /bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/glm_dummy.dir/detail/dummy.cpp.o -c /home/hoefsldyla/Documents/CLionCopy/work/ext/glm/detail/dummy.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object ext/glm/CMakeFiles/glm_dummy.dir/detail/dummy.cpp.o"
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/ext/glm && /bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/glm_dummy.dir/detail/dummy.cpp.o -c /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/ext/glm/detail/dummy.cpp
 
 ext/glm/CMakeFiles/glm_dummy.dir/detail/dummy.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/glm_dummy.dir/detail/dummy.cpp.i"
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/ext/glm && /bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hoefsldyla/Documents/CLionCopy/work/ext/glm/detail/dummy.cpp > CMakeFiles/glm_dummy.dir/detail/dummy.cpp.i
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/ext/glm && /bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/ext/glm/detail/dummy.cpp > CMakeFiles/glm_dummy.dir/detail/dummy.cpp.i
 
 ext/glm/CMakeFiles/glm_dummy.dir/detail/dummy.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/glm_dummy.dir/detail/dummy.cpp.s"
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/ext/glm && /bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hoefsldyla/Documents/CLionCopy/work/ext/glm/detail/dummy.cpp -o CMakeFiles/glm_dummy.dir/detail/dummy.cpp.s
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/ext/glm && /bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/ext/glm/detail/dummy.cpp -o CMakeFiles/glm_dummy.dir/detail/dummy.cpp.s
 
 ext/glm/CMakeFiles/glm_dummy.dir/detail/glm.cpp.o: ext/glm/CMakeFiles/glm_dummy.dir/flags.make
 ext/glm/CMakeFiles/glm_dummy.dir/detail/glm.cpp.o: ../ext/glm/detail/glm.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object ext/glm/CMakeFiles/glm_dummy.dir/detail/glm.cpp.o"
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/ext/glm && /bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/glm_dummy.dir/detail/glm.cpp.o -c /home/hoefsldyla/Documents/CLionCopy/work/ext/glm/detail/glm.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object ext/glm/CMakeFiles/glm_dummy.dir/detail/glm.cpp.o"
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/ext/glm && /bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/glm_dummy.dir/detail/glm.cpp.o -c /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/ext/glm/detail/glm.cpp
 
 ext/glm/CMakeFiles/glm_dummy.dir/detail/glm.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/glm_dummy.dir/detail/glm.cpp.i"
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/ext/glm && /bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hoefsldyla/Documents/CLionCopy/work/ext/glm/detail/glm.cpp > CMakeFiles/glm_dummy.dir/detail/glm.cpp.i
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/ext/glm && /bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/ext/glm/detail/glm.cpp > CMakeFiles/glm_dummy.dir/detail/glm.cpp.i
 
 ext/glm/CMakeFiles/glm_dummy.dir/detail/glm.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/glm_dummy.dir/detail/glm.cpp.s"
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/ext/glm && /bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hoefsldyla/Documents/CLionCopy/work/ext/glm/detail/glm.cpp -o CMakeFiles/glm_dummy.dir/detail/glm.cpp.s
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/ext/glm && /bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/ext/glm/detail/glm.cpp -o CMakeFiles/glm_dummy.dir/detail/glm.cpp.s
 
 # Object files for target glm_dummy
 glm_dummy_OBJECTS = \
@@ -95,8 +95,8 @@ bin/glm_dummy: ext/glm/CMakeFiles/glm_dummy.dir/detail/dummy.cpp.o
 bin/glm_dummy: ext/glm/CMakeFiles/glm_dummy.dir/detail/glm.cpp.o
 bin/glm_dummy: ext/glm/CMakeFiles/glm_dummy.dir/build.make
 bin/glm_dummy: ext/glm/CMakeFiles/glm_dummy.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ../../bin/glm_dummy"
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/ext/glm && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/glm_dummy.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ../../bin/glm_dummy"
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/ext/glm && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/glm_dummy.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 ext/glm/CMakeFiles/glm_dummy.dir/build: bin/glm_dummy
@@ -104,10 +104,10 @@ ext/glm/CMakeFiles/glm_dummy.dir/build: bin/glm_dummy
 .PHONY : ext/glm/CMakeFiles/glm_dummy.dir/build
 
 ext/glm/CMakeFiles/glm_dummy.dir/clean:
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/ext/glm && $(CMAKE_COMMAND) -P CMakeFiles/glm_dummy.dir/cmake_clean.cmake
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/ext/glm && $(CMAKE_COMMAND) -P CMakeFiles/glm_dummy.dir/cmake_clean.cmake
 .PHONY : ext/glm/CMakeFiles/glm_dummy.dir/clean
 
 ext/glm/CMakeFiles/glm_dummy.dir/depend:
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hoefsldyla/Documents/CLionCopy/work /home/hoefsldyla/Documents/CLionCopy/work/ext/glm /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/ext/glm /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/ext/glm/CMakeFiles/glm_dummy.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/ext/glm /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/ext/glm /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/ext/glm/CMakeFiles/glm_dummy.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : ext/glm/CMakeFiles/glm_dummy.dir/depend
 

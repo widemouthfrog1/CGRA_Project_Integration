@@ -48,10 +48,10 @@ RM = /am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/bi
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hoefsldyla/Documents/CLionCopy/work
+CMAKE_SOURCE_DIR = /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug
+CMAKE_BINARY_DIR = /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -126,14 +126,14 @@ install/local/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/ext/glm/CMakeFiles/progress.marks
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 ext/glm/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles 0
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/ext/glm/CMakeFiles/progress.marks
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 ext/glm/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 ext/glm/clean
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 ext/glm/clean
 .PHONY : clean
 
 # The main clean target
@@ -143,22 +143,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 ext/glm/preinstall
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 ext/glm/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 ext/glm/preinstall
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 ext/glm/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 ext/glm/CMakeFiles/glm_dummy.dir/rule:
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 ext/glm/CMakeFiles/glm_dummy.dir/rule
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 ext/glm/CMakeFiles/glm_dummy.dir/rule
 .PHONY : ext/glm/CMakeFiles/glm_dummy.dir/rule
 
 # Convenience name for target.
@@ -168,7 +168,7 @@ glm_dummy: ext/glm/CMakeFiles/glm_dummy.dir/rule
 
 # fast build rule for target.
 glm_dummy/fast:
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug && $(MAKE) -f ext/glm/CMakeFiles/glm_dummy.dir/build.make ext/glm/CMakeFiles/glm_dummy.dir/build
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(MAKE) -f ext/glm/CMakeFiles/glm_dummy.dir/build.make ext/glm/CMakeFiles/glm_dummy.dir/build
 .PHONY : glm_dummy/fast
 
 detail/dummy.o: detail/dummy.cpp.o
@@ -177,7 +177,7 @@ detail/dummy.o: detail/dummy.cpp.o
 
 # target to build an object file
 detail/dummy.cpp.o:
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug && $(MAKE) -f ext/glm/CMakeFiles/glm_dummy.dir/build.make ext/glm/CMakeFiles/glm_dummy.dir/detail/dummy.cpp.o
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(MAKE) -f ext/glm/CMakeFiles/glm_dummy.dir/build.make ext/glm/CMakeFiles/glm_dummy.dir/detail/dummy.cpp.o
 .PHONY : detail/dummy.cpp.o
 
 detail/dummy.i: detail/dummy.cpp.i
@@ -186,7 +186,7 @@ detail/dummy.i: detail/dummy.cpp.i
 
 # target to preprocess a source file
 detail/dummy.cpp.i:
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug && $(MAKE) -f ext/glm/CMakeFiles/glm_dummy.dir/build.make ext/glm/CMakeFiles/glm_dummy.dir/detail/dummy.cpp.i
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(MAKE) -f ext/glm/CMakeFiles/glm_dummy.dir/build.make ext/glm/CMakeFiles/glm_dummy.dir/detail/dummy.cpp.i
 .PHONY : detail/dummy.cpp.i
 
 detail/dummy.s: detail/dummy.cpp.s
@@ -195,7 +195,7 @@ detail/dummy.s: detail/dummy.cpp.s
 
 # target to generate assembly for a file
 detail/dummy.cpp.s:
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug && $(MAKE) -f ext/glm/CMakeFiles/glm_dummy.dir/build.make ext/glm/CMakeFiles/glm_dummy.dir/detail/dummy.cpp.s
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(MAKE) -f ext/glm/CMakeFiles/glm_dummy.dir/build.make ext/glm/CMakeFiles/glm_dummy.dir/detail/dummy.cpp.s
 .PHONY : detail/dummy.cpp.s
 
 detail/glm.o: detail/glm.cpp.o
@@ -204,7 +204,7 @@ detail/glm.o: detail/glm.cpp.o
 
 # target to build an object file
 detail/glm.cpp.o:
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug && $(MAKE) -f ext/glm/CMakeFiles/glm_dummy.dir/build.make ext/glm/CMakeFiles/glm_dummy.dir/detail/glm.cpp.o
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(MAKE) -f ext/glm/CMakeFiles/glm_dummy.dir/build.make ext/glm/CMakeFiles/glm_dummy.dir/detail/glm.cpp.o
 .PHONY : detail/glm.cpp.o
 
 detail/glm.i: detail/glm.cpp.i
@@ -213,7 +213,7 @@ detail/glm.i: detail/glm.cpp.i
 
 # target to preprocess a source file
 detail/glm.cpp.i:
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug && $(MAKE) -f ext/glm/CMakeFiles/glm_dummy.dir/build.make ext/glm/CMakeFiles/glm_dummy.dir/detail/glm.cpp.i
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(MAKE) -f ext/glm/CMakeFiles/glm_dummy.dir/build.make ext/glm/CMakeFiles/glm_dummy.dir/detail/glm.cpp.i
 .PHONY : detail/glm.cpp.i
 
 detail/glm.s: detail/glm.cpp.s
@@ -222,7 +222,7 @@ detail/glm.s: detail/glm.cpp.s
 
 # target to generate assembly for a file
 detail/glm.cpp.s:
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug && $(MAKE) -f ext/glm/CMakeFiles/glm_dummy.dir/build.make ext/glm/CMakeFiles/glm_dummy.dir/detail/glm.cpp.s
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(MAKE) -f ext/glm/CMakeFiles/glm_dummy.dir/build.make ext/glm/CMakeFiles/glm_dummy.dir/detail/glm.cpp.s
 .PHONY : detail/glm.cpp.s
 
 # Help Target
@@ -255,6 +255,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

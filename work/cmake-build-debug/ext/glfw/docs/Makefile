@@ -48,10 +48,10 @@ RM = /am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/bi
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hoefsldyla/Documents/CLionCopy/work
+CMAKE_SOURCE_DIR = /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug
+CMAKE_BINARY_DIR = /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -126,14 +126,14 @@ install/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/ext/glfw/docs/CMakeFiles/progress.marks
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 ext/glfw/docs/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles 0
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/ext/glfw/docs/CMakeFiles/progress.marks
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 ext/glfw/docs/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 ext/glfw/docs/clean
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 ext/glfw/docs/clean
 .PHONY : clean
 
 # The main clean target
@@ -143,22 +143,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 ext/glfw/docs/preinstall
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 ext/glfw/docs/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 ext/glfw/docs/preinstall
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 ext/glfw/docs/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 ext/glfw/docs/CMakeFiles/docs.dir/rule:
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 ext/glfw/docs/CMakeFiles/docs.dir/rule
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 ext/glfw/docs/CMakeFiles/docs.dir/rule
 .PHONY : ext/glfw/docs/CMakeFiles/docs.dir/rule
 
 # Convenience name for target.
@@ -168,7 +168,7 @@ docs: ext/glfw/docs/CMakeFiles/docs.dir/rule
 
 # fast build rule for target.
 docs/fast:
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug && $(MAKE) -f ext/glfw/docs/CMakeFiles/docs.dir/build.make ext/glfw/docs/CMakeFiles/docs.dir/build
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(MAKE) -f ext/glfw/docs/CMakeFiles/docs.dir/build.make ext/glfw/docs/CMakeFiles/docs.dir/build
 .PHONY : docs/fast
 
 # Help Target
@@ -195,6 +195,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

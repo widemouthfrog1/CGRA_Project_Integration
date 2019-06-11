@@ -1,4 +1,4 @@
-# Install script for directory: /home/hoefsldyla/Documents/CLionCopy/work/ext/stb
+# Install script for directory: /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/ext/stb
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

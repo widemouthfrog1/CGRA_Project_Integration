@@ -5,11 +5,15 @@ ext/imgui/CMakeFiles/imgui.dir/imgui.cpp.o: ../ext/imgui/imconfig.h
 ext/imgui/CMakeFiles/imgui.dir/imgui.cpp.o: ../ext/imgui/imgui.cpp
 ext/imgui/CMakeFiles/imgui.dir/imgui.cpp.o: ../ext/imgui/imgui.h
 ext/imgui/CMakeFiles/imgui.dir/imgui.cpp.o: ../ext/imgui/imgui_internal.h
+ext/imgui/CMakeFiles/imgui.dir/imgui.cpp.o: ../ext/imgui/imstb_textedit.h
 
 ext/imgui/CMakeFiles/imgui.dir/imgui_draw.cpp.o: ../ext/imgui/imconfig.h
 ext/imgui/CMakeFiles/imgui.dir/imgui_draw.cpp.o: ../ext/imgui/imgui.h
 ext/imgui/CMakeFiles/imgui.dir/imgui_draw.cpp.o: ../ext/imgui/imgui_draw.cpp
 ext/imgui/CMakeFiles/imgui.dir/imgui_draw.cpp.o: ../ext/imgui/imgui_internal.h
+ext/imgui/CMakeFiles/imgui.dir/imgui_draw.cpp.o: ../ext/imgui/imstb_rectpack.h
+ext/imgui/CMakeFiles/imgui.dir/imgui_draw.cpp.o: ../ext/imgui/imstb_textedit.h
+ext/imgui/CMakeFiles/imgui.dir/imgui_draw.cpp.o: ../ext/imgui/imstb_truetype.h
 
 ext/imgui/CMakeFiles/imgui.dir/imgui_impl_glfw.cpp.o: ../ext/glfw/include/GLFW/glfw3.h
 ext/imgui/CMakeFiles/imgui.dir/imgui_impl_glfw.cpp.o: ../ext/glfw/include/GLFW/glfw3native.h

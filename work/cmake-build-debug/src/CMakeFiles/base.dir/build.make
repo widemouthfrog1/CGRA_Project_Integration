@@ -43,10 +43,10 @@ RM = /am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/bi
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hoefsldyla/Documents/CLionCopy/work
+CMAKE_SOURCE_DIR = /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug
+CMAKE_BINARY_DIR = /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include src/CMakeFiles/base.dir/depend.make
@@ -59,42 +59,42 @@ include src/CMakeFiles/base.dir/flags.make
 
 src/CMakeFiles/base.dir/Application.cpp.o: src/CMakeFiles/base.dir/flags.make
 src/CMakeFiles/base.dir/Application.cpp.o: ../src/Application.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/base.dir/Application.cpp.o"
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/src && /bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/base.dir/Application.cpp.o -c /home/hoefsldyla/Documents/CLionCopy/work/src/Application.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/base.dir/Application.cpp.o"
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/src && /bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/base.dir/Application.cpp.o -c /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/src/Application.cpp
 
 src/CMakeFiles/base.dir/Application.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/base.dir/Application.cpp.i"
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/src && /bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hoefsldyla/Documents/CLionCopy/work/src/Application.cpp > CMakeFiles/base.dir/Application.cpp.i
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/src && /bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/src/Application.cpp > CMakeFiles/base.dir/Application.cpp.i
 
 src/CMakeFiles/base.dir/Application.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/base.dir/Application.cpp.s"
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/src && /bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hoefsldyla/Documents/CLionCopy/work/src/Application.cpp -o CMakeFiles/base.dir/Application.cpp.s
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/src && /bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/src/Application.cpp -o CMakeFiles/base.dir/Application.cpp.s
 
 src/CMakeFiles/base.dir/Camera.cpp.o: src/CMakeFiles/base.dir/flags.make
 src/CMakeFiles/base.dir/Camera.cpp.o: ../src/Camera.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/base.dir/Camera.cpp.o"
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/src && /bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/base.dir/Camera.cpp.o -c /home/hoefsldyla/Documents/CLionCopy/work/src/Camera.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/base.dir/Camera.cpp.o"
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/src && /bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/base.dir/Camera.cpp.o -c /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/src/Camera.cpp
 
 src/CMakeFiles/base.dir/Camera.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/base.dir/Camera.cpp.i"
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/src && /bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hoefsldyla/Documents/CLionCopy/work/src/Camera.cpp > CMakeFiles/base.dir/Camera.cpp.i
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/src && /bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/src/Camera.cpp > CMakeFiles/base.dir/Camera.cpp.i
 
 src/CMakeFiles/base.dir/Camera.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/base.dir/Camera.cpp.s"
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/src && /bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hoefsldyla/Documents/CLionCopy/work/src/Camera.cpp -o CMakeFiles/base.dir/Camera.cpp.s
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/src && /bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/src/Camera.cpp -o CMakeFiles/base.dir/Camera.cpp.s
 
 src/CMakeFiles/base.dir/Shader.cpp.o: src/CMakeFiles/base.dir/flags.make
 src/CMakeFiles/base.dir/Shader.cpp.o: ../src/Shader.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/base.dir/Shader.cpp.o"
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/src && /bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/base.dir/Shader.cpp.o -c /home/hoefsldyla/Documents/CLionCopy/work/src/Shader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/base.dir/Shader.cpp.o"
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/src && /bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/base.dir/Shader.cpp.o -c /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/src/Shader.cpp
 
 src/CMakeFiles/base.dir/Shader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/base.dir/Shader.cpp.i"
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/src && /bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hoefsldyla/Documents/CLionCopy/work/src/Shader.cpp > CMakeFiles/base.dir/Shader.cpp.i
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/src && /bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/src/Shader.cpp > CMakeFiles/base.dir/Shader.cpp.i
 
 src/CMakeFiles/base.dir/Shader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/base.dir/Shader.cpp.s"
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/src && /bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hoefsldyla/Documents/CLionCopy/work/src/Shader.cpp -o CMakeFiles/base.dir/Shader.cpp.s
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/src && /bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/src/Shader.cpp -o CMakeFiles/base.dir/Shader.cpp.s
 
 # Object files for target base
 base_OBJECTS = \
@@ -124,8 +124,8 @@ bin/base: bin/libstb.a
 bin/base: bin/libimgui.a
 bin/base: /usr/lib/libGLU.so
 bin/base: src/CMakeFiles/base.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable ../bin/base"
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/base.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable ../bin/base"
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/base.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/CMakeFiles/base.dir/build: bin/base
@@ -133,10 +133,10 @@ src/CMakeFiles/base.dir/build: bin/base
 .PHONY : src/CMakeFiles/base.dir/build
 
 src/CMakeFiles/base.dir/clean:
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/src && $(CMAKE_COMMAND) -P CMakeFiles/base.dir/cmake_clean.cmake
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/src && $(CMAKE_COMMAND) -P CMakeFiles/base.dir/cmake_clean.cmake
 .PHONY : src/CMakeFiles/base.dir/clean
 
 src/CMakeFiles/base.dir/depend:
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hoefsldyla/Documents/CLionCopy/work /home/hoefsldyla/Documents/CLionCopy/work/src /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/src /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/src/CMakeFiles/base.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/src /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/src /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/src/CMakeFiles/base.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/CMakeFiles/base.dir/depend
 

@@ -43,10 +43,10 @@ RM = /am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/bi
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hoefsldyla/Documents/CLionCopy/work
+CMAKE_SOURCE_DIR = /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug
+CMAKE_BINARY_DIR = /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug
 
 # Utility rule file for uninstall.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug
 include ext/glfw/CMakeFiles/uninstall.dir/progress.make
 
 ext/glfw/CMakeFiles/uninstall:
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/ext/glfw && /am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/bin/cmake -P /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/ext/glfw/cmake_uninstall.cmake
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/ext/glfw && /am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/bin/cmake -P /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/ext/glfw/cmake_uninstall.cmake
 
 uninstall: ext/glfw/CMakeFiles/uninstall
 uninstall: ext/glfw/CMakeFiles/uninstall.dir/build.make
@@ -67,10 +67,10 @@ ext/glfw/CMakeFiles/uninstall.dir/build: uninstall
 .PHONY : ext/glfw/CMakeFiles/uninstall.dir/build
 
 ext/glfw/CMakeFiles/uninstall.dir/clean:
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/ext/glfw && $(CMAKE_COMMAND) -P CMakeFiles/uninstall.dir/cmake_clean.cmake
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/ext/glfw && $(CMAKE_COMMAND) -P CMakeFiles/uninstall.dir/cmake_clean.cmake
 .PHONY : ext/glfw/CMakeFiles/uninstall.dir/clean
 
 ext/glfw/CMakeFiles/uninstall.dir/depend:
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hoefsldyla/Documents/CLionCopy/work /home/hoefsldyla/Documents/CLionCopy/work/ext/glfw /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/ext/glfw /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/ext/glfw/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/ext/glfw /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/ext/glfw /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/ext/glfw/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : ext/glfw/CMakeFiles/uninstall.dir/depend
 

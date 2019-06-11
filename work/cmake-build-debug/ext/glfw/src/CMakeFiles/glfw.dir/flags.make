@@ -6,5 +6,5 @@ C_FLAGS =  -fopenmp -g -fPIC   -Wall
 
 C_DEFINES = -DCGRA_HAVE_OPENMP -D_GLFW_USE_CONFIG_H
 
-C_INCLUDES = -I/home/hoefsldyla/Documents/CLionCopy/work/ext/glfw/src -I/home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/ext/glfw/src 
+C_INCLUDES = -I/home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/ext/glfw/src -I/home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/ext/glfw/src 
 

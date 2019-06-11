@@ -1,17 +1,4 @@
 The system is: Linux - 4.18.16-arch1-1-ARCH - x86_64
-Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-Compiler: /bin/cc 
-Build flags: 
-Id flags:  
-
-The output was:
-0
-
-
-Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
-
-The C compiler identification is GNU, found in "/home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/3.13.4/CompilerIdC/a.out"
-
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: /bin/c++ 
 Build flags: 
@@ -23,206 +10,46 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is GNU, found in "/home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/3.13.4/CompilerIdCXX/a.out"
+The CXX compiler identification is GNU, found in "/home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/3.13.4/CompilerIdCXX/a.out"
 
-Determining if the C compiler works passed with the following output:
-Change Dir: /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /bin/cc 
+Build flags: 
+Id flags:  
 
-Run Build Command:"/usr/local/bin/gmake" "cmTC_490ef/fast"
-/usr/local/bin/gmake -f CMakeFiles/cmTC_490ef.dir/build.make CMakeFiles/cmTC_490ef.dir/build
-gmake[1]: Entering directory '/am/phoenix/home1/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_490ef.dir/testCCompiler.c.o
-/bin/cc    -o CMakeFiles/cmTC_490ef.dir/testCCompiler.c.o   -c /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_490ef
-/am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_490ef.dir/link.txt --verbose=1
-/bin/cc      CMakeFiles/cmTC_490ef.dir/testCCompiler.c.o  -o cmTC_490ef 
-gmake[1]: Leaving directory '/am/phoenix/home1/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp'
+The output was:
+0
 
 
-Detecting C compiler ABI info compiled with the following output:
-Change Dir: /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-Run Build Command:"/usr/local/bin/gmake" "cmTC_9ae63/fast"
-/usr/local/bin/gmake -f CMakeFiles/cmTC_9ae63.dir/build.make CMakeFiles/cmTC_9ae63.dir/build
-gmake[1]: Entering directory '/am/phoenix/home1/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_9ae63.dir/CMakeCCompilerABI.c.o
-/bin/cc    -o CMakeFiles/cmTC_9ae63.dir/CMakeCCompilerABI.c.o   -c /am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/share/cmake-3.13/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_9ae63
-/am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9ae63.dir/link.txt --verbose=1
-/bin/cc     -v CMakeFiles/cmTC_9ae63.dir/CMakeCCompilerABI.c.o  -o cmTC_9ae63 
-Using built-in specs.
-COLLECT_GCC=/bin/cc
-COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/lto-wrapper
-Target: x86_64-pc-linux-gnu
-Configured with: /build/gcc/src/gcc/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-shared --enable-threads=posix --enable-libmpx --with-system-zlib --with-isl --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-lto --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --enable-gnu-indirect-function --enable-multilib --disable-werror --enable-checking=release --enable-default-pie --enable-default-ssp --enable-cet=auto
-Thread model: posix
-gcc version 8.2.1 20180831 (GCC) 
-COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
-LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9ae63' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccpu6HUK.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_9ae63 /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../.. CMakeFiles/cmTC_9ae63.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9ae63' '-mtune=generic' '-march=x86-64'
-gmake[1]: Leaving directory '/am/phoenix/home1/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp'
+The C compiler identification is GNU, found in "/home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/3.13.4/CompilerIdC/a.out"
 
-
-Parsed C implicit link information from above output:
-  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp]
-  ignore line: []
-  ignore line: [Run Build Command:"/usr/local/bin/gmake" "cmTC_9ae63/fast"]
-  ignore line: [/usr/local/bin/gmake -f CMakeFiles/cmTC_9ae63.dir/build.make CMakeFiles/cmTC_9ae63.dir/build]
-  ignore line: [gmake[1]: Entering directory '/am/phoenix/home1/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_9ae63.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/bin/cc    -o CMakeFiles/cmTC_9ae63.dir/CMakeCCompilerABI.c.o   -c /am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/share/cmake-3.13/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_9ae63]
-  ignore line: [/am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9ae63.dir/link.txt --verbose=1]
-  ignore line: [/bin/cc     -v CMakeFiles/cmTC_9ae63.dir/CMakeCCompilerABI.c.o  -o cmTC_9ae63 ]
-  ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=/bin/cc]
-  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/lto-wrapper]
-  ignore line: [Target: x86_64-pc-linux-gnu]
-  ignore line: [Configured with: /build/gcc/src/gcc/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-shared --enable-threads=posix --enable-libmpx --with-system-zlib --with-isl --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-lto --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --enable-gnu-indirect-function --enable-multilib --disable-werror --enable-checking=release --enable-default-pie --enable-default-ssp --enable-cet=auto]
-  ignore line: [Thread model: posix]
-  ignore line: [gcc version 8.2.1 20180831 (GCC) ]
-  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
-  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9ae63' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccpu6HUK.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_9ae63 /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../.. CMakeFiles/cmTC_9ae63.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crtn.o]
-    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/collect2] ==> ignore
-    arg [-plugin] ==> ignore
-    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/liblto_plugin.so] ==> ignore
-    arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccpu6HUK.res] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
-    arg [-plugin-opt=-pass-through=-lc] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
-    arg [--build-id] ==> ignore
-    arg [--eh-frame-hdr] ==> ignore
-    arg [--hash-style=gnu] ==> ignore
-    arg [-m] ==> ignore
-    arg [elf_x86_64] ==> ignore
-    arg [-dynamic-linker] ==> ignore
-    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
-    arg [-pie] ==> ignore
-    arg [-o] ==> ignore
-    arg [cmTC_9ae63] ==> ignore
-    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/Scrt1.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crti.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtbeginS.o] ==> ignore
-    arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1]
-    arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib]
-    arg [-L/lib/../lib] ==> dir [/lib/../lib]
-    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
-    arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../..] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../..]
-    arg [CMakeFiles/cmTC_9ae63.dir/CMakeCCompilerABI.c.o] ==> ignore
-    arg [-lgcc] ==> lib [gcc]
-    arg [--as-needed] ==> ignore
-    arg [-lgcc_s] ==> lib [gcc_s]
-    arg [--no-as-needed] ==> ignore
-    arg [-lc] ==> lib [c]
-    arg [-lgcc] ==> lib [gcc]
-    arg [--as-needed] ==> ignore
-    arg [-lgcc_s] ==> lib [gcc_s]
-    arg [--no-as-needed] ==> ignore
-    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtendS.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crtn.o] ==> ignore
-  collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1]
-  collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib] ==> [/usr/lib]
-  collapse library dir [/lib/../lib] ==> [/lib]
-  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
-  collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../..] ==> [/usr/lib]
-  implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
-  implicit dirs: [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1;/usr/lib;/lib]
-  implicit fwks: []
-
-
-
-
-Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp
-
-Run Build Command:"/usr/local/bin/gmake" "cmTC_efae6/fast"
-/usr/local/bin/gmake -f CMakeFiles/cmTC_efae6.dir/build.make CMakeFiles/cmTC_efae6.dir/build
-gmake[1]: Entering directory '/am/phoenix/home1/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_efae6.dir/feature_tests.c.o
-/bin/cc   -std=c11 -o CMakeFiles/cmTC_efae6.dir/feature_tests.c.o   -c /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/feature_tests.c
-Linking C executable cmTC_efae6
-/am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_efae6.dir/link.txt --verbose=1
-/bin/cc      CMakeFiles/cmTC_efae6.dir/feature_tests.c.o  -o cmTC_efae6 
-gmake[1]: Leaving directory '/am/phoenix/home1/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp'
-
-
-    Feature record: C_FEATURE:1c_function_prototypes
-    Feature record: C_FEATURE:1c_restrict
-    Feature record: C_FEATURE:1c_static_assert
-    Feature record: C_FEATURE:1c_variadic_macros
-
-
-Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp
-
-Run Build Command:"/usr/local/bin/gmake" "cmTC_e4c9a/fast"
-/usr/local/bin/gmake -f CMakeFiles/cmTC_e4c9a.dir/build.make CMakeFiles/cmTC_e4c9a.dir/build
-gmake[1]: Entering directory '/am/phoenix/home1/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_e4c9a.dir/feature_tests.c.o
-/bin/cc   -std=c99 -o CMakeFiles/cmTC_e4c9a.dir/feature_tests.c.o   -c /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/feature_tests.c
-Linking C executable cmTC_e4c9a
-/am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e4c9a.dir/link.txt --verbose=1
-/bin/cc      CMakeFiles/cmTC_e4c9a.dir/feature_tests.c.o  -o cmTC_e4c9a 
-gmake[1]: Leaving directory '/am/phoenix/home1/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp'
-
-
-    Feature record: C_FEATURE:1c_function_prototypes
-    Feature record: C_FEATURE:1c_restrict
-    Feature record: C_FEATURE:0c_static_assert
-    Feature record: C_FEATURE:1c_variadic_macros
-
-
-Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp
-
-Run Build Command:"/usr/local/bin/gmake" "cmTC_2ea9a/fast"
-/usr/local/bin/gmake -f CMakeFiles/cmTC_2ea9a.dir/build.make CMakeFiles/cmTC_2ea9a.dir/build
-gmake[1]: Entering directory '/am/phoenix/home1/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_2ea9a.dir/feature_tests.c.o
-/bin/cc   -std=c90 -o CMakeFiles/cmTC_2ea9a.dir/feature_tests.c.o   -c /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/feature_tests.c
-Linking C executable cmTC_2ea9a
-/am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2ea9a.dir/link.txt --verbose=1
-/bin/cc      CMakeFiles/cmTC_2ea9a.dir/feature_tests.c.o  -o cmTC_2ea9a 
-gmake[1]: Leaving directory '/am/phoenix/home1/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp'
-
-
-    Feature record: C_FEATURE:1c_function_prototypes
-    Feature record: C_FEATURE:0c_restrict
-    Feature record: C_FEATURE:0c_static_assert
-    Feature record: C_FEATURE:0c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/local/bin/gmake" "cmTC_56ad2/fast"
-/usr/local/bin/gmake -f CMakeFiles/cmTC_56ad2.dir/build.make CMakeFiles/cmTC_56ad2.dir/build
-gmake[1]: Entering directory '/am/phoenix/home1/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_56ad2.dir/testCXXCompiler.cxx.o
-/bin/c++     -o CMakeFiles/cmTC_56ad2.dir/testCXXCompiler.cxx.o -c /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_56ad2
-/am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_56ad2.dir/link.txt --verbose=1
-/bin/c++       CMakeFiles/cmTC_56ad2.dir/testCXXCompiler.cxx.o  -o cmTC_56ad2 
-gmake[1]: Leaving directory '/am/phoenix/home1/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/local/bin/gmake" "cmTC_61aa5/fast"
+/usr/local/bin/gmake -f CMakeFiles/cmTC_61aa5.dir/build.make CMakeFiles/cmTC_61aa5.dir/build
+gmake[1]: Entering directory '/am/phoenix/home1/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_61aa5.dir/testCXXCompiler.cxx.o
+/bin/c++     -o CMakeFiles/cmTC_61aa5.dir/testCXXCompiler.cxx.o -c /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_61aa5
+/am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_61aa5.dir/link.txt --verbose=1
+/bin/c++       -rdynamic CMakeFiles/cmTC_61aa5.dir/testCXXCompiler.cxx.o  -o cmTC_61aa5 
+gmake[1]: Leaving directory '/am/phoenix/home1/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/local/bin/gmake" "cmTC_fe9bb/fast"
-/usr/local/bin/gmake -f CMakeFiles/cmTC_fe9bb.dir/build.make CMakeFiles/cmTC_fe9bb.dir/build
-gmake[1]: Entering directory '/am/phoenix/home1/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_fe9bb.dir/CMakeCXXCompilerABI.cpp.o
-/bin/c++     -o CMakeFiles/cmTC_fe9bb.dir/CMakeCXXCompilerABI.cpp.o -c /am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/share/cmake-3.13/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_fe9bb
-/am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fe9bb.dir/link.txt --verbose=1
-/bin/c++      -v CMakeFiles/cmTC_fe9bb.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_fe9bb 
+Run Build Command:"/usr/local/bin/gmake" "cmTC_eb049/fast"
+/usr/local/bin/gmake -f CMakeFiles/cmTC_eb049.dir/build.make CMakeFiles/cmTC_eb049.dir/build
+gmake[1]: Entering directory '/am/phoenix/home1/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_eb049.dir/CMakeCXXCompilerABI.cpp.o
+/bin/c++     -o CMakeFiles/cmTC_eb049.dir/CMakeCXXCompilerABI.cpp.o -c /am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/share/cmake-3.13/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_eb049
+/am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eb049.dir/link.txt --verbose=1
+/bin/c++      -v -rdynamic CMakeFiles/cmTC_eb049.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_eb049 
 Using built-in specs.
 COLLECT_GCC=/bin/c++
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/lto-wrapper
@@ -232,24 +59,24 @@ Thread model: posix
 gcc version 8.2.1 20180831 (GCC) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_fe9bb' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccMQKIIm.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_fe9bb /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../.. CMakeFiles/cmTC_fe9bb.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_fe9bb' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-gmake[1]: Leaving directory '/am/phoenix/home1/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_eb049' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccwA59CQ.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_eb049 /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../.. CMakeFiles/cmTC_eb049.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_eb049' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+gmake[1]: Leaving directory '/am/phoenix/home1/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/local/bin/gmake" "cmTC_fe9bb/fast"]
-  ignore line: [/usr/local/bin/gmake -f CMakeFiles/cmTC_fe9bb.dir/build.make CMakeFiles/cmTC_fe9bb.dir/build]
-  ignore line: [gmake[1]: Entering directory '/am/phoenix/home1/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_fe9bb.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/bin/c++     -o CMakeFiles/cmTC_fe9bb.dir/CMakeCXXCompilerABI.cpp.o -c /am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/share/cmake-3.13/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_fe9bb]
-  ignore line: [/am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fe9bb.dir/link.txt --verbose=1]
-  ignore line: [/bin/c++      -v CMakeFiles/cmTC_fe9bb.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_fe9bb ]
+  ignore line: [Run Build Command:"/usr/local/bin/gmake" "cmTC_eb049/fast"]
+  ignore line: [/usr/local/bin/gmake -f CMakeFiles/cmTC_eb049.dir/build.make CMakeFiles/cmTC_eb049.dir/build]
+  ignore line: [gmake[1]: Entering directory '/am/phoenix/home1/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_eb049.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/bin/c++     -o CMakeFiles/cmTC_eb049.dir/CMakeCXXCompilerABI.cpp.o -c /am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/share/cmake-3.13/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_eb049]
+  ignore line: [/am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eb049.dir/link.txt --verbose=1]
+  ignore line: [/bin/c++      -v -rdynamic CMakeFiles/cmTC_eb049.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_eb049 ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/bin/c++]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/lto-wrapper]
@@ -259,13 +86,13 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 8.2.1 20180831 (GCC) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_fe9bb' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccMQKIIm.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_fe9bb /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../.. CMakeFiles/cmTC_fe9bb.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_eb049' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccwA59CQ.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_eb049 /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../.. CMakeFiles/cmTC_eb049.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crtn.o]
     arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccMQKIIm.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccwA59CQ.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -276,11 +103,12 @@ Parsed CXX implicit link information from above output:
     arg [--hash-style=gnu] ==> ignore
     arg [-m] ==> ignore
     arg [elf_x86_64] ==> ignore
+    arg [-export-dynamic] ==> ignore
     arg [-dynamic-linker] ==> ignore
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-pie] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_fe9bb] ==> ignore
+    arg [cmTC_eb049] ==> ignore
     arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/Scrt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtbeginS.o] ==> ignore
@@ -289,7 +117,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/lib/../lib] ==> dir [/lib/../lib]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../..] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../..]
-    arg [CMakeFiles/cmTC_fe9bb.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_eb049.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -312,17 +140,17 @@ Parsed CXX implicit link information from above output:
 
 
 Detecting CXX [-std=c++2a] compiler features compiled with the following output:
-Change Dir: /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/local/bin/gmake" "cmTC_47152/fast"
-/usr/local/bin/gmake -f CMakeFiles/cmTC_47152.dir/build.make CMakeFiles/cmTC_47152.dir/build
-gmake[1]: Entering directory '/am/phoenix/home1/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_47152.dir/feature_tests.cxx.o
-/bin/c++    -std=c++2a -o CMakeFiles/cmTC_47152.dir/feature_tests.cxx.o -c /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_47152
-/am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_47152.dir/link.txt --verbose=1
-/bin/c++       CMakeFiles/cmTC_47152.dir/feature_tests.cxx.o  -o cmTC_47152 
-gmake[1]: Leaving directory '/am/phoenix/home1/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/local/bin/gmake" "cmTC_3fbbf/fast"
+/usr/local/bin/gmake -f CMakeFiles/cmTC_3fbbf.dir/build.make CMakeFiles/cmTC_3fbbf.dir/build
+gmake[1]: Entering directory '/am/phoenix/home1/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_3fbbf.dir/feature_tests.cxx.o
+/bin/c++    -std=c++2a -o CMakeFiles/cmTC_3fbbf.dir/feature_tests.cxx.o -c /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_3fbbf
+/am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3fbbf.dir/link.txt --verbose=1
+/bin/c++       -rdynamic CMakeFiles/cmTC_3fbbf.dir/feature_tests.cxx.o  -o cmTC_3fbbf 
+gmake[1]: Leaving directory '/am/phoenix/home1/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -385,17 +213,17 @@ gmake[1]: Leaving directory '/am/phoenix/home1/hoefsldyla/Documents/CLionCopy/wo
 
 
 Detecting CXX [-std=c++17] compiler features compiled with the following output:
-Change Dir: /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/local/bin/gmake" "cmTC_a3b02/fast"
-/usr/local/bin/gmake -f CMakeFiles/cmTC_a3b02.dir/build.make CMakeFiles/cmTC_a3b02.dir/build
-gmake[1]: Entering directory '/am/phoenix/home1/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_a3b02.dir/feature_tests.cxx.o
-/bin/c++    -std=c++17 -o CMakeFiles/cmTC_a3b02.dir/feature_tests.cxx.o -c /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_a3b02
-/am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a3b02.dir/link.txt --verbose=1
-/bin/c++       CMakeFiles/cmTC_a3b02.dir/feature_tests.cxx.o  -o cmTC_a3b02 
-gmake[1]: Leaving directory '/am/phoenix/home1/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/local/bin/gmake" "cmTC_c3a02/fast"
+/usr/local/bin/gmake -f CMakeFiles/cmTC_c3a02.dir/build.make CMakeFiles/cmTC_c3a02.dir/build
+gmake[1]: Entering directory '/am/phoenix/home1/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c3a02.dir/feature_tests.cxx.o
+/bin/c++    -std=c++17 -o CMakeFiles/cmTC_c3a02.dir/feature_tests.cxx.o -c /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_c3a02
+/am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c3a02.dir/link.txt --verbose=1
+/bin/c++       -rdynamic CMakeFiles/cmTC_c3a02.dir/feature_tests.cxx.o  -o cmTC_c3a02 
+gmake[1]: Leaving directory '/am/phoenix/home1/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -458,17 +286,17 @@ gmake[1]: Leaving directory '/am/phoenix/home1/hoefsldyla/Documents/CLionCopy/wo
 
 
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
-Change Dir: /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/local/bin/gmake" "cmTC_b7f87/fast"
-/usr/local/bin/gmake -f CMakeFiles/cmTC_b7f87.dir/build.make CMakeFiles/cmTC_b7f87.dir/build
-gmake[1]: Entering directory '/am/phoenix/home1/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_b7f87.dir/feature_tests.cxx.o
-/bin/c++    -std=c++14 -o CMakeFiles/cmTC_b7f87.dir/feature_tests.cxx.o -c /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_b7f87
-/am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b7f87.dir/link.txt --verbose=1
-/bin/c++       CMakeFiles/cmTC_b7f87.dir/feature_tests.cxx.o  -o cmTC_b7f87 
-gmake[1]: Leaving directory '/am/phoenix/home1/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/local/bin/gmake" "cmTC_4eac5/fast"
+/usr/local/bin/gmake -f CMakeFiles/cmTC_4eac5.dir/build.make CMakeFiles/cmTC_4eac5.dir/build
+gmake[1]: Entering directory '/am/phoenix/home1/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_4eac5.dir/feature_tests.cxx.o
+/bin/c++    -std=c++14 -o CMakeFiles/cmTC_4eac5.dir/feature_tests.cxx.o -c /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_4eac5
+/am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4eac5.dir/link.txt --verbose=1
+/bin/c++       -rdynamic CMakeFiles/cmTC_4eac5.dir/feature_tests.cxx.o  -o cmTC_4eac5 
+gmake[1]: Leaving directory '/am/phoenix/home1/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -531,17 +359,17 @@ gmake[1]: Leaving directory '/am/phoenix/home1/hoefsldyla/Documents/CLionCopy/wo
 
 
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/local/bin/gmake" "cmTC_dd723/fast"
-/usr/local/bin/gmake -f CMakeFiles/cmTC_dd723.dir/build.make CMakeFiles/cmTC_dd723.dir/build
-gmake[1]: Entering directory '/am/phoenix/home1/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_dd723.dir/feature_tests.cxx.o
-/bin/c++    -std=c++11 -o CMakeFiles/cmTC_dd723.dir/feature_tests.cxx.o -c /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_dd723
-/am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dd723.dir/link.txt --verbose=1
-/bin/c++       CMakeFiles/cmTC_dd723.dir/feature_tests.cxx.o  -o cmTC_dd723 
-gmake[1]: Leaving directory '/am/phoenix/home1/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/local/bin/gmake" "cmTC_9ac0d/fast"
+/usr/local/bin/gmake -f CMakeFiles/cmTC_9ac0d.dir/build.make CMakeFiles/cmTC_9ac0d.dir/build
+gmake[1]: Entering directory '/am/phoenix/home1/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_9ac0d.dir/feature_tests.cxx.o
+/bin/c++    -std=c++11 -o CMakeFiles/cmTC_9ac0d.dir/feature_tests.cxx.o -c /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_9ac0d
+/am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9ac0d.dir/link.txt --verbose=1
+/bin/c++       -rdynamic CMakeFiles/cmTC_9ac0d.dir/feature_tests.cxx.o  -o cmTC_9ac0d 
+gmake[1]: Leaving directory '/am/phoenix/home1/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -604,17 +432,17 @@ gmake[1]: Leaving directory '/am/phoenix/home1/hoefsldyla/Documents/CLionCopy/wo
 
 
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/local/bin/gmake" "cmTC_3098a/fast"
-/usr/local/bin/gmake -f CMakeFiles/cmTC_3098a.dir/build.make CMakeFiles/cmTC_3098a.dir/build
-gmake[1]: Entering directory '/am/phoenix/home1/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_3098a.dir/feature_tests.cxx.o
-/bin/c++    -std=c++98 -o CMakeFiles/cmTC_3098a.dir/feature_tests.cxx.o -c /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_3098a
-/am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3098a.dir/link.txt --verbose=1
-/bin/c++       CMakeFiles/cmTC_3098a.dir/feature_tests.cxx.o  -o cmTC_3098a 
-gmake[1]: Leaving directory '/am/phoenix/home1/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/local/bin/gmake" "cmTC_48fbf/fast"
+/usr/local/bin/gmake -f CMakeFiles/cmTC_48fbf.dir/build.make CMakeFiles/cmTC_48fbf.dir/build
+gmake[1]: Entering directory '/am/phoenix/home1/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_48fbf.dir/feature_tests.cxx.o
+/bin/c++    -std=c++98 -o CMakeFiles/cmTC_48fbf.dir/feature_tests.cxx.o -c /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_48fbf
+/am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_48fbf.dir/link.txt --verbose=1
+/bin/c++       -rdynamic CMakeFiles/cmTC_48fbf.dir/feature_tests.cxx.o  -o cmTC_48fbf 
+gmake[1]: Leaving directory '/am/phoenix/home1/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -674,22 +502,196 @@ gmake[1]: Leaving directory '/am/phoenix/home1/hoefsldyla/Documents/CLionCopy/wo
     Feature record: CXX_FEATURE:0cxx_variable_templates
     Feature record: CXX_FEATURE:0cxx_variadic_macros
     Feature record: CXX_FEATURE:0cxx_variadic_templates
-Detecting C OpenMP compiler ABI info compiled with the following output:
-Change Dir: /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp
+Determining if the C compiler works passed with the following output:
+Change Dir: /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/local/bin/gmake" "cmTC_25b67/fast"
-/usr/local/bin/gmake -f CMakeFiles/cmTC_25b67.dir/build.make CMakeFiles/cmTC_25b67.dir/build
-gmake[1]: Entering directory '/am/phoenix/home1/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_25b67.dir/OpenMPTryFlag.c.o
-/bin/cc   -fopenmp -v   -o CMakeFiles/cmTC_25b67.dir/OpenMPTryFlag.c.o   -c /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/FindOpenMP/OpenMPTryFlag.c
+Run Build Command:"/usr/local/bin/gmake" "cmTC_ed1e6/fast"
+/usr/local/bin/gmake -f CMakeFiles/cmTC_ed1e6.dir/build.make CMakeFiles/cmTC_ed1e6.dir/build
+gmake[1]: Entering directory '/am/phoenix/home1/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ed1e6.dir/testCCompiler.c.o
+/bin/cc    -o CMakeFiles/cmTC_ed1e6.dir/testCCompiler.c.o   -c /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_ed1e6
+/am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ed1e6.dir/link.txt --verbose=1
+/bin/cc      -rdynamic CMakeFiles/cmTC_ed1e6.dir/testCCompiler.c.o  -o cmTC_ed1e6 
+gmake[1]: Leaving directory '/am/phoenix/home1/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/local/bin/gmake" "cmTC_dec1f/fast"
+/usr/local/bin/gmake -f CMakeFiles/cmTC_dec1f.dir/build.make CMakeFiles/cmTC_dec1f.dir/build
+gmake[1]: Entering directory '/am/phoenix/home1/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_dec1f.dir/CMakeCCompilerABI.c.o
+/bin/cc    -o CMakeFiles/cmTC_dec1f.dir/CMakeCCompilerABI.c.o   -c /am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/share/cmake-3.13/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_dec1f
+/am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dec1f.dir/link.txt --verbose=1
+/bin/cc     -v -rdynamic CMakeFiles/cmTC_dec1f.dir/CMakeCCompilerABI.c.o  -o cmTC_dec1f 
+Using built-in specs.
+COLLECT_GCC=/bin/cc
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/lto-wrapper
+Target: x86_64-pc-linux-gnu
+Configured with: /build/gcc/src/gcc/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-shared --enable-threads=posix --enable-libmpx --with-system-zlib --with-isl --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-lto --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --enable-gnu-indirect-function --enable-multilib --disable-werror --enable-checking=release --enable-default-pie --enable-default-ssp --enable-cet=auto
+Thread model: posix
+gcc version 8.2.1 20180831 (GCC) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_dec1f' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cc0NxvUW.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_dec1f /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../.. CMakeFiles/cmTC_dec1f.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_dec1f' '-mtune=generic' '-march=x86-64'
+gmake[1]: Leaving directory '/am/phoenix/home1/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"/usr/local/bin/gmake" "cmTC_dec1f/fast"]
+  ignore line: [/usr/local/bin/gmake -f CMakeFiles/cmTC_dec1f.dir/build.make CMakeFiles/cmTC_dec1f.dir/build]
+  ignore line: [gmake[1]: Entering directory '/am/phoenix/home1/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_dec1f.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/bin/cc    -o CMakeFiles/cmTC_dec1f.dir/CMakeCCompilerABI.c.o   -c /am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/share/cmake-3.13/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_dec1f]
+  ignore line: [/am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dec1f.dir/link.txt --verbose=1]
+  ignore line: [/bin/cc     -v -rdynamic CMakeFiles/cmTC_dec1f.dir/CMakeCCompilerABI.c.o  -o cmTC_dec1f ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/bin/cc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/lto-wrapper]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Configured with: /build/gcc/src/gcc/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-shared --enable-threads=posix --enable-libmpx --with-system-zlib --with-isl --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-lto --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --enable-gnu-indirect-function --enable-multilib --disable-werror --enable-checking=release --enable-default-pie --enable-default-ssp --enable-cet=auto]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 8.2.1 20180831 (GCC) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_dec1f' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cc0NxvUW.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_dec1f /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../.. CMakeFiles/cmTC_dec1f.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crtn.o]
+    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cc0NxvUW.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_dec1f] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/Scrt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtbeginS.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1]
+    arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../..] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../..]
+    arg [CMakeFiles/cmTC_dec1f.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtendS.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crtn.o] ==> ignore
+  collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1]
+  collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/lib/../lib] ==> [/lib]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../..] ==> [/usr/lib]
+  implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+  implicit dirs: [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1;/usr/lib;/lib]
+  implicit fwks: []
+
+
+
+
+Detecting C [-std=c11] compiler features compiled with the following output:
+Change Dir: /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/local/bin/gmake" "cmTC_6b41d/fast"
+/usr/local/bin/gmake -f CMakeFiles/cmTC_6b41d.dir/build.make CMakeFiles/cmTC_6b41d.dir/build
+gmake[1]: Entering directory '/am/phoenix/home1/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6b41d.dir/feature_tests.c.o
+/bin/cc   -std=c11 -o CMakeFiles/cmTC_6b41d.dir/feature_tests.c.o   -c /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/feature_tests.c
+Linking C executable cmTC_6b41d
+/am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6b41d.dir/link.txt --verbose=1
+/bin/cc      -rdynamic CMakeFiles/cmTC_6b41d.dir/feature_tests.c.o  -o cmTC_6b41d 
+gmake[1]: Leaving directory '/am/phoenix/home1/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:1c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c99] compiler features compiled with the following output:
+Change Dir: /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/local/bin/gmake" "cmTC_d34e7/fast"
+/usr/local/bin/gmake -f CMakeFiles/cmTC_d34e7.dir/build.make CMakeFiles/cmTC_d34e7.dir/build
+gmake[1]: Entering directory '/am/phoenix/home1/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d34e7.dir/feature_tests.c.o
+/bin/cc   -std=c99 -o CMakeFiles/cmTC_d34e7.dir/feature_tests.c.o   -c /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/feature_tests.c
+Linking C executable cmTC_d34e7
+/am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d34e7.dir/link.txt --verbose=1
+/bin/cc      -rdynamic CMakeFiles/cmTC_d34e7.dir/feature_tests.c.o  -o cmTC_d34e7 
+gmake[1]: Leaving directory '/am/phoenix/home1/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c90] compiler features compiled with the following output:
+Change Dir: /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/local/bin/gmake" "cmTC_7e7c1/fast"
+/usr/local/bin/gmake -f CMakeFiles/cmTC_7e7c1.dir/build.make CMakeFiles/cmTC_7e7c1.dir/build
+gmake[1]: Entering directory '/am/phoenix/home1/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7e7c1.dir/feature_tests.c.o
+/bin/cc   -std=c90 -o CMakeFiles/cmTC_7e7c1.dir/feature_tests.c.o   -c /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/feature_tests.c
+Linking C executable cmTC_7e7c1
+/am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7e7c1.dir/link.txt --verbose=1
+/bin/cc      -rdynamic CMakeFiles/cmTC_7e7c1.dir/feature_tests.c.o  -o cmTC_7e7c1 
+gmake[1]: Leaving directory '/am/phoenix/home1/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:0c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:0c_variadic_macros
+Detecting C OpenMP compiler ABI info compiled with the following output:
+Change Dir: /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/local/bin/gmake" "cmTC_24cce/fast"
+/usr/local/bin/gmake -f CMakeFiles/cmTC_24cce.dir/build.make CMakeFiles/cmTC_24cce.dir/build
+gmake[1]: Entering directory '/am/phoenix/home1/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_24cce.dir/OpenMPTryFlag.c.o
+/bin/cc   -fopenmp -v   -o CMakeFiles/cmTC_24cce.dir/OpenMPTryFlag.c.o   -c /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/FindOpenMP/OpenMPTryFlag.c
 Using built-in specs.
 COLLECT_GCC=/bin/cc
 Target: x86_64-pc-linux-gnu
 Configured with: /build/gcc/src/gcc/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-shared --enable-threads=posix --enable-libmpx --with-system-zlib --with-isl --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-lto --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --enable-gnu-indirect-function --enable-multilib --disable-werror --enable-checking=release --enable-default-pie --enable-default-ssp --enable-cet=auto
 Thread model: posix
 gcc version 8.2.1 20180831 (GCC) 
-COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_25b67.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread'
- /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/cc1 -quiet -v -D_REENTRANT /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/FindOpenMP/OpenMPTryFlag.c -quiet -dumpbase OpenMPTryFlag.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_25b67.dir/OpenMPTryFlag.c.o -version -fopenmp -o /tmp/cc5J0sz1.s
+COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_24cce.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread'
+ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/cc1 -quiet -v -D_REENTRANT /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/FindOpenMP/OpenMPTryFlag.c -quiet -dumpbase OpenMPTryFlag.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_24cce.dir/OpenMPTryFlag.c.o -version -fopenmp -o /tmp/cc0smN81.s
 GNU C17 (GCC) version 8.2.1 20180831 (x86_64-pc-linux-gnu)
 	compiled by GNU C version 8.2.1 20180831, GMP version 6.1.2, MPFR version 4.0.1, MPC version 1.1.0, isl version isl-0.19-GMP
 
@@ -707,15 +709,15 @@ GNU C17 (GCC) version 8.2.1 20180831 (x86_64-pc-linux-gnu)
 
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
 Compiler executable checksum: d81a63c97befb93e239da298914017da
-COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_25b67.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread'
- as -v --64 -o CMakeFiles/cmTC_25b67.dir/OpenMPTryFlag.c.o /tmp/cc5J0sz1.s
+COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_24cce.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread'
+ as -v --64 -o CMakeFiles/cmTC_24cce.dir/OpenMPTryFlag.c.o /tmp/cc0smN81.s
 GNU assembler version 2.31.1 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.31.1
 COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_25b67.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread'
-Linking C executable cmTC_25b67
-/am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_25b67.dir/link.txt --verbose=1
-/bin/cc  -fopenmp -v    -rdynamic CMakeFiles/cmTC_25b67.dir/OpenMPTryFlag.c.o  -o cmTC_25b67 -v 
+COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_24cce.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread'
+Linking C executable cmTC_24cce
+/am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_24cce.dir/link.txt --verbose=1
+/bin/cc  -fopenmp -v    -rdynamic CMakeFiles/cmTC_24cce.dir/OpenMPTryFlag.c.o  -o cmTC_24cce -v 
 Using built-in specs.
 COLLECT_GCC=/bin/cc
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/lto-wrapper
@@ -726,29 +728,29 @@ gcc version 8.2.1 20180831 (GCC)
 COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../:/lib/:/usr/lib/
 Reading specs from /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/libgomp.spec
-COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-rdynamic' '-o' 'cmTC_25b67' '-v' '-mtune=generic' '-march=x86-64' '-pthread'
- /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cc69eNM4.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_25b67 /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../.. CMakeFiles/cmTC_25b67.dir/OpenMPTryFlag.c.o -lgomp -lgcc --as-needed -lgcc_s --no-as-needed -lpthread -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crtn.o
-COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-rdynamic' '-o' 'cmTC_25b67' '-v' '-mtune=generic' '-march=x86-64' '-pthread'
-gmake[1]: Leaving directory '/am/phoenix/home1/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-rdynamic' '-o' 'cmTC_24cce' '-v' '-mtune=generic' '-march=x86-64' '-pthread'
+ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cc5HyaX4.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_24cce /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../.. CMakeFiles/cmTC_24cce.dir/OpenMPTryFlag.c.o -lgomp -lgcc --as-needed -lgcc_s --no-as-needed -lpthread -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crtn.o
+COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-rdynamic' '-o' 'cmTC_24cce' '-v' '-mtune=generic' '-march=x86-64' '-pthread'
+gmake[1]: Leaving directory '/am/phoenix/home1/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Parsed C OpenMP implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/local/bin/gmake" "cmTC_25b67/fast"]
-  ignore line: [/usr/local/bin/gmake -f CMakeFiles/cmTC_25b67.dir/build.make CMakeFiles/cmTC_25b67.dir/build]
-  ignore line: [gmake[1]: Entering directory '/am/phoenix/home1/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_25b67.dir/OpenMPTryFlag.c.o]
-  ignore line: [/bin/cc   -fopenmp -v   -o CMakeFiles/cmTC_25b67.dir/OpenMPTryFlag.c.o   -c /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/FindOpenMP/OpenMPTryFlag.c]
+  ignore line: [Run Build Command:"/usr/local/bin/gmake" "cmTC_24cce/fast"]
+  ignore line: [/usr/local/bin/gmake -f CMakeFiles/cmTC_24cce.dir/build.make CMakeFiles/cmTC_24cce.dir/build]
+  ignore line: [gmake[1]: Entering directory '/am/phoenix/home1/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_24cce.dir/OpenMPTryFlag.c.o]
+  ignore line: [/bin/cc   -fopenmp -v   -o CMakeFiles/cmTC_24cce.dir/OpenMPTryFlag.c.o   -c /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/FindOpenMP/OpenMPTryFlag.c]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/bin/cc]
   ignore line: [Target: x86_64-pc-linux-gnu]
   ignore line: [Configured with: /build/gcc/src/gcc/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-shared --enable-threads=posix --enable-libmpx --with-system-zlib --with-isl --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-lto --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --enable-gnu-indirect-function --enable-multilib --disable-werror --enable-checking=release --enable-default-pie --enable-default-ssp --enable-cet=auto]
   ignore line: [Thread model: posix]
   ignore line: [gcc version 8.2.1 20180831 (GCC) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_25b67.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread']
-  ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/cc1 -quiet -v -D_REENTRANT /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/FindOpenMP/OpenMPTryFlag.c -quiet -dumpbase OpenMPTryFlag.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_25b67.dir/OpenMPTryFlag.c.o -version -fopenmp -o /tmp/cc5J0sz1.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_24cce.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread']
+  ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/cc1 -quiet -v -D_REENTRANT /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/FindOpenMP/OpenMPTryFlag.c -quiet -dumpbase OpenMPTryFlag.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_24cce.dir/OpenMPTryFlag.c.o -version -fopenmp -o /tmp/cc0smN81.s]
   ignore line: [GNU C17 (GCC) version 8.2.1 20180831 (x86_64-pc-linux-gnu)]
   ignore line: [	compiled by GNU C version 8.2.1 20180831, GMP version 6.1.2, MPFR version 4.0.1, MPC version 1.1.0, isl version isl-0.19-GMP]
   ignore line: []
@@ -766,15 +768,15 @@ Parsed C OpenMP implicit link information from above output:
   ignore line: []
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
   ignore line: [Compiler executable checksum: d81a63c97befb93e239da298914017da]
-  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_25b67.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread']
-  ignore line: [ as -v --64 -o CMakeFiles/cmTC_25b67.dir/OpenMPTryFlag.c.o /tmp/cc5J0sz1.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_24cce.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_24cce.dir/OpenMPTryFlag.c.o /tmp/cc0smN81.s]
   ignore line: [GNU assembler version 2.31.1 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.31.1]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_25b67.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread']
-  ignore line: [Linking C executable cmTC_25b67]
-  ignore line: [/am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_25b67.dir/link.txt --verbose=1]
-  ignore line: [/bin/cc  -fopenmp -v    -rdynamic CMakeFiles/cmTC_25b67.dir/OpenMPTryFlag.c.o  -o cmTC_25b67 -v ]
+  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_24cce.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread']
+  ignore line: [Linking C executable cmTC_24cce]
+  ignore line: [/am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_24cce.dir/link.txt --verbose=1]
+  ignore line: [/bin/cc  -fopenmp -v    -rdynamic CMakeFiles/cmTC_24cce.dir/OpenMPTryFlag.c.o  -o cmTC_24cce -v ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/bin/cc]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/lto-wrapper]
@@ -785,13 +787,13 @@ Parsed C OpenMP implicit link information from above output:
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../:/lib/:/usr/lib/]
   ignore line: [Reading specs from /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/libgomp.spec]
-  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-rdynamic' '-o' 'cmTC_25b67' '-v' '-mtune=generic' '-march=x86-64' '-pthread']
-  link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cc69eNM4.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_25b67 /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../.. CMakeFiles/cmTC_25b67.dir/OpenMPTryFlag.c.o -lgomp -lgcc --as-needed -lgcc_s --no-as-needed -lpthread -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-rdynamic' '-o' 'cmTC_24cce' '-v' '-mtune=generic' '-march=x86-64' '-pthread']
+  link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cc5HyaX4.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_24cce /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../.. CMakeFiles/cmTC_24cce.dir/OpenMPTryFlag.c.o -lgomp -lgcc --as-needed -lgcc_s --no-as-needed -lpthread -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crtn.o]
     arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/cc69eNM4.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cc5HyaX4.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
@@ -808,7 +810,7 @@ Parsed C OpenMP implicit link information from above output:
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-pie] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_25b67] ==> ignore
+    arg [cmTC_24cce] ==> ignore
     arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/Scrt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtbeginS.o] ==> ignore
@@ -817,7 +819,7 @@ Parsed C OpenMP implicit link information from above output:
     arg [-L/lib/../lib] ==> dir [/lib/../lib]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../..] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../..]
-    arg [CMakeFiles/cmTC_25b67.dir/OpenMPTryFlag.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_24cce.dir/OpenMPTryFlag.c.o] ==> ignore
     arg [-lgomp] ==> lib [gomp]
     arg [-lgcc] ==> lib [gcc]
     arg [--as-needed] ==> ignore
@@ -842,21 +844,21 @@ Parsed C OpenMP implicit link information from above output:
 
 
 Detecting CXX OpenMP compiler ABI info compiled with the following output:
-Change Dir: /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/local/bin/gmake" "cmTC_6f0db/fast"
-/usr/local/bin/gmake -f CMakeFiles/cmTC_6f0db.dir/build.make CMakeFiles/cmTC_6f0db.dir/build
-gmake[1]: Entering directory '/am/phoenix/home1/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_6f0db.dir/OpenMPTryFlag.cpp.o
-/bin/c++    -fopenmp -v   -o CMakeFiles/cmTC_6f0db.dir/OpenMPTryFlag.cpp.o -c /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+Run Build Command:"/usr/local/bin/gmake" "cmTC_bce05/fast"
+/usr/local/bin/gmake -f CMakeFiles/cmTC_bce05.dir/build.make CMakeFiles/cmTC_bce05.dir/build
+gmake[1]: Entering directory '/am/phoenix/home1/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_bce05.dir/OpenMPTryFlag.cpp.o
+/bin/c++    -fopenmp -v   -o CMakeFiles/cmTC_bce05.dir/OpenMPTryFlag.cpp.o -c /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
 Using built-in specs.
 COLLECT_GCC=/bin/c++
 Target: x86_64-pc-linux-gnu
 Configured with: /build/gcc/src/gcc/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-shared --enable-threads=posix --enable-libmpx --with-system-zlib --with-isl --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-lto --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --enable-gnu-indirect-function --enable-multilib --disable-werror --enable-checking=release --enable-default-pie --enable-default-ssp --enable-cet=auto
 Thread model: posix
 gcc version 8.2.1 20180831 (GCC) 
-COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_6f0db.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread'
- /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/cc1plus -quiet -v -D_GNU_SOURCE -D_REENTRANT /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp -quiet -dumpbase OpenMPTryFlag.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_6f0db.dir/OpenMPTryFlag.cpp.o -version -fopenmp -o /tmp/ccuL3j1b.s
+COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_bce05.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread'
+ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/cc1plus -quiet -v -D_GNU_SOURCE -D_REENTRANT /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp -quiet -dumpbase OpenMPTryFlag.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_bce05.dir/OpenMPTryFlag.cpp.o -version -fopenmp -o /tmp/ccPWKk7h.s
 GNU C++14 (GCC) version 8.2.1 20180831 (x86_64-pc-linux-gnu)
 	compiled by GNU C version 8.2.1 20180831, GMP version 6.1.2, MPFR version 4.0.1, MPC version 1.1.0, isl version isl-0.19-GMP
 
@@ -877,15 +879,15 @@ GNU C++14 (GCC) version 8.2.1 20180831 (x86_64-pc-linux-gnu)
 
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
 Compiler executable checksum: a03a3250bc7a24a525a6f08bf70a1ad6
-COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_6f0db.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread'
- as -v --64 -o CMakeFiles/cmTC_6f0db.dir/OpenMPTryFlag.cpp.o /tmp/ccuL3j1b.s
+COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_bce05.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread'
+ as -v --64 -o CMakeFiles/cmTC_bce05.dir/OpenMPTryFlag.cpp.o /tmp/ccPWKk7h.s
 GNU assembler version 2.31.1 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.31.1
 COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_6f0db.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread'
-Linking CXX executable cmTC_6f0db
-/am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6f0db.dir/link.txt --verbose=1
-/bin/c++   -fopenmp -v    -rdynamic CMakeFiles/cmTC_6f0db.dir/OpenMPTryFlag.cpp.o  -o cmTC_6f0db -v 
+COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_bce05.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread'
+Linking CXX executable cmTC_bce05
+/am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bce05.dir/link.txt --verbose=1
+/bin/c++   -fopenmp -v    -rdynamic CMakeFiles/cmTC_bce05.dir/OpenMPTryFlag.cpp.o  -o cmTC_bce05 -v 
 Using built-in specs.
 COLLECT_GCC=/bin/c++
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/lto-wrapper
@@ -896,29 +898,29 @@ gcc version 8.2.1 20180831 (GCC)
 COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../:/lib/:/usr/lib/
 Reading specs from /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/libgomp.spec
-COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-rdynamic' '-o' 'cmTC_6f0db' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread'
- /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cczH6CFb.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_6f0db /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../.. CMakeFiles/cmTC_6f0db.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crtn.o
-COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-rdynamic' '-o' 'cmTC_6f0db' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread'
-gmake[1]: Leaving directory '/am/phoenix/home1/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-rdynamic' '-o' 'cmTC_bce05' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread'
+ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cc0irbzo.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_bce05 /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../.. CMakeFiles/cmTC_bce05.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crtn.o
+COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-rdynamic' '-o' 'cmTC_bce05' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread'
+gmake[1]: Leaving directory '/am/phoenix/home1/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Parsed CXX OpenMP implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/local/bin/gmake" "cmTC_6f0db/fast"]
-  ignore line: [/usr/local/bin/gmake -f CMakeFiles/cmTC_6f0db.dir/build.make CMakeFiles/cmTC_6f0db.dir/build]
-  ignore line: [gmake[1]: Entering directory '/am/phoenix/home1/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_6f0db.dir/OpenMPTryFlag.cpp.o]
-  ignore line: [/bin/c++    -fopenmp -v   -o CMakeFiles/cmTC_6f0db.dir/OpenMPTryFlag.cpp.o -c /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp]
+  ignore line: [Run Build Command:"/usr/local/bin/gmake" "cmTC_bce05/fast"]
+  ignore line: [/usr/local/bin/gmake -f CMakeFiles/cmTC_bce05.dir/build.make CMakeFiles/cmTC_bce05.dir/build]
+  ignore line: [gmake[1]: Entering directory '/am/phoenix/home1/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_bce05.dir/OpenMPTryFlag.cpp.o]
+  ignore line: [/bin/c++    -fopenmp -v   -o CMakeFiles/cmTC_bce05.dir/OpenMPTryFlag.cpp.o -c /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/bin/c++]
   ignore line: [Target: x86_64-pc-linux-gnu]
   ignore line: [Configured with: /build/gcc/src/gcc/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-shared --enable-threads=posix --enable-libmpx --with-system-zlib --with-isl --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-lto --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --enable-gnu-indirect-function --enable-multilib --disable-werror --enable-checking=release --enable-default-pie --enable-default-ssp --enable-cet=auto]
   ignore line: [Thread model: posix]
   ignore line: [gcc version 8.2.1 20180831 (GCC) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_6f0db.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread']
-  ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/cc1plus -quiet -v -D_GNU_SOURCE -D_REENTRANT /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp -quiet -dumpbase OpenMPTryFlag.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_6f0db.dir/OpenMPTryFlag.cpp.o -version -fopenmp -o /tmp/ccuL3j1b.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_bce05.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread']
+  ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/cc1plus -quiet -v -D_GNU_SOURCE -D_REENTRANT /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp -quiet -dumpbase OpenMPTryFlag.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_bce05.dir/OpenMPTryFlag.cpp.o -version -fopenmp -o /tmp/ccPWKk7h.s]
   ignore line: [GNU C++14 (GCC) version 8.2.1 20180831 (x86_64-pc-linux-gnu)]
   ignore line: [	compiled by GNU C version 8.2.1 20180831, GMP version 6.1.2, MPFR version 4.0.1, MPC version 1.1.0, isl version isl-0.19-GMP]
   ignore line: []
@@ -939,15 +941,15 @@ Parsed CXX OpenMP implicit link information from above output:
   ignore line: []
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
   ignore line: [Compiler executable checksum: a03a3250bc7a24a525a6f08bf70a1ad6]
-  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_6f0db.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread']
-  ignore line: [ as -v --64 -o CMakeFiles/cmTC_6f0db.dir/OpenMPTryFlag.cpp.o /tmp/ccuL3j1b.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_bce05.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_bce05.dir/OpenMPTryFlag.cpp.o /tmp/ccPWKk7h.s]
   ignore line: [GNU assembler version 2.31.1 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.31.1]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_6f0db.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread']
-  ignore line: [Linking CXX executable cmTC_6f0db]
-  ignore line: [/am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6f0db.dir/link.txt --verbose=1]
-  ignore line: [/bin/c++   -fopenmp -v    -rdynamic CMakeFiles/cmTC_6f0db.dir/OpenMPTryFlag.cpp.o  -o cmTC_6f0db -v ]
+  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_bce05.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread']
+  ignore line: [Linking CXX executable cmTC_bce05]
+  ignore line: [/am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bce05.dir/link.txt --verbose=1]
+  ignore line: [/bin/c++   -fopenmp -v    -rdynamic CMakeFiles/cmTC_bce05.dir/OpenMPTryFlag.cpp.o  -o cmTC_bce05 -v ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/bin/c++]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/lto-wrapper]
@@ -958,13 +960,13 @@ Parsed CXX OpenMP implicit link information from above output:
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../:/lib/:/usr/lib/]
   ignore line: [Reading specs from /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/libgomp.spec]
-  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-rdynamic' '-o' 'cmTC_6f0db' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread']
-  link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cczH6CFb.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_6f0db /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../.. CMakeFiles/cmTC_6f0db.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-rdynamic' '-o' 'cmTC_bce05' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread']
+  link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cc0irbzo.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_bce05 /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../.. CMakeFiles/cmTC_bce05.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crtn.o]
     arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/cczH6CFb.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cc0irbzo.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
@@ -981,7 +983,7 @@ Parsed CXX OpenMP implicit link information from above output:
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-pie] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_6f0db] ==> ignore
+    arg [cmTC_bce05] ==> ignore
     arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/Scrt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../../../lib/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/crtbeginS.o] ==> ignore
@@ -990,7 +992,7 @@ Parsed CXX OpenMP implicit link information from above output:
     arg [-L/lib/../lib] ==> dir [/lib/../lib]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../..] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1/../../..]
-    arg [CMakeFiles/cmTC_6f0db.dir/OpenMPTryFlag.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_bce05.dir/OpenMPTryFlag.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgomp] ==> lib [gomp]
@@ -1013,33 +1015,33 @@ Parsed CXX OpenMP implicit link information from above output:
 
 
 Determining if the include file pthread.h exists passed with the following output:
-Change Dir: /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/local/bin/gmake" "cmTC_af47d/fast"
-/usr/local/bin/gmake -f CMakeFiles/cmTC_af47d.dir/build.make CMakeFiles/cmTC_af47d.dir/build
-gmake[1]: Entering directory '/am/phoenix/home1/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_af47d.dir/CheckIncludeFile.c.o
-/bin/cc   -fopenmp    -o CMakeFiles/cmTC_af47d.dir/CheckIncludeFile.c.o   -c /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_af47d
-/am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_af47d.dir/link.txt --verbose=1
-/bin/cc  -fopenmp     -rdynamic CMakeFiles/cmTC_af47d.dir/CheckIncludeFile.c.o  -o cmTC_af47d 
-gmake[1]: Leaving directory '/am/phoenix/home1/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/local/bin/gmake" "cmTC_1c967/fast"
+/usr/local/bin/gmake -f CMakeFiles/cmTC_1c967.dir/build.make CMakeFiles/cmTC_1c967.dir/build
+gmake[1]: Entering directory '/am/phoenix/home1/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1c967.dir/CheckIncludeFile.c.o
+/bin/cc   -fopenmp    -o CMakeFiles/cmTC_1c967.dir/CheckIncludeFile.c.o   -c /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_1c967
+/am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1c967.dir/link.txt --verbose=1
+/bin/cc  -fopenmp     -rdynamic CMakeFiles/cmTC_1c967.dir/CheckIncludeFile.c.o  -o cmTC_1c967 
+gmake[1]: Leaving directory '/am/phoenix/home1/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Determining if the pthread_create exist passed with the following output:
-Change Dir: /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/local/bin/gmake" "cmTC_dcac6/fast"
-/usr/local/bin/gmake -f CMakeFiles/cmTC_dcac6.dir/build.make CMakeFiles/cmTC_dcac6.dir/build
-gmake[1]: Entering directory '/am/phoenix/home1/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_dcac6.dir/CheckSymbolExists.c.o
-/bin/cc   -fopenmp    -o CMakeFiles/cmTC_dcac6.dir/CheckSymbolExists.c.o   -c /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_dcac6
-/am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dcac6.dir/link.txt --verbose=1
-/bin/cc  -fopenmp     -rdynamic CMakeFiles/cmTC_dcac6.dir/CheckSymbolExists.c.o  -o cmTC_dcac6 
-gmake[1]: Leaving directory '/am/phoenix/home1/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/local/bin/gmake" "cmTC_25950/fast"
+/usr/local/bin/gmake -f CMakeFiles/cmTC_25950.dir/build.make CMakeFiles/cmTC_25950.dir/build
+gmake[1]: Entering directory '/am/phoenix/home1/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_25950.dir/CheckSymbolExists.c.o
+/bin/cc   -fopenmp    -o CMakeFiles/cmTC_25950.dir/CheckSymbolExists.c.o   -c /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_25950
+/am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_25950.dir/link.txt --verbose=1
+/bin/cc  -fopenmp     -rdynamic CMakeFiles/cmTC_25950.dir/CheckSymbolExists.c.o  -o cmTC_25950 
+gmake[1]: Leaving directory '/am/phoenix/home1/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp'
 
-File /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+File /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
 #include <pthread.h>
 
@@ -1055,114 +1057,114 @@ int main(int argc, char** argv)
 }
 
 Determining if the function XOpenDisplay exists in the /usr/lib/libX11.so;/usr/lib/libXext.so passed with the following output:
-Change Dir: /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/local/bin/gmake" "cmTC_e6b29/fast"
-/usr/local/bin/gmake -f CMakeFiles/cmTC_e6b29.dir/build.make CMakeFiles/cmTC_e6b29.dir/build
-gmake[1]: Entering directory '/am/phoenix/home1/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_e6b29.dir/CheckFunctionExists.c.o
-/bin/cc   -fopenmp -DCHECK_FUNCTION_EXISTS=XOpenDisplay   -o CMakeFiles/cmTC_e6b29.dir/CheckFunctionExists.c.o   -c /am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/share/cmake-3.13/Modules/CheckFunctionExists.c
-Linking C executable cmTC_e6b29
-/am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e6b29.dir/link.txt --verbose=1
-/bin/cc  -fopenmp -DCHECK_FUNCTION_EXISTS=XOpenDisplay    -rdynamic CMakeFiles/cmTC_e6b29.dir/CheckFunctionExists.c.o  -o cmTC_e6b29 /usr/lib/libX11.so /usr/lib/libXext.so 
-gmake[1]: Leaving directory '/am/phoenix/home1/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/local/bin/gmake" "cmTC_5f46b/fast"
+/usr/local/bin/gmake -f CMakeFiles/cmTC_5f46b.dir/build.make CMakeFiles/cmTC_5f46b.dir/build
+gmake[1]: Entering directory '/am/phoenix/home1/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5f46b.dir/CheckFunctionExists.c.o
+/bin/cc   -fopenmp -DCHECK_FUNCTION_EXISTS=XOpenDisplay   -o CMakeFiles/cmTC_5f46b.dir/CheckFunctionExists.c.o   -c /am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_5f46b
+/am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5f46b.dir/link.txt --verbose=1
+/bin/cc  -fopenmp -DCHECK_FUNCTION_EXISTS=XOpenDisplay    -rdynamic CMakeFiles/cmTC_5f46b.dir/CheckFunctionExists.c.o  -o cmTC_5f46b /usr/lib/libX11.so /usr/lib/libXext.so 
+gmake[1]: Leaving directory '/am/phoenix/home1/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Determining if the function gethostbyname exists passed with the following output:
-Change Dir: /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/local/bin/gmake" "cmTC_95f0a/fast"
-/usr/local/bin/gmake -f CMakeFiles/cmTC_95f0a.dir/build.make CMakeFiles/cmTC_95f0a.dir/build
-gmake[1]: Entering directory '/am/phoenix/home1/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_95f0a.dir/CheckFunctionExists.c.o
-/bin/cc   -fopenmp -DCHECK_FUNCTION_EXISTS=gethostbyname   -o CMakeFiles/cmTC_95f0a.dir/CheckFunctionExists.c.o   -c /am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/share/cmake-3.13/Modules/CheckFunctionExists.c
-Linking C executable cmTC_95f0a
-/am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_95f0a.dir/link.txt --verbose=1
-/bin/cc  -fopenmp -DCHECK_FUNCTION_EXISTS=gethostbyname    -rdynamic CMakeFiles/cmTC_95f0a.dir/CheckFunctionExists.c.o  -o cmTC_95f0a 
-gmake[1]: Leaving directory '/am/phoenix/home1/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/local/bin/gmake" "cmTC_fd042/fast"
+/usr/local/bin/gmake -f CMakeFiles/cmTC_fd042.dir/build.make CMakeFiles/cmTC_fd042.dir/build
+gmake[1]: Entering directory '/am/phoenix/home1/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fd042.dir/CheckFunctionExists.c.o
+/bin/cc   -fopenmp -DCHECK_FUNCTION_EXISTS=gethostbyname   -o CMakeFiles/cmTC_fd042.dir/CheckFunctionExists.c.o   -c /am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_fd042
+/am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fd042.dir/link.txt --verbose=1
+/bin/cc  -fopenmp -DCHECK_FUNCTION_EXISTS=gethostbyname    -rdynamic CMakeFiles/cmTC_fd042.dir/CheckFunctionExists.c.o  -o cmTC_fd042 
+gmake[1]: Leaving directory '/am/phoenix/home1/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Determining if the function connect exists passed with the following output:
-Change Dir: /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/local/bin/gmake" "cmTC_a7336/fast"
-/usr/local/bin/gmake -f CMakeFiles/cmTC_a7336.dir/build.make CMakeFiles/cmTC_a7336.dir/build
-gmake[1]: Entering directory '/am/phoenix/home1/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_a7336.dir/CheckFunctionExists.c.o
-/bin/cc   -fopenmp -DCHECK_FUNCTION_EXISTS=connect   -o CMakeFiles/cmTC_a7336.dir/CheckFunctionExists.c.o   -c /am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/share/cmake-3.13/Modules/CheckFunctionExists.c
-Linking C executable cmTC_a7336
-/am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a7336.dir/link.txt --verbose=1
-/bin/cc  -fopenmp -DCHECK_FUNCTION_EXISTS=connect    -rdynamic CMakeFiles/cmTC_a7336.dir/CheckFunctionExists.c.o  -o cmTC_a7336 
-gmake[1]: Leaving directory '/am/phoenix/home1/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/local/bin/gmake" "cmTC_0548b/fast"
+/usr/local/bin/gmake -f CMakeFiles/cmTC_0548b.dir/build.make CMakeFiles/cmTC_0548b.dir/build
+gmake[1]: Entering directory '/am/phoenix/home1/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0548b.dir/CheckFunctionExists.c.o
+/bin/cc   -fopenmp -DCHECK_FUNCTION_EXISTS=connect   -o CMakeFiles/cmTC_0548b.dir/CheckFunctionExists.c.o   -c /am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_0548b
+/am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0548b.dir/link.txt --verbose=1
+/bin/cc  -fopenmp -DCHECK_FUNCTION_EXISTS=connect    -rdynamic CMakeFiles/cmTC_0548b.dir/CheckFunctionExists.c.o  -o cmTC_0548b 
+gmake[1]: Leaving directory '/am/phoenix/home1/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Determining if the function remove exists passed with the following output:
-Change Dir: /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/local/bin/gmake" "cmTC_04c7b/fast"
-/usr/local/bin/gmake -f CMakeFiles/cmTC_04c7b.dir/build.make CMakeFiles/cmTC_04c7b.dir/build
-gmake[1]: Entering directory '/am/phoenix/home1/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_04c7b.dir/CheckFunctionExists.c.o
-/bin/cc   -fopenmp -DCHECK_FUNCTION_EXISTS=remove   -o CMakeFiles/cmTC_04c7b.dir/CheckFunctionExists.c.o   -c /am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/share/cmake-3.13/Modules/CheckFunctionExists.c
-Linking C executable cmTC_04c7b
-/am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_04c7b.dir/link.txt --verbose=1
-/bin/cc  -fopenmp -DCHECK_FUNCTION_EXISTS=remove    -rdynamic CMakeFiles/cmTC_04c7b.dir/CheckFunctionExists.c.o  -o cmTC_04c7b 
-gmake[1]: Leaving directory '/am/phoenix/home1/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/local/bin/gmake" "cmTC_4fa76/fast"
+/usr/local/bin/gmake -f CMakeFiles/cmTC_4fa76.dir/build.make CMakeFiles/cmTC_4fa76.dir/build
+gmake[1]: Entering directory '/am/phoenix/home1/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4fa76.dir/CheckFunctionExists.c.o
+/bin/cc   -fopenmp -DCHECK_FUNCTION_EXISTS=remove   -o CMakeFiles/cmTC_4fa76.dir/CheckFunctionExists.c.o   -c /am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_4fa76
+/am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4fa76.dir/link.txt --verbose=1
+/bin/cc  -fopenmp -DCHECK_FUNCTION_EXISTS=remove    -rdynamic CMakeFiles/cmTC_4fa76.dir/CheckFunctionExists.c.o  -o cmTC_4fa76 
+gmake[1]: Leaving directory '/am/phoenix/home1/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Determining if the function shmat exists passed with the following output:
-Change Dir: /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/local/bin/gmake" "cmTC_f7774/fast"
-/usr/local/bin/gmake -f CMakeFiles/cmTC_f7774.dir/build.make CMakeFiles/cmTC_f7774.dir/build
-gmake[1]: Entering directory '/am/phoenix/home1/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_f7774.dir/CheckFunctionExists.c.o
-/bin/cc   -fopenmp -DCHECK_FUNCTION_EXISTS=shmat   -o CMakeFiles/cmTC_f7774.dir/CheckFunctionExists.c.o   -c /am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/share/cmake-3.13/Modules/CheckFunctionExists.c
-Linking C executable cmTC_f7774
-/am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f7774.dir/link.txt --verbose=1
-/bin/cc  -fopenmp -DCHECK_FUNCTION_EXISTS=shmat    -rdynamic CMakeFiles/cmTC_f7774.dir/CheckFunctionExists.c.o  -o cmTC_f7774 
-gmake[1]: Leaving directory '/am/phoenix/home1/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/local/bin/gmake" "cmTC_92db2/fast"
+/usr/local/bin/gmake -f CMakeFiles/cmTC_92db2.dir/build.make CMakeFiles/cmTC_92db2.dir/build
+gmake[1]: Entering directory '/am/phoenix/home1/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_92db2.dir/CheckFunctionExists.c.o
+/bin/cc   -fopenmp -DCHECK_FUNCTION_EXISTS=shmat   -o CMakeFiles/cmTC_92db2.dir/CheckFunctionExists.c.o   -c /am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_92db2
+/am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_92db2.dir/link.txt --verbose=1
+/bin/cc  -fopenmp -DCHECK_FUNCTION_EXISTS=shmat    -rdynamic CMakeFiles/cmTC_92db2.dir/CheckFunctionExists.c.o  -o cmTC_92db2 
+gmake[1]: Leaving directory '/am/phoenix/home1/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Determining if the function IceConnectionNumber exists in the ICE passed with the following output:
-Change Dir: /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/local/bin/gmake" "cmTC_64351/fast"
-/usr/local/bin/gmake -f CMakeFiles/cmTC_64351.dir/build.make CMakeFiles/cmTC_64351.dir/build
-gmake[1]: Entering directory '/am/phoenix/home1/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_64351.dir/CheckFunctionExists.c.o
-/bin/cc   -fopenmp -DCHECK_FUNCTION_EXISTS=IceConnectionNumber   -o CMakeFiles/cmTC_64351.dir/CheckFunctionExists.c.o   -c /am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/share/cmake-3.13/Modules/CheckFunctionExists.c
-Linking C executable cmTC_64351
-/am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_64351.dir/link.txt --verbose=1
-/bin/cc  -fopenmp -DCHECK_FUNCTION_EXISTS=IceConnectionNumber    -rdynamic CMakeFiles/cmTC_64351.dir/CheckFunctionExists.c.o  -o cmTC_64351 -lICE 
-gmake[1]: Leaving directory '/am/phoenix/home1/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/local/bin/gmake" "cmTC_d68b4/fast"
+/usr/local/bin/gmake -f CMakeFiles/cmTC_d68b4.dir/build.make CMakeFiles/cmTC_d68b4.dir/build
+gmake[1]: Entering directory '/am/phoenix/home1/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d68b4.dir/CheckFunctionExists.c.o
+/bin/cc   -fopenmp -DCHECK_FUNCTION_EXISTS=IceConnectionNumber   -o CMakeFiles/cmTC_d68b4.dir/CheckFunctionExists.c.o   -c /am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_d68b4
+/am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d68b4.dir/link.txt --verbose=1
+/bin/cc  -fopenmp -DCHECK_FUNCTION_EXISTS=IceConnectionNumber    -rdynamic CMakeFiles/cmTC_d68b4.dir/CheckFunctionExists.c.o  -o cmTC_d68b4 -lICE 
+gmake[1]: Leaving directory '/am/phoenix/home1/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Determining if the function glXGetProcAddress exists passed with the following output:
-Change Dir: /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/local/bin/gmake" "cmTC_53f2a/fast"
-/usr/local/bin/gmake -f CMakeFiles/cmTC_53f2a.dir/build.make CMakeFiles/cmTC_53f2a.dir/build
-gmake[1]: Entering directory '/am/phoenix/home1/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_53f2a.dir/CheckFunctionExists.c.o
-/bin/cc   -fopenmp -DCHECK_FUNCTION_EXISTS=glXGetProcAddress   -o CMakeFiles/cmTC_53f2a.dir/CheckFunctionExists.c.o   -c /am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/share/cmake-3.13/Modules/CheckFunctionExists.c
-Linking C executable cmTC_53f2a
-/am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_53f2a.dir/link.txt --verbose=1
-/bin/cc  -fopenmp -DCHECK_FUNCTION_EXISTS=glXGetProcAddress    -rdynamic CMakeFiles/cmTC_53f2a.dir/CheckFunctionExists.c.o  -o cmTC_53f2a /usr/lib/libGL.so 
-gmake[1]: Leaving directory '/am/phoenix/home1/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/local/bin/gmake" "cmTC_83e23/fast"
+/usr/local/bin/gmake -f CMakeFiles/cmTC_83e23.dir/build.make CMakeFiles/cmTC_83e23.dir/build
+gmake[1]: Entering directory '/am/phoenix/home1/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_83e23.dir/CheckFunctionExists.c.o
+/bin/cc   -fopenmp -DCHECK_FUNCTION_EXISTS=glXGetProcAddress   -o CMakeFiles/cmTC_83e23.dir/CheckFunctionExists.c.o   -c /am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_83e23
+/am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_83e23.dir/link.txt --verbose=1
+/bin/cc  -fopenmp -DCHECK_FUNCTION_EXISTS=glXGetProcAddress    -rdynamic CMakeFiles/cmTC_83e23.dir/CheckFunctionExists.c.o  -o cmTC_83e23 /usr/lib/libGL.so 
+gmake[1]: Leaving directory '/am/phoenix/home1/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Determining if the function glXGetProcAddressARB exists passed with the following output:
-Change Dir: /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/local/bin/gmake" "cmTC_5cf5b/fast"
-/usr/local/bin/gmake -f CMakeFiles/cmTC_5cf5b.dir/build.make CMakeFiles/cmTC_5cf5b.dir/build
-gmake[1]: Entering directory '/am/phoenix/home1/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_5cf5b.dir/CheckFunctionExists.c.o
-/bin/cc   -fopenmp -DCHECK_FUNCTION_EXISTS=glXGetProcAddressARB   -o CMakeFiles/cmTC_5cf5b.dir/CheckFunctionExists.c.o   -c /am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/share/cmake-3.13/Modules/CheckFunctionExists.c
-Linking C executable cmTC_5cf5b
-/am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5cf5b.dir/link.txt --verbose=1
-/bin/cc  -fopenmp -DCHECK_FUNCTION_EXISTS=glXGetProcAddressARB    -rdynamic CMakeFiles/cmTC_5cf5b.dir/CheckFunctionExists.c.o  -o cmTC_5cf5b /usr/lib/libGL.so 
-gmake[1]: Leaving directory '/am/phoenix/home1/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/local/bin/gmake" "cmTC_223f5/fast"
+/usr/local/bin/gmake -f CMakeFiles/cmTC_223f5.dir/build.make CMakeFiles/cmTC_223f5.dir/build
+gmake[1]: Entering directory '/am/phoenix/home1/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_223f5.dir/CheckFunctionExists.c.o
+/bin/cc   -fopenmp -DCHECK_FUNCTION_EXISTS=glXGetProcAddressARB   -o CMakeFiles/cmTC_223f5.dir/CheckFunctionExists.c.o   -c /am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_223f5
+/am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_223f5.dir/link.txt --verbose=1
+/bin/cc  -fopenmp -DCHECK_FUNCTION_EXISTS=glXGetProcAddressARB    -rdynamic CMakeFiles/cmTC_223f5.dir/CheckFunctionExists.c.o  -o cmTC_223f5 /usr/lib/libGL.so 
+gmake[1]: Leaving directory '/am/phoenix/home1/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 

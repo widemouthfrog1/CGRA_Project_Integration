@@ -6,17 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/home/hoefsldyla/Documents/CLionCopy/work/ext/stb/stb.c
+/home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/ext/stb/stb.c
 stb_image.h
-/home/hoefsldyla/Documents/CLionCopy/work/ext/stb/stb_image.h
+/home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/ext/stb/stb_image.h
 stb_image_resize.h
-/home/hoefsldyla/Documents/CLionCopy/work/ext/stb/stb_image_resize.h
+/home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/ext/stb/stb_image_resize.h
 stb_image_write.h
-/home/hoefsldyla/Documents/CLionCopy/work/ext/stb/stb_image_write.h
+/home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/ext/stb/stb_image_write.h
 
-/home/hoefsldyla/Documents/CLionCopy/work/ext/stb/stb_image.h
+/home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/ext/stb/stb_image.h
 stb_image.h
-/home/hoefsldyla/Documents/CLionCopy/work/ext/stb/stb_image.h
+/home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/ext/stb/stb_image.h
 stdio.h
 -
 stdarg.h
@@ -42,9 +42,9 @@ intrin.h
 arm_neon.h
 -
 
-/home/hoefsldyla/Documents/CLionCopy/work/ext/stb/stb_image_resize.h
+/home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/ext/stb/stb_image_resize.h
 stb_image_resize.h
-/home/hoefsldyla/Documents/CLionCopy/work/ext/stb/stb_image_resize.h
+/home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/ext/stb/stb_image_resize.h
 stdint.h
 -
 assert.h
@@ -56,7 +56,7 @@ math.h
 stdlib.h
 -
 
-/home/hoefsldyla/Documents/CLionCopy/work/ext/stb/stb_image_write.h
+/home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/ext/stb/stb_image_write.h
 stdarg.h
 -
 stdlib.h

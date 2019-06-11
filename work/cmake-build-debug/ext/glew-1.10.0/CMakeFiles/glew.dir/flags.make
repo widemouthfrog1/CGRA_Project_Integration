@@ -6,5 +6,5 @@ C_FLAGS =  -fopenmp -g
 
 C_DEFINES = -DCGRA_HAVE_OPENMP -DGLEW_STATIC
 
-C_INCLUDES = -I/home/hoefsldyla/Documents/CLionCopy/work/ext/glfw/include -I/home/hoefsldyla/Documents/CLionCopy/work/ext/glew-1.10.0/include 
+C_INCLUDES = -I/home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/ext/glfw/include -I/home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/ext/glew-1.10.0/include 
 

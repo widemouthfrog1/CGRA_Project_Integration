@@ -1,4 +1,4 @@
-# Install script for directory: /home/hoefsldyla/Documents/CLionCopy/work/ext/glfw/src
+# Install script for directory: /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/ext/glfw/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,6 +38,6 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/bin/libglfw3.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/bin/libglfw3.a")
 endif()
 

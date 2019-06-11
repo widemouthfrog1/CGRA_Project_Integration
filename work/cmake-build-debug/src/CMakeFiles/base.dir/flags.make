@@ -4,7 +4,7 @@
 # compile CXX with /bin/c++
 CXX_FLAGS =  -fopenmp -g   -std=c++1z -Wall -Wextra -pedantic -fvisibility=hidden -pthread -msse2 -Werror=return-type -fdiagnostics-color
 
-CXX_DEFINES = -DCGRA_HAVE_OPENMP -DCGRA_SRCDIR=\"/home/hoefsldyla/Documents/CLionCopy/work\" -DGLEW_STATIC
+CXX_DEFINES = -DCGRA_HAVE_OPENMP -DCGRA_SRCDIR=\"/home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work\" -DGLEW_STATIC
 
-CXX_INCLUDES = -I/home/hoefsldyla/Documents/CLionCopy/work/ext/glfw/include -I/home/hoefsldyla/Documents/CLionCopy/work/ext -I/home/hoefsldyla/Documents/CLionCopy/work/src -I/home/hoefsldyla/Documents/CLionCopy/work/ext/glew-1.10.0/include -I/home/hoefsldyla/Documents/CLionCopy/work/ext/stb -I/home/hoefsldyla/Documents/CLionCopy/work/ext/imgui 
+CXX_INCLUDES = -I/home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/ext/glfw/include -I/home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/ext -I/home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/src -I/home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/ext/glew-1.10.0/include -I/home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/ext/stb -I/home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/ext/imgui 
 

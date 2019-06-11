@@ -43,10 +43,10 @@ RM = /am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/bi
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hoefsldyla/Documents/CLionCopy/work
+CMAKE_SOURCE_DIR = /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug
+CMAKE_BINARY_DIR = /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug
 
 # Utility rule file for res.
 
@@ -63,10 +63,10 @@ res/CMakeFiles/res.dir/build: res
 .PHONY : res/CMakeFiles/res.dir/build
 
 res/CMakeFiles/res.dir/clean:
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/res && $(CMAKE_COMMAND) -P CMakeFiles/res.dir/cmake_clean.cmake
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/res && $(CMAKE_COMMAND) -P CMakeFiles/res.dir/cmake_clean.cmake
 .PHONY : res/CMakeFiles/res.dir/clean
 
 res/CMakeFiles/res.dir/depend:
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hoefsldyla/Documents/CLionCopy/work /home/hoefsldyla/Documents/CLionCopy/work/res /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/res /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/res/CMakeFiles/res.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/res /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/res /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/res/CMakeFiles/res.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : res/CMakeFiles/res.dir/depend
 

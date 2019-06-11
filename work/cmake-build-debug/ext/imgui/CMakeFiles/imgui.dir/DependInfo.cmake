@@ -4,11 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/hoefsldyla/Documents/CLionCopy/work/ext/imgui/imgui.cpp" "/home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/ext/imgui/CMakeFiles/imgui.dir/imgui.cpp.o"
-  "/home/hoefsldyla/Documents/CLionCopy/work/ext/imgui/imgui_draw.cpp" "/home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/ext/imgui/CMakeFiles/imgui.dir/imgui_draw.cpp.o"
-  "/home/hoefsldyla/Documents/CLionCopy/work/ext/imgui/imgui_impl_glfw.cpp" "/home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/ext/imgui/CMakeFiles/imgui.dir/imgui_impl_glfw.cpp.o"
-  "/home/hoefsldyla/Documents/CLionCopy/work/ext/imgui/imgui_impl_opengl3.cpp" "/home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/ext/imgui/CMakeFiles/imgui.dir/imgui_impl_opengl3.cpp.o"
-  "/home/hoefsldyla/Documents/CLionCopy/work/ext/imgui/imgui_widgets.cpp" "/home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/ext/imgui/CMakeFiles/imgui.dir/imgui_widgets.cpp.o"
+  "/home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/ext/imgui/imgui.cpp" "/home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/ext/imgui/CMakeFiles/imgui.dir/imgui.cpp.o"
+  "/home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/ext/imgui/imgui_draw.cpp" "/home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/ext/imgui/CMakeFiles/imgui.dir/imgui_draw.cpp.o"
+  "/home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/ext/imgui/imgui_impl_glfw.cpp" "/home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/ext/imgui/CMakeFiles/imgui.dir/imgui_impl_glfw.cpp.o"
+  "/home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/ext/imgui/imgui_impl_opengl3.cpp" "/home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/ext/imgui/CMakeFiles/imgui.dir/imgui_impl_opengl3.cpp.o"
+  "/home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/ext/imgui/imgui_widgets.cpp" "/home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/ext/imgui/CMakeFiles/imgui.dir/imgui_widgets.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

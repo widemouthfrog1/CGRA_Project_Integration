@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/hoefsldyla/Documents/CLionCopy/work/ext/stb/stb.c" "/home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/ext/stb/CMakeFiles/stb.dir/stb.c.o"
+  "/home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/ext/stb/stb.c" "/home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/ext/stb/CMakeFiles/stb.dir/stb.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

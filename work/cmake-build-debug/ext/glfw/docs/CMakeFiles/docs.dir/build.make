@@ -43,10 +43,10 @@ RM = /am/embassy/vol/x6/jetbrains/apps/CLion/ch-0/191.6183.77/bin/cmake/linux/bi
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hoefsldyla/Documents/CLionCopy/work
+CMAKE_SOURCE_DIR = /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug
+CMAKE_BINARY_DIR = /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug
 
 # Utility rule file for docs.
 
@@ -54,8 +54,8 @@ CMAKE_BINARY_DIR = /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug
 include ext/glfw/docs/CMakeFiles/docs.dir/progress.make
 
 ext/glfw/docs/CMakeFiles/docs:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating HTML documentation"
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/ext/glfw/docs && /usr/pkg/bin/doxygen
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating HTML documentation"
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/ext/glfw/docs && /usr/pkg/bin/doxygen
 
 docs: ext/glfw/docs/CMakeFiles/docs
 docs: ext/glfw/docs/CMakeFiles/docs.dir/build.make
@@ -68,10 +68,10 @@ ext/glfw/docs/CMakeFiles/docs.dir/build: docs
 .PHONY : ext/glfw/docs/CMakeFiles/docs.dir/build
 
 ext/glfw/docs/CMakeFiles/docs.dir/clean:
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/ext/glfw/docs && $(CMAKE_COMMAND) -P CMakeFiles/docs.dir/cmake_clean.cmake
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/ext/glfw/docs && $(CMAKE_COMMAND) -P CMakeFiles/docs.dir/cmake_clean.cmake
 .PHONY : ext/glfw/docs/CMakeFiles/docs.dir/clean
 
 ext/glfw/docs/CMakeFiles/docs.dir/depend:
-	cd /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hoefsldyla/Documents/CLionCopy/work /home/hoefsldyla/Documents/CLionCopy/work/ext/glfw/docs /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/ext/glfw/docs /home/hoefsldyla/Documents/CLionCopy/work/cmake-build-debug/ext/glfw/docs/CMakeFiles/docs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/ext/glfw/docs /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/ext/glfw/docs /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/ext/glfw/docs/CMakeFiles/docs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : ext/glfw/docs/CMakeFiles/docs.dir/depend
 

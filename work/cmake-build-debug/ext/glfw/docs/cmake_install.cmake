@@ -1,4 +1,4 @@
-# Install script for directory: /home/hoefsldyla/Documents/CLionCopy/work/ext/glfw/docs
+# Install script for directory: /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/ext/glfw/docs
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

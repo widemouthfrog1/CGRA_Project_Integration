@@ -6,5 +6,5 @@ CXX_FLAGS =  -fopenmp -g
 
 CXX_DEFINES = -DCGRA_HAVE_OPENMP
 
-CXX_INCLUDES = -I/home/hoefsldyla/Documents/CLionCopy/work/ext/glfw/include -I/home/hoefsldyla/Documents/CLionCopy/work/ext/imgui 
+CXX_INCLUDES = -I/home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/ext/glfw/include -I/home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/ext/imgui 
 
