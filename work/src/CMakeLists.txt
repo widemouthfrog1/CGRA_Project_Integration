@@ -16,6 +16,17 @@ SET(sources
 	"Shader.cpp"
     "NoiseMapGenerator.hpp"
 
+	"TreeApplication.cpp"
+	"TreeApplication.hpp"
+	"ProjectMath.cpp"
+	"ProjectMath.h"
+	"Rule.h"
+	"Rule.cpp"
+	"Turtle.cpp"
+	"Turtle.h"
+	"Vertex.cpp"
+	"Vertex.h"
+
 	"CMakeLists.txt"
 )
 
@@ -25,7 +36,6 @@ add_executable(${CGRA_PROJECT} ${sources})
 # ----TODO--------------------- #
 # list your subdirectories here #
 # ----------------------------- #
-#add_subdirectory(Trees)
 
 
 #########################################################

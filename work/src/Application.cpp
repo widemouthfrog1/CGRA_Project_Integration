@@ -21,7 +21,7 @@
 #include <random>
 #include <algorithm>
 
-#include "Trees/TreeApplication.hpp"
+//#include "TreeApplication.hpp"
 
 glm::mat4 modelMatrix = glm::mat4(1.0f);
 glm::mat4 viewMatrix = glm::lookAt(glm::vec3(10,10,10), glm::vec3(0,0,0), glm::vec3(0,1,0));
@@ -239,8 +239,6 @@ int main(){
 
     // Setup ImGui //
 
-    loadTrees(std::vector<glm::vec3>());
-
     while(glfwGetKey(mainWindow, GLFW_KEY_Q) != GLFW_PRESS && glfwWindowShouldClose(mainWindow) == 0){
         
         processInput(mainWindow);
@@ -279,7 +277,7 @@ int main(){
 
         groundMesh.drawMesh();
 
-        for(unsigned int i = 0; i < trees.size(); i++){
+        /*for(unsigned int i = 0; i < trees.size(); i++){
 
             glm::mat4 scaleMatrix = glm::scale(glm::mat4(1.0f), glm::vec3(0.1, 1, 0.1));
             glm::mat4 newModelViewMatrix = mainCamera.getViewMatrix() * glm::translate(glm::mat4(1.0f), trees[i].position) * glm::translate(glm::mat4(1.0f), glm::vec3(-(terrainSize-1)/2, 0, -(terrainSize-1)/2)) * scaleMatrix;
@@ -290,8 +288,7 @@ int main(){
             glUniform1iv(waterMeshID, 1, &isHighlighted);
 
             trees[i].mesh.drawMesh();
-        }
-
+        }*/
 
         if(toggleOptions) ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData()); 
         
@@ -765,6 +762,10 @@ void renderTerrainGUI(){
     if(ImGui::Button("Start Erosion")){
         erodeTerrain();
     }
+
+    ImGui::Separator();
+
+    //treeGUI();
 
     ImGui::End();
 

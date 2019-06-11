@@ -89,7 +89,7 @@ float getNoiseAt(float xPos, float yPos) {
     float thirdContribution = 0.5f - xOffset2 * xOffset2 - yOffset2 * yOffset2;
 
     if(!(thirdContribution < 0.0f)) thirdContribution *= thirdContribution;
-    thirdContribution = thirdContribution < 0.0f ? 0.0f : thirdContribution * thirdContribution * computeGradient(gradientIndices2, xOffset2, yOffset2);
+    noiseContribution2 = thirdContribution < 0.0f ? 0.0f : thirdContribution * thirdContribution * computeGradient(gradientIndices2, xOffset2, yOffset2);
 
     // All the noise contribution are added together then scaled so that the values are between -1 and 1.
     return 45.23065f * (noiseContribution0 + noiseContribution1 + noiseContribution2);

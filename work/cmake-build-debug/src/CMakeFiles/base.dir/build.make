@@ -96,11 +96,81 @@ src/CMakeFiles/base.dir/Shader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/base.dir/Shader.cpp.s"
 	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/src && /bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/src/Shader.cpp -o CMakeFiles/base.dir/Shader.cpp.s
 
+src/CMakeFiles/base.dir/TreeApplication.cpp.o: src/CMakeFiles/base.dir/flags.make
+src/CMakeFiles/base.dir/TreeApplication.cpp.o: ../src/TreeApplication.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/base.dir/TreeApplication.cpp.o"
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/src && /bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/base.dir/TreeApplication.cpp.o -c /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/src/TreeApplication.cpp
+
+src/CMakeFiles/base.dir/TreeApplication.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/base.dir/TreeApplication.cpp.i"
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/src && /bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/src/TreeApplication.cpp > CMakeFiles/base.dir/TreeApplication.cpp.i
+
+src/CMakeFiles/base.dir/TreeApplication.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/base.dir/TreeApplication.cpp.s"
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/src && /bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/src/TreeApplication.cpp -o CMakeFiles/base.dir/TreeApplication.cpp.s
+
+src/CMakeFiles/base.dir/ProjectMath.cpp.o: src/CMakeFiles/base.dir/flags.make
+src/CMakeFiles/base.dir/ProjectMath.cpp.o: ../src/ProjectMath.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/base.dir/ProjectMath.cpp.o"
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/src && /bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/base.dir/ProjectMath.cpp.o -c /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/src/ProjectMath.cpp
+
+src/CMakeFiles/base.dir/ProjectMath.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/base.dir/ProjectMath.cpp.i"
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/src && /bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/src/ProjectMath.cpp > CMakeFiles/base.dir/ProjectMath.cpp.i
+
+src/CMakeFiles/base.dir/ProjectMath.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/base.dir/ProjectMath.cpp.s"
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/src && /bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/src/ProjectMath.cpp -o CMakeFiles/base.dir/ProjectMath.cpp.s
+
+src/CMakeFiles/base.dir/Rule.cpp.o: src/CMakeFiles/base.dir/flags.make
+src/CMakeFiles/base.dir/Rule.cpp.o: ../src/Rule.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/CMakeFiles/base.dir/Rule.cpp.o"
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/src && /bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/base.dir/Rule.cpp.o -c /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/src/Rule.cpp
+
+src/CMakeFiles/base.dir/Rule.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/base.dir/Rule.cpp.i"
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/src && /bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/src/Rule.cpp > CMakeFiles/base.dir/Rule.cpp.i
+
+src/CMakeFiles/base.dir/Rule.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/base.dir/Rule.cpp.s"
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/src && /bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/src/Rule.cpp -o CMakeFiles/base.dir/Rule.cpp.s
+
+src/CMakeFiles/base.dir/Turtle.cpp.o: src/CMakeFiles/base.dir/flags.make
+src/CMakeFiles/base.dir/Turtle.cpp.o: ../src/Turtle.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/CMakeFiles/base.dir/Turtle.cpp.o"
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/src && /bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/base.dir/Turtle.cpp.o -c /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/src/Turtle.cpp
+
+src/CMakeFiles/base.dir/Turtle.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/base.dir/Turtle.cpp.i"
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/src && /bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/src/Turtle.cpp > CMakeFiles/base.dir/Turtle.cpp.i
+
+src/CMakeFiles/base.dir/Turtle.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/base.dir/Turtle.cpp.s"
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/src && /bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/src/Turtle.cpp -o CMakeFiles/base.dir/Turtle.cpp.s
+
+src/CMakeFiles/base.dir/Vertex.cpp.o: src/CMakeFiles/base.dir/flags.make
+src/CMakeFiles/base.dir/Vertex.cpp.o: ../src/Vertex.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/CMakeFiles/base.dir/Vertex.cpp.o"
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/src && /bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/base.dir/Vertex.cpp.o -c /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/src/Vertex.cpp
+
+src/CMakeFiles/base.dir/Vertex.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/base.dir/Vertex.cpp.i"
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/src && /bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/src/Vertex.cpp > CMakeFiles/base.dir/Vertex.cpp.i
+
+src/CMakeFiles/base.dir/Vertex.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/base.dir/Vertex.cpp.s"
+	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/src && /bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/src/Vertex.cpp -o CMakeFiles/base.dir/Vertex.cpp.s
+
 # Object files for target base
 base_OBJECTS = \
 "CMakeFiles/base.dir/Application.cpp.o" \
 "CMakeFiles/base.dir/Camera.cpp.o" \
-"CMakeFiles/base.dir/Shader.cpp.o"
+"CMakeFiles/base.dir/Shader.cpp.o" \
+"CMakeFiles/base.dir/TreeApplication.cpp.o" \
+"CMakeFiles/base.dir/ProjectMath.cpp.o" \
+"CMakeFiles/base.dir/Rule.cpp.o" \
+"CMakeFiles/base.dir/Turtle.cpp.o" \
+"CMakeFiles/base.dir/Vertex.cpp.o"
 
 # External object files for target base
 base_EXTERNAL_OBJECTS =
@@ -108,6 +178,11 @@ base_EXTERNAL_OBJECTS =
 bin/base: src/CMakeFiles/base.dir/Application.cpp.o
 bin/base: src/CMakeFiles/base.dir/Camera.cpp.o
 bin/base: src/CMakeFiles/base.dir/Shader.cpp.o
+bin/base: src/CMakeFiles/base.dir/TreeApplication.cpp.o
+bin/base: src/CMakeFiles/base.dir/ProjectMath.cpp.o
+bin/base: src/CMakeFiles/base.dir/Rule.cpp.o
+bin/base: src/CMakeFiles/base.dir/Turtle.cpp.o
+bin/base: src/CMakeFiles/base.dir/Vertex.cpp.o
 bin/base: src/CMakeFiles/base.dir/build.make
 bin/base: bin/libglew.a
 bin/base: bin/libglfw3.a
@@ -124,7 +199,7 @@ bin/base: bin/libstb.a
 bin/base: bin/libimgui.a
 bin/base: /usr/lib/libGLU.so
 bin/base: src/CMakeFiles/base.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable ../bin/base"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable ../bin/base"
 	cd /home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/cmake-build-debug/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/base.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

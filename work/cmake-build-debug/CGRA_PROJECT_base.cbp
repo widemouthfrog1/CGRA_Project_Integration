@@ -1351,10 +1351,40 @@
 		<Unit filename="/home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/src/NoiseMapGenerator.hpp">
 			<Option target="base"/>
 		</Unit>
+		<Unit filename="/home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/src/ProjectMath.cpp">
+			<Option target="base"/>
+		</Unit>
+		<Unit filename="/home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/src/ProjectMath.h">
+			<Option target="base"/>
+		</Unit>
+		<Unit filename="/home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/src/Rule.cpp">
+			<Option target="base"/>
+		</Unit>
+		<Unit filename="/home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/src/Rule.h">
+			<Option target="base"/>
+		</Unit>
 		<Unit filename="/home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/src/Shader.cpp">
 			<Option target="base"/>
 		</Unit>
 		<Unit filename="/home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/src/Shader.hpp">
+			<Option target="base"/>
+		</Unit>
+		<Unit filename="/home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/src/TreeApplication.cpp">
+			<Option target="base"/>
+		</Unit>
+		<Unit filename="/home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/src/TreeApplication.hpp">
+			<Option target="base"/>
+		</Unit>
+		<Unit filename="/home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/src/Turtle.cpp">
+			<Option target="base"/>
+		</Unit>
+		<Unit filename="/home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/src/Turtle.h">
+			<Option target="base"/>
+		</Unit>
+		<Unit filename="/home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/src/Vertex.cpp">
+			<Option target="base"/>
+		</Unit>
+		<Unit filename="/home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/src/Vertex.h">
 			<Option target="base"/>
 		</Unit>
 		<Unit filename="/home/hoefsldyla/Documents/CGRA_PROJECt_INTEGRATION/work/CMakeLists.txt">
