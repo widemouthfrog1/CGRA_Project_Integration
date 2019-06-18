@@ -129,22 +129,6 @@ void redrawScene(){
     glUniform1iv(isTreeID, 1, &isTree);
         
     groundMesh.drawMesh(false);
-
-    for(unsigned int i = 0; i < treeList.size(); i++){
-            
-        glm::mat4 scaleMatrix = glm::scale(glm::mat4(1.0f), glm::vec3(0.5, 0.5, 0.5));
-        glm::mat4 newModelViewMatrix = mainCamera.getViewMatrix() * glm::translate(glm::mat4(1.0f), treeList[i].position) * glm::translate(glm::mat4(1.0f), glm::vec3(-(terrainSize-1)/2, 0, -(terrainSize-1)/2)) * scaleMatrix;
-        glUniformMatrix4fv(modelViewMatrixID, 1, GL_FALSE, &newModelViewMatrix[0][0]);
-
-        isTree = 1;
-        glUniform1iv(isTreeID, 1, &isTree);
-
-        GLint isHighlighted = selectedTree == i || selectAll ? 1 : 0;
-        GLuint selectedTreeID = glGetUniformLocation(simpleShader.getID(), "uSelectedTree");
-        glUniform1iv(selectedTreeID, 1, &isHighlighted);
-
-        treeList[i].mesh.drawMesh(true);
-    }
         
     glfwSwapBuffers(mainWindow);
 }
@@ -377,14 +361,6 @@ void generateTerrain(bool alterHeight){
     groundMesh = Mesh(vertexPositions, depthIndices);
 }
 
-void updateTreeHeights(){
-
-    for(treeModel currentTree: treeList){
-        glm::vec3 treePosition = currentTree.position;
-        currentTree.position.y = calculateGradientAndHeight(treePosition.x, treePosition.z).z;
-    }
-}
-
 void depositSediment(int xPos, int zPos, float xOffset, float zOffset, float amountOfSediment){
 
     depthMap[xPos][zPos] += amountOfSediment * (1 - xOffset) * (1 - zOffset);
@@ -565,11 +541,12 @@ void erodeTerrain(){
         }
 
         generateTerrain(false);
-        updateTreeHeights();
         redrawScene();
 
     }
 
+    placeTrees();
+    redrawScene();
 }
 
 void placeTrees(){
